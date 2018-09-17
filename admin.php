@@ -1,7 +1,10 @@
 <?php
 $page_title="add Admin";
 require_once('includes/header.php');
-
+if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
+{
+    header('location:login.php');
+}
 ?>
 
 <!--    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css" /> -->

@@ -1,5 +1,5 @@
 <?php
-$page_title="Add News";
+$page_title="Add Planning";
 require_once('includes/header.php');
 if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 {
@@ -68,7 +68,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                     
                                     <div class="col-sm-12 col-lg-12" style="padding:1%;text-align: center;">
                                         <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
-                                            <i class="fa fa-plus"></i> Add News
+                                            <i class="fa fa-plus"></i> Add Planning
                                         </button>
                                    
                                     </div>
@@ -149,7 +149,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         $(document).ready(function(){
             $('#add_button').click(function(){
                 $('#user_form')[0].reset();
-                $('.modal-title').text("Add News");
+                $('.modal-title').text("Add Plan");
                 $('#action').val("Add");
                 $('#operation').val("Add");
                 $('#user_uploaded_image').html('');
@@ -336,11 +336,11 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                         ?>
                     </select>
                     <label>Enter Date</label>
-                    <input type="text" name="date" id="date" class="form-control" />
+                    <input type="text" placeholder="YYYY/MM/DD" name="date" id="date" class="form-control" />
                     <br />
 
                     <br />
-                    <label>Select News Image</label>
+                    <label>Select Plan Image</label>
                     <input type="file" name="image_url" id="image_url" />
                     <span id="user_uploaded_image"></span>
                 </div>

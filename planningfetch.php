@@ -1,9 +1,9 @@
    <?php
 include('db.php');
-include('newsfunction.php');
+include('planningfunction.php');
 $query = '';
 $output = array();
-$query .= "SELECT * FROM pasistence_news ";
+$query .= "SELECT * FROM pasistence_planning ";
 if(isset($_POST["search"]["value"]))
 {
  $query .= 'WHERE title LIKE "%'.$_POST["search"]["value"].'%" ';
@@ -34,7 +34,7 @@ foreach($result as $row)
  $image = '';
  if($row["image_url"] != '')
  {
-  $image = '<img src="img/news/'.$row["image_url"].'" class="img-thumbnail" width="50" height="35" />';
+  $image = '<img src="img/planning/'.$row["image_url"].'" class="img-thumbnail" width="50" height="35" />';
  }
  else
  {

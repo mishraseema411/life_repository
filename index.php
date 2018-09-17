@@ -1,6 +1,7 @@
 ﻿<?php
 $page_title="dashboard";
- require_once('includes/header.php');?>
+require_once('includes/db.php');
+require_once('includes/header.php');?>
 <style>
 
 
@@ -9,8 +10,9 @@ $page_title="dashboard";
 </head>
 <body>
 
-<?php require_once('includes/navbar.php');?>
-        
+    <?php require_once('includes/navbar.php');?>
+
+
 
 
 
@@ -18,31 +20,46 @@ $page_title="dashboard";
 
     <div id="right-panel" class="right-panel" >
 
-       <?php require_once('includes/rightPanelHeader.php');?>
+        <?php require_once('includes/rightPanelHeader.php');?>
 
         <!-- Header/Bradcrum-->
+
+        <?php  
+        $result1 = mysqli_query($con,"select count(1) FROM pasistence_city");
+        $result2 = mysqli_query($con,"select count(1) FROM pasistence_club");
+        $result3 = mysqli_query($con,"select count(1) FROM pasistence_planning");
+        $result4 = mysqli_query($con,"select count(1) FROM pasistence_news");
+        
+        $row1 = mysqli_fetch_array($result1);
+        $row2 = mysqli_fetch_array($result2);
+        $row3 = mysqli_fetch_array($result3);
+        $row4 = mysqli_fetch_array($result4);
+
+//        $total = $row[0];
+//        echo "Total rows: " . $total;
+//        
+//        $q1="Select count(id)  from pasistence_city";
+//        $q2="Select count(id)  from pasistence_club";
+//        $q3="Select count(id)  from pasistence_planning";
+//        $q4="Select count(id)  from pasistence_news";
+
+        $city=$row1[0];
+        $club=$row2[0];
+        $plans=$row3[0];
+        $news=$row4[0];
+
+        ?>
 
 
         <div class="content mt-3">
 
 
-           <div class="col-sm-6 col-lg-3">
+            <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-flat-color-1">
                     <div class="card-body pb-0">
-                        <div class="dropdown float-right">
-                            <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                                <i class="fa fa-cog"></i>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <div class="dropdown-menu-content">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
-                        </div>
+
                         <h4 class="mb-0">
-                            <span class="count">108</span>
+                            <span class="count"><?php echo $city; ?></span>
                         </h4>
                         <p class="text-light">City</p>
 
@@ -57,20 +74,9 @@ $page_title="dashboard";
             <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-flat-color-4">
                     <div class="card-body pb-0">
-                        <div class="dropdown float-right">
-                            <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                                <i class="fa fa-cog"></i>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <div class="dropdown-menu-content">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
-                        </div>
+
                         <h4 class="mb-0">
-                            <span class="count">10468</span>
+                            <span class="count"><?php echo $club; ?></span>
                         </h4>
                         <p class="text-light">Clubs</p>
 
@@ -86,22 +92,11 @@ $page_title="dashboard";
             <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-flat-color-2">
                     <div class="card-body pb-0">
-                        <div class="dropdown float-right">
-                            <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                                <i class="fa fa-cog"></i>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <div class="dropdown-menu-content">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
-                        </div>
+
                         <h4 class="mb-0">
-                            <span class="count">10468</span>
+                            <span class="count"><?php echo $plans; ?></span>
                         </h4>
-                        <p class="text-light">Members</p>
+                        <p class="text-light">Plannings</p>
 
                         <div class="chart-wrapper px-0" style="height:50px;" height="50">
                             <canvas id="widgetChart2"></canvas>
@@ -115,28 +110,17 @@ $page_title="dashboard";
             <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-flat-color-3">
                     <div class="card-body pb-0">
-                        <div class="dropdown float-right">
-                            <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                                <i class="fa fa-cog"></i>
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <div class="dropdown-menu-content">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
-                        </div>
+
                         <h4 class="mb-0">
-                            <span class="count">10468</span>
+                            <span class="count"><?php echo $news; ?></span>
                         </h4>
                         <p class="text-light">News</p>
 
                     </div>
 
-                        <div class="chart-wrapper px-0" style="height:50px;" height="50">
-                            <canvas id="widgetChart3"></canvas>
-                        </div>
+                    <div class="chart-wrapper px-0" style="height:50px;" height="50">
+                        <canvas id="widgetChart3"></canvas>
+                    </div>
                 </div>
             </div>
             <!--/.col-->
@@ -202,7 +186,7 @@ $page_title="dashboard";
 
 
 
-           
+
 
         </div> <!-- .content -->
     </div><!-- /#right-panel -->
