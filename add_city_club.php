@@ -1,7 +1,7 @@
 ﻿<?php
 $page_title="addCityClubMembers";
 require_once('includes/header.php');
-require('inc/clubinfo.php');
+//require('inc/clubinfo.php');
 if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 {
     header('location:login.php');
