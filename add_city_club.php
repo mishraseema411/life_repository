@@ -24,6 +24,15 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         padding:0%;
         margin:0%;
     }
+    #user_data_length select{
+     padding: 15px 20px !important;
+     width: 120px !important;
+     margin-top: 10px;
+    }
+    #user_data_filter input{
+        margin-top: 10px;
+    }
+
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -81,7 +90,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
             <div class="container">
                 <div class="animated fadeIn">
                     <div class="row">
-                        <div class="col-sm-3 col-lg-3 ">
+                        <!-- <div class="col-sm-3 col-lg-3 ">
                             <section class="card">
                                 <div class="card-header text-center">
                                     <strong>Add City </strong>Set club details
@@ -144,9 +153,9 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
                                 </div>
                             </section>
-                        </div>
+                        </div> -->
 
-                        <div class="col-sm-9 col-lg-9" id="showinfo2">
+                        <!-- <div class="col-sm-12 col-lg-12" id="showinfo2">
                             <section class="card">
                                 <div class="card-header">
                                     <strong>Enter City</strong> Details
@@ -207,19 +216,27 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                 </div>
                             </section>
 
-                        </div>
-                        <div class="col-sm-9 col-lg-9 ">
+                        </div> -->
+                        <div class="col-sm-12 col-lg-12 ">
                             <section class="card">
-                                <div class="card-header text-center">
-                                    <strong>Add Club </strong>Set club details
-                                    <hr/>
-                                    <div class="col-sm-12 col-lg-12" >
-
+                                <div class="card-header">
+                                    
+                                    <div class="col-sm-9 col-lg-9" style="padding:1%;text-align: center;">
+                                        <strong>Add City </strong>Set club details
+                                   
+                                    </div>
+                                     <div class="col-sm-3 col-lg-3" style="padding:1%; text-align: center;">
+                                        <button id="city" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cityModal" class="btn btn-primary btn-sm">
+                                            <i class="fa fa-plus"></i> Add City
+                                        </button>
                                         <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
                                             <i class="fa fa-plus"></i> Add club
                                         </button>
 
+                                       
                                     </div>
+                                     
+ 
                                 </div>
                                 <div class="card-body text-secondary" style="padding:0px;margin:0px;">
 
@@ -248,11 +265,8 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                 </div>
                             </section>
                         </div>
-                        <div class="col-sm-9 col-lg-9 col-offset-3">
-
-
-                        </div>
-                    </div>
+                         
+                    </div><!-- .row -->
 
 
                 </div>
@@ -426,8 +440,9 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         <form method="post" id="user_form" enctype="multipart/form-data">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Add User</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
                 </div>
                 <div class="modal-body">
                     <label>Enter First Name</label>
@@ -483,6 +498,75 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                 <div class="modal-footer">
                     <input type="hidden" name="user_id" id="user_id" />
                     <input type="hidden" name="operation" id="operation" />
+                    <input type="submit" name="action" id="action" class="btn btn-success" value="Add" />
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="cityModal" class="modal fade">
+    <div class="modal-dialog">
+         
+            <div class="modal-content">
+                <div class="modal-header">
+                     <h4 class="modal-title" >Add City</h4> 
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    
+                </div>
+                <div class="modal-body">
+                    <form id="formCity" action="city.php" method="post" enctype="multipart/form-data" class="form-horizontal">
+
+
+
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label class=" form-control-label">City Name</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <input type="text" id="city" name="cityname" placeholder="Enter City" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row form-group">
+                                                <div class="col col-md-3"><label for="file-input" class=" form-control-label">Select Image</label></div>
+                                                <div class="col-12 col-md-9"><input type="file" id="file-input" name="cityimage" class="form-control-file"></div>
+                                            </div>
+
+
+
+                                            <div class="card-footer">
+                                                <button type="submit" name="Submit" class="btn btn-primary btn-sm">
+                                                    <i class="fa fa-dot-circle-o"></i>&nbsp; Submit
+                                                </button>
+                                                <button type="reset" class="btn btn-danger btn-sm">
+                                                    <i class="fa fa-ban"></i>&nbsp; Reset
+                                                </button>
+
+                                                <button type="button" id="cancel_city" class="btn btn-secondary btn-sm">
+                                                    <i class="fa fa-close"></i>&nbsp; Cancel
+                                                </button>
+
+
+                                                <?php 
+                                                if(isset($error_msg))
+                                                {
+                                                    echo "<span style='color:red;' class='pull-right'> Error Here </span> ";
+                                                }
+                                                else if(isset($msg))
+                                                {
+                                                    {
+                                                        echo "<span style='color:green;' class='pull-right'> $msg </span> ";
+                                                    }
+                                                }
+                                                ?>
+                                            </div>
+
+                                        </form>
+                </div>
+                <div class="modal-footer">
+                    
                     <input type="submit" name="action" id="action" class="btn btn-success" value="Add" />
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
