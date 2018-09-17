@@ -104,6 +104,7 @@ else
                                         {
                                             move_uploaded_file($imageurl_temp,"img/admin/$imageurl");
                                         }
+                                        echo "<script>alert('Admin updated !');location.replace('addAdmin.php');</script>";
                                     }
                                     else
                                     {

@@ -69,9 +69,9 @@ else
                                
 
                                 $email=mysqli_real_escape_string($con,strtolower($_POST['email']));
-                                $password=mysqli_real_escape_string($con,md5($_POST['password']));
+//                                $password=mysqli_real_escape_string($con,md5($_POST['password']));
                                 
-                                echo $password;
+                             
 
                                 $phone=mysqli_real_escape_string($con,$_POST['phone']);
                                 $dob=mysqli_real_escape_string($con,$_POST['dob']);
@@ -84,7 +84,7 @@ else
                                 }
 
 
-                                if(empty($fname) or empty($lname) or empty($email) or empty($password) or empty($phone) or empty($dob))
+                                if(empty($fname) or empty($lname) or empty($email)  or empty($phone) or empty($dob))
                                 {
 
                                     $error="All (*) fields are required!";
@@ -100,10 +100,12 @@ else
                                         $msg="user has been updated!";
                                         header("refresh:0;url=editAdmin.php?edit=$edit_id");
                                         
+                                        
                                         if(!empty($imageurl))
                                         {
                                              move_uploaded_file($imageurl_temp,"img/admin/$imageurl");
                                         }
+                                        
                                     }
                                     else
                                     {
@@ -180,9 +182,14 @@ else
                                             <button type="submit" name="submit1" class="btn btn-primary btn-sm">
                                                 <i class="fa fa-dot-circle-o"></i> Update Admin
                                             </button>
+                                             <a href="addAdmin.php">  <button type="button" class="btn btn-success btn-sm">
+                                                <i class="fa fa-dot-circle-o"> </i> OKAY
+                                            </button></a>
 
                                         </div>
-
+                                        
+                                        
+                                       
                                     </form>
                                 </div>
 

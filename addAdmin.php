@@ -67,12 +67,8 @@ if(!isset($_SESSION['username']))
                             <div class="col col-md-12">
                                 <div class="card">
 
-                                    <div class="col-md-4 ">
-                                        <div class="form-group">
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 ">
+                                    
+                                    <div class="col-md-12  text-center" style="padding:1%;">
                                       
                                         <a href="admin.php" class="btn btn-primary btn-sm">Add New Admin</a>
 
@@ -146,7 +142,7 @@ if(!isset($_SESSION['username']))
                                         <td><?php echo $username; ?></td>
                                         <td><?php echo $email; ?></td>
                                         <td>***********</td>
-                                        <td><img src="img/admin/unknown.jpg" width="30px"/></td>
+                                        <td><img src=<?php echo "img/admin/$image" ?> width="30px"/></td>
                                         <td><?php echo $phone; ?></td>
 
                                         <td><a href="editAdmin.php?edit=<?php echo $id; ?>"><i class="fa fa-pencil"></i></a></td>
