@@ -151,7 +151,7 @@ else
 
                                         <div class="row form-group">
                                             <div class="col col-md-3"><label for="dob" class=" form-control-label">Date of Birth*</label></div>
-                                            <div class="col-12 col-md-9"><input type="text" id="dob" name="dob" placeholder="YYYY-MM-DD" class="form-control" value="<?php { echo $e_dob;} ?>"></div>
+                                            <div class="col-12 col-md-9"><input type="date" id="dob" name="dob" placeholder="YYYY-MM-DD" class="form-control" value="<?php { echo $e_dob;} ?>"></div>
                                         </div>
 
                                         <div class="row form-group">

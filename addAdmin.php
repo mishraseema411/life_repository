@@ -64,16 +64,15 @@ if(!isset($_SESSION['username']))
                     <form action="" method="post" autocomplete="off">
                         <div class="row justify-content-md-center">
 
-                            <div class="col col-md-12">
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12" style="padding:0%;text-align: right;">
                                 <div class="card">
+                                    <div class="card-header">
 
-                                    
-                                    <div class="col-md-12  text-center" style="padding:1%;">
-                                      
                                         <a href="admin.php" class="btn btn-primary btn-sm">Add New Admin</a>
 
                                     </div>
-
+                                    
+                                
                                 </div>
                             </div>
                         </div>
@@ -81,14 +80,14 @@ if(!isset($_SESSION['username']))
 
                         <div class="row card">
                             <?php
-            if(isset($error))
-            {
-                echo $error;
-            }
-            else if(isset($msg))
-            {
-                echo $msg;
-            }
+                                if(isset($error))
+                                {
+                                    echo $error;
+                                }
+                                else if(isset($msg))
+                                {
+                                    echo $msg;
+                                }
 
                             ?>
                             <table class="table datatable table-striped table-borderd table-hover">
@@ -109,30 +108,30 @@ if(!isset($_SESSION['username']))
                                 </thead>
                                 <tbody>
                                     <?php
-            while($row=mysqli_fetch_array($run))
-            {
-                $id=$row['id'];
-                $fname=$row['fname'];
-                $lname=$row['lname'];
-                $username=$row['username'];
-                $email=$row['email'];
-                $image=$row['image'];
-                $password=$row['password'];
-                $phone=$row['phone'];
+                                        while($row=mysqli_fetch_array($run))
+                                        {
+                                            $id=$row['id'];
+                                            $fname=$row['fname'];
+                                            $lname=$row['lname'];
+                                            $username=$row['username'];
+                                            $email=$row['email'];
+                                            $image=$row['image'];
+                                            $password=$row['password'];
+                                            $phone=$row['phone'];
 
-                $date    = $row['dob'];
+                                            $date    = $row['dob'];
 
 
-                //                $datee= new \DateTime($row['dob']);
-                //  
-                //                $date=$datee->format('d-m-Y'); 
+                                            //                $datee= new \DateTime($row['dob']);
+                                            //  
+                                            //                $date=$datee->format('d-m-Y'); 
 
-                //                $date=new datetime($row['dob']);
-                //                $d=$date['mday'];
-                //                $m=substr($date['month'],0,3);
-                //                $y=$date['year'];
+                                            //                $date=new datetime($row['dob']);
+                                            //                $d=$date['mday'];
+                                            //                $m=substr($date['month'],0,3);
+                                            //                $y=$date['year'];
 
-                                    ?>
+                                                                ?>
 
                                     <tr>
                                         

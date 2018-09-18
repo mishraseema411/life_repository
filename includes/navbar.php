@@ -22,7 +22,8 @@
                     
                     <h3 class="menu-title"></h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="add_city_club.php" class="dropdown-toggle"  aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Set city and club</a>
+                        <a href="add_city_club.php" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> 
+                            <i class="menu-icon fa fa-laptop"></i>Set City and Club</a>
 <!--
                         <ul class="sub-menu children dropdown-menu">
                             
@@ -36,17 +37,22 @@
                     <h3 class="menu-title"></h3><!-- /.menu-title -->
 
                     <li class="menu-item-has-children dropdown">
-                        <a href="planningAdd.php" class="dropdown-toggle"  aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Set Planning</a>
+                        <a href="planningAdd.php" class="dropdown-toggle"  aria-haspopup="true" aria-expanded="false"> 
+                            <i class="menu-icon fa fa-tasks"></i>Set Planning</a>
                        
                     </li>
-                   <h3 class="menu-title"></h3><!-- /.menu-title -->
-                    <li class="menu-item-has-children dropdown">
-                        <a href="newsAdd.php" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list-ul"></i>Set News</a>
-                       
-                    </li>
+
                     <h3 class="menu-title"></h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="parameter.php" class="dropdown-toggle"  aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Parameters</a>
+                        <a href="newsAdd.php" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false"> 
+                            <i class="menu-icon fa fa-list-ul"></i>Set News</a>
+                       
+                    </li>
+
+                    <h3 class="menu-title"></h3><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="parameter.php" class="dropdown-toggle"  aria-haspopup="true" aria-expanded="false"> 
+                            <i class="menu-icon fa fa-tasks"></i>Parameters</a>
                        
                     </li>
                     
@@ -57,7 +63,8 @@
                     
                     <h3 class="menu-title"></h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="addAdmin.php" class="dropdown-toggle"  aria-haspopup="true" aria-expanded="false" > <i class="menu-icon fa fa-user-plus"></i>Add Admin</a>
+                        <a href="addAdmin.php" class="dropdown-toggle"  aria-haspopup="true" aria-expanded="false" > 
+                            <i class="menu-icon fa fa-user-plus"></i>Add Admin</a>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->

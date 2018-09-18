@@ -70,11 +70,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         });
     });
 
-    $('#user_form').submit(function(e) {
-    e.preventDefault();
-    // Coding
-    $('#userModal').modal('hide'); //or  $('#IDModal').modal('hide');
-    return false;
+   
 });
 </script>
 
@@ -89,7 +85,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
     <!-- Right Panel -->
 
-    <div id="right-panel" class="right-panel" >
+    <div id = "right-panel" class = "right-panel">
 
         <?php require_once('includes/rightPanelHeader.php');?>
 
@@ -227,20 +223,20 @@ else if(isset($msg))
 </section>
 
 </div> -->
-                        <div class="col-sm-12 col-lg-12 ">
+                        <div class="col-sm-12 col-lg-12">
                             <section class="card">
                                 <div class="card-header">
 
-                                    <div class="col-sm-9 col-lg-9" style="padding:1%;text-align: center;">
-                                        <h3><strong>Add City </strong>Set club details</h3>
+                                    <div class="col-sm-6 col-xs-6 col-lg-6" style="padding:1%;text-align: left;">
+                                        <h3><strong>Set City & Club </strong> </h3>
 
                                     </div>
-                                    <div class="col-sm-3 col-lg-3" style="padding:1%; text-align: center;">
+                                    <div class="col-sm-6 col-lg-6 col-xs-6" style="padding:1%; text-align: right;">
                                         <button id="city" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cityModal" class="btn btn-primary btn-sm">
                                             <i class="fa fa-plus"></i> Add City
                                         </button>
                                         <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
-                                            <i class="fa fa-plus"></i> Add club
+                                            <i class="fa fa-plus"></i> Add Club
                                         </button>
 
 
@@ -319,6 +315,7 @@ else if(isset($msg))
 
 
     <script type="text/javascript" language="javascript" >
+
         $(document).ready(function(){
             $('#add_button').click(function(){
                 $('#user_form')[0].reset();
@@ -436,6 +433,26 @@ else if(isset($msg))
 
 
         });
+    function sortDropDownListByText() {
+        // Loop for each select element on the page.
+        $("select").each(function() {             
+            // Keep track of the selected option.
+            var selectedValue = $(this).val();     
+            // Sort all the options by text. I could easily sort these by val.
+            $(this).html($("option", $(this)).sort(function(a, b) {
+                return a.text == b.text ? 0 : a.text < b.text ? -1 : 1
+            }));     
+            // Select one option.
+            $(this).val(selectedValue);
+        });
+    }
+     $(document).ready(sortDropDownListByText);
+
+     function hideIt() {
+        if(document.getElementById) { 
+            document.getElementById('userModal').style.visibility='hidden';
+        }
+    }
     </script>
 
 
@@ -447,7 +464,7 @@ else if(isset($msg))
 
 <div id="userModal" class="modal fade">
     <div class="modal-dialog">
-        <form method="post" id="user_form" enctype="multipart/form-data" autocomplete="off">
+        <form method="post" id="user_form" enctype="multipart/form-data" autocomplete="off" onsubmit="hideIt()">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Add User</h4>
@@ -488,9 +505,9 @@ else if(isset($msg))
                     <!--
 
 
-<label>Enter City</label>
-<input type="text" name="city_id" id="city_id" class="form-control" />
--->
+                        <label>Enter City</label>
+                        <input type="text" name="city_id" id="city_id" class="form-control" />
+                        -->
                     <br/>
                     <label>Zipcode</label>
                     <input type="text" name="zip_code" id="zip_code" class="form-control" />
@@ -526,7 +543,7 @@ else if(isset($msg))
 
             </div>
             <div class="modal-body">
-                <form id="formCity" action="city.php" method="post" enctype="multipart/form-data" class="form-horizontal" autocomplete="off">
+                <form id="formCity" action="city.php" method="post" enctype="multipart/form-data" class="form-horizontal" autocomplete="off" onsubmit="hideIt()">
 
 
 
