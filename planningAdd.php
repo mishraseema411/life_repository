@@ -22,15 +22,18 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         height: 60px !important;
         padding:0%;
         margin:0%;
+		
     }
     #user_data_length select{
-     padding: 15px 20px !important;
-     width: 120px !important;
-     margin-top: 10px;
+      
+        width: 120px !important;
+        height: 36px!important;
+		margin-top: 10px;
     }
     #user_data_filter input{
-        margin-top: 10px;
+       margin-top: 10px;
     }
+
 
 </style>
 
@@ -66,14 +69,20 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                             <section class="card">
                                 <div class="card-header">
                                     
-                                    <div class="col-sm-12 col-lg-12" style="padding:1%;text-align: center;">
-                                        <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
-                                            <i class="fa fa-plus"></i> Add Planning
+                                    <div class="col-sm-8 col-lg-8" style="padding:1%;text-align: center;">
+                                    <strong><h3>Add Planning</h3> </strong>
+									  
+                                   
+                                    </div>
+                                 
+                                      <div class="col-sm-4 col-lg-4" style="padding:1%;text-align: center;">
+                                     
+									 <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
+                                           <i class="fa fa-plus"></i> Add Planning
                                         </button>
                                    
                                     </div>
                                  
-                                     
  
                                 </div>
                                 <div class="card-body text-secondary" style="padding:0px;margin:0px;">
