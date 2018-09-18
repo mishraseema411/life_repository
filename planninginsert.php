@@ -63,20 +63,20 @@ if(isset($_POST["operation"]))
             $image_url = $_POST["hidden_user_image"];
         }
 
-        $statement1 = $connection->prepare(
+        $statement3 = $connection->prepare(
             "SELECT id FROM pasistence_city
   WHERE name = '".$_POST["city"]."' 
   LIMIT 1");
-        $statement1->execute();  
-        $city_id = $statement1->fetchColumn();
+        $statement3->execute();  
+        $city_id = $statement3->fetchColumn();
 
 
-        $statement2 = $connection->prepare(
+        $statement4 = $connection->prepare(
             "SELECT id FROM pasistence_club
   WHERE name = '".$_POST["club"]."' 
   LIMIT 1");
-        $statement2->execute();  
-        $club_id= $statement2->fetchColumn();
+        $statement4->execute();  
+        $club_id= $statement4->fetchColumn();
 
         $statement = $connection->prepare(
             "UPDATE pasistence_planning 
