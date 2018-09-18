@@ -24,6 +24,9 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         margin:0%;
 		
     }
+<<<<<<< HEAD
+    
+=======
     #user_data_length select{
       
         width: 120px !important;
@@ -34,6 +37,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
        margin-top: 10px;
     }
 
+>>>>>>> 1cfe7478f8bdfb43360a5e413cf4d08ca1a414bb
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -290,16 +294,16 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
                 </div>
                 <div class="modal-body">
-                    <label>Enter Title</label>
+                    <label>Title</label>
                     <input type="text" name="title" id="title" class="form-control" />
                     <br />
-                    <label>Enter News</label>
+                    <label>News</label>
                     <input type="textarea" name="content" id="content" class="form-control" />
                     <br/>
 
 
-                    <label>Enter City</label>
-                    <select data-placeholder="Choose a city..." class="form-control " name="city" id="city">
+                    <label>City</label>
+                    <select data-placeholder="Choose a city..." class="form-control " name="city" id="city" style=" min-height: 35px;">
                         <option value=""></option>
                         <?php
                         $query1="select * from pasistence_city ORDER BY id DESC";
@@ -319,9 +323,9 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                         }
                         ?>
                     </select>
-
-                    <label>Enter club</label>
-                    <select data-placeholder="Choose a club..." class="form-control" name="club" id="club">
+                    <br/>
+                    <label>Club</label>
+                    <select data-placeholder="Choose a club..." class="form-control" name="club" id="club" style=" min-height: 35px;">
                         <option value=""></option>
                         <?php
                         $query2="select * from pasistence_club ORDER BY id DESC";
@@ -340,9 +344,9 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                             }
                         }
                         ?>
-                    </select>
-                    <label>Enter Date</label>
-                    <input type="text" name="date" id="date" class="form-control" />
+                    </select><br/>
+                    <label>Date</label>
+                    <input type="date" name="date" id="date" class="form-control" />
                     <br />
 
                     <br />

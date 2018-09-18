@@ -81,9 +81,7 @@ require_once('includes/header.php');
                                                     <button type="submit" id="submit_news" name="Submit" class="btn btn-primary btn-md" style="width:120px;">
                                                         <i class="fa fa-dot-circle-o"></i>&nbsp; OK
                                                     </button>
-                                                    <button type="button" id="cancel_news" class="btn btn-secondary btn-md" style="width:120px;">
-                                                    <i class="fa fa-close"></i>&nbsp; Cancel
-                                                </button>
+                                                    
                                                 </div>
                                             </div>
                                          
