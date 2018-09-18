@@ -24,9 +24,9 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         margin:0%;
 		
     }
-<<<<<<< HEAD
+ 
     
-=======
+ 
     #user_data_length select{
       
         width: 120px !important;
@@ -36,7 +36,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
     #user_data_filter input{
        margin-top: 10px;
     }
->>>>>>> 1cfe7478f8bdfb43360a5e413cf4d08ca1a414bb
+ 
 
 
 
@@ -56,7 +56,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
     <!-- Right Panel -->
 
-    <div id="right-panel" class="right-panel" >
+    <div id="right-panel" class="right-panel">
 
         <?php require_once('includes/rightPanelHeader.php');?>
 
@@ -70,17 +70,17 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                        
 
 
-                        <div class="col-sm-12 col-lg-12 ">
+                        <div class="col-sm-12 col-lg-12 col-md-12 col-xs-12">
                             <section class="card">
                                 <div class="card-header">
                                     
-                                    <div class="col-sm-8 col-lg-8" style="padding:1%;text-align: center;">
-                                    <strong><h3>Add Planning</h3> </strong>
+                                    <div class="col-sm-8 col-xs-8 col-lg-8 col-md-8" style="padding:1%;text-align: left;">
+                                    <strong><h3>Planning</h3> </strong>
 									  
                                    
                                     </div>
                                  
-                                      <div class="col-sm-4 col-lg-4" style="padding:1%;text-align: center;">
+                                      <div class="col-sm-4 col-lg-4 col-xs-4 col-md-4" style="padding:1%;text-align: right;">
                                      
 									 <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
                                            <i class="fa fa-plus"></i> Add Planning
@@ -216,7 +216,9 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                             alert(data);
                             $('#user_form')[0].reset();
                             $('#userModal').modal('hide');
+
                             dataTable.ajax.reload();
+
                         }
                     });
                 }
@@ -267,7 +269,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                             dataTable.ajax.reload();
                         }
                     });
-                }
+           }
                 else
                 {
                     return false; 
@@ -276,21 +278,39 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
 
         });
+
+        
+    function sortDropDownListByText() {
+        // Loop for each select element on the page.
+        $("select").each(function() {             
+            // Keep track of the selected option.
+            var selectedValue = $(this).val();     
+            // Sort all the options by text. I could easily sort these by val.
+            $(this).html($("option", $(this)).sort(function(a, b) {
+                return a.text == b.text ? 0 : a.text < b.text ? -1 : 1
+            }));     
+            // Select one option.
+            $(this).val(selectedValue);
+        });
+    }
+     $(document).ready(sortDropDownListByText);
+
+
+
+
+     function hideIt() {
+        if(document.getElementById) { 
+            document.getElementById('userModal').style.visibility='hidden';
+        }
+    }
     </script>
-
-
-
-
-</body>
-</html>
-
 
 <div id="userModal" class="modal fade">
     <div class="modal-dialog">
         
     
         
-        <form method="post" id="user_form" enctype="multipart/form-data" autocomplete="off">
+        <form method="post" id="user_form" enctype="multipart/form-data" autocomplete="off" onsubmit="hideIt()">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Add News</h4>
@@ -362,10 +382,17 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                     <input type="hidden" name="user_id" id="user_id" />
                     <input type="hidden" name="operation" id="operation" />
                     <input type="submit" name="action" id="action" class="btn btn-success" value="Add" />
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Close</button>
                 </div>
             </div>
         </form>
     </div>
 </div>
+
+ 
+</body>
+</html>
+
+
+
 

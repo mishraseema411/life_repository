@@ -12,7 +12,7 @@ $email=$_SESSION['email'];
 
             <div class="header-menu">
 
-                <div class="col-sm-7">
+                <div class="col-sm-7 col-md-7 col-lg-7 col-xs-7">
                     <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
 <!--
                     <div class="header-left">
@@ -93,7 +93,7 @@ $email=$_SESSION['email'];
 -->
                 </div>
 
-                <div class="col-sm-5" >
+                <div class="col-sm-5 col-md-5 col-lg-5 col-xs-5">
                     <div class="user-area dropdown float-right" >
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img class="user-avatar rounded-circle" src=<?php echo "img/admin/$img"; ?> alt="User Avatar">
