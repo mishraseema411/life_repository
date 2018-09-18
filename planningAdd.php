@@ -1,6 +1,7 @@
 <?php
 $page_title="Add Planning";
 require_once('includes/header.php');
+include('model.php');
 if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 {
     header('location:login.php');
@@ -24,9 +25,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         margin:0%;
 		
     }
-<<<<<<< HEAD
-    
-=======
+
     #user_data_length select{
       
         width: 120px !important;
@@ -174,7 +173,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                 "serverSide":true,
                 "order":[],
                 "ajax":{
-                    url:"newsfetch.php",
+                    url:"planningfetch.php",
                     type:"POST"
                 },
                 "columnDefs":[
@@ -193,6 +192,8 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                 var content = $('#content').val();
                 var city = $('#city').val();
                 var club = $('#club').val();
+                var city_id;
+                var club_id;
                 var extension = $('#image_url').val().split('.').pop().toLowerCase();
                 if(extension != '')
                 {
@@ -317,13 +318,14 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                             while($row1=mysqli_fetch_array($run1))
                             {
                                 $city=ucfirst($row1['name']); 
-
+                                $value=$row1['id']; 
 
                         ?>
-                        <option value="<?php echo " $city "; ?> ">
+                        <option value="<?php echo " $value "; ?> ">
                             <?php echo " $city ";?></option>
                         <?php
                             }
+                        
                         }
                         ?>
                     </select>
@@ -339,10 +341,11 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                             while($row2=mysqli_fetch_array($run2))
                             {
                                 $club=ucfirst($row2['name']); 
+                                 $value=$row2['id']; 
 
 
                         ?>
-                        <option value="<?php echo " $club "; ?> ">
+                        <option value="<?php echo " $value "; ?> ">
                             <?php echo " $club ";?></option>
                         <?php
                             }

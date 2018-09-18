@@ -11,7 +11,7 @@ if(isset($_POST["operation"]))
    $image_url = upload_image();
   }
   $statement = $connection->prepare("
-   INSERT INTO pasistence_news (title, content, image_url,city,club,date) 
+   INSERT INTO pasistence_news (title, content, image_url,city,club,date,) 
    VALUES (:title, :content, :image_url, :city, :club, :date)
   ");
   $result = $statement->execute(
