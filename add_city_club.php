@@ -22,14 +22,16 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         height: 60px !important;
         padding:0%;
         margin:0%;
+		
     }
     #user_data_length select{
-        padding: 15px 20px !important;
+      
         width: 120px !important;
-        margin-top: 10px;
+        height: 36px!important;
+		margin-top: 10px;
     }
     #user_data_filter input{
-        margin-top: 10px;
+       margin-top: 10px;
     }
 
        
@@ -67,6 +69,13 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
             $("#showinfo2").hide("slow");
         });
     });
+
+    $('#user_form').submit(function(e) {
+    e.preventDefault();
+    // Coding
+    $('#userModal').modal('hide'); //or  $('#IDModal').modal('hide');
+    return false;
+});
 </script>
 
 

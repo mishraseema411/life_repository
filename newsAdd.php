@@ -22,8 +22,22 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         height: 60px !important;
         padding:0%;
         margin:0%;
+		
     }
+<<<<<<< HEAD
     
+=======
+    #user_data_length select{
+      
+        width: 120px !important;
+        height: 36px!important;
+		margin-top: 10px;
+    }
+    #user_data_filter input{
+       margin-top: 10px;
+    }
+
+>>>>>>> 1cfe7478f8bdfb43360a5e413cf4d08ca1a414bb
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -57,8 +71,12 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                         <div class="col-sm-12 col-lg-12 ">
                             <section class="card">
                                 <div class="card-header">
-
-                                    <div class="col-sm-12 col-lg-12" style="padding:1%;text-align: center;">
+                               <div class="col-sm-8 col-lg-8" style="padding:1%;text-align: center;">
+                                    <strong><h3>Add News</h3> </strong>
+									  
+                                   
+                                    </div>
+                                    <div class="col-sm-4col-lg-4" style="padding:1%;text-align: center;">
                                         <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
                                             <i class="fa fa-plus"></i> Add News
                                         </button>
