@@ -32,6 +32,8 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         margin-top: 10px;
     }
 
+       
+
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -221,7 +223,7 @@ else if(isset($msg))
                                 <div class="card-header">
 
                                     <div class="col-sm-9 col-lg-9" style="padding:1%;text-align: center;">
-                                        <strong>Add City </strong>Set club details
+                                        <h3><strong>Add City </strong>Set club details</h3>
 
                                     </div>
                                     <div class="col-sm-3 col-lg-3" style="padding:1%; text-align: center;">
@@ -444,16 +446,16 @@ else if(isset($msg))
 
                 </div>
                 <div class="modal-body">
-                    <label>Enter First Name</label>
+                    <label>First Name</label>
                     <input type="text" name="name" id="name" class="form-control" />
                     <br />
-                    <label>Enter Address</label>
+                    <label>Address</label>
                     <input type="text" name="address" id="address" class="form-control" />
                     <br/>
 
 
-                    <label>Enter City</label>
-                    <select data-placeholder="Choose a city..." class="form-control" name="city_id" id="city_id">
+                    <label>City</label>
+                    <select data-placeholder="Choose a city..." class="form-control" name="city_id" id="city_id" style=" min-height: 35px;">
                         <option value=""></option>
                         <?php
                         $query1="select * from pasistence_city ORDER BY id DESC";
@@ -481,13 +483,13 @@ else if(isset($msg))
 <input type="text" name="city_id" id="city_id" class="form-control" />
 -->
                     <br/>
-                    <label>Enter Zipcode</label>
+                    <label>Zipcode</label>
                     <input type="text" name="zip_code" id="zip_code" class="form-control" />
                     <br/>
-                    <label>Enter Phone</label>
+                    <label>Phone</label>
                     <input type="text" name="phone" id="phone" class="form-control" />
                     <br/>
-                    <label>Enter Email</label>
+                    <label>Email</label>
                     <input type="email" name="email" id="email" class="form-control" />
                     <br />
                     <label>Select User Image</label>
@@ -497,7 +499,7 @@ else if(isset($msg))
                 <div class="modal-footer">
                     <input type="hidden" name="user_id" id="user_id" />
                     <input type="hidden" name="operation" id="operation" />
-                    <input type="submit" name="action" id="action" class="btn btn-success" value="Add" />
+                    <input type="submit" name="action" id="action" class="btn btn-success" value="Add">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
