@@ -206,7 +206,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                 if(title != '' && content != '' && city != '' && club != '' && date != '' )
                 {
                     $.ajax({
-                        url:"newsinsert.php",
+                        url:"planninginsert.php",
                         method:'POST',
                         data:new FormData(this),
                         contentType:false,
@@ -231,7 +231,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
             $(document).on('click', '.update', function(){
                 var user_id = $(this).attr("id");
                 $.ajax({
-                    url:"newsfetch_single.php",
+                    url:"planningfetch_single.php",
                     method:"POST",
                     data:{user_id:user_id},
                     dataType:"json",
@@ -260,7 +260,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                 if(confirm("Are you sure you want to delete this?"))
                 {
                     $.ajax({
-                        url:"newsdelete.php",
+                        url:"planningdelete.php",
                         method:"POST",
                         data:{user_id:user_id},
                         success:function(data)
