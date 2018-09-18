@@ -61,7 +61,7 @@ if(!isset($_SESSION['username']))
         <div class="content mt-3">
             <div class="container">
                 <div class="animated fadeIn">
-                    <form action="" method="post">
+                    <form action="" method="post" autocomplete="off">
                         <div class="row justify-content-md-center">
 
                             <div class="col col-md-12">

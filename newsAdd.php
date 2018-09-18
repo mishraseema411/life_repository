@@ -24,9 +24,9 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         margin:0%;
     }
     #user_data_length select{
-     padding: 15px 20px !important;
-     width: 120px !important;
-     margin-top: 10px;
+        padding: 15px 20px !important;
+        width: 120px !important;
+        margin-top: 10px;
     }
     #user_data_filter input{
         margin-top: 10px;
@@ -59,22 +59,22 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
             <div class="container">
                 <div class="animated fadeIn">
                     <div class="row">
-                       
+
 
 
                         <div class="col-sm-12 col-lg-12 ">
                             <section class="card">
                                 <div class="card-header">
-                                    
+
                                     <div class="col-sm-12 col-lg-12" style="padding:1%;text-align: center;">
                                         <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
                                             <i class="fa fa-plus"></i> Add News
                                         </button>
-                                   
+
                                     </div>
-                                 
-                                     
- 
+
+
+
                                 </div>
                                 <div class="card-body text-secondary" style="padding:0px;margin:0px;">
 
@@ -102,7 +102,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                 </div>
                             </section>
                         </div>
-                         
+
                     </div><!-- .row -->
 
 
@@ -113,26 +113,26 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
     <!-- Right Panel -->
 
 
-   
- <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/plugins.js"></script>
-<script src="assets/js/main.js"></script>
+
+    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
 
 
 
-<!--
+    <!--
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>  
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 -->
 
-    
-<script src="assets/js/lib/data-table/datatables.min.js"></script>
-<script src="assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
-<script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
+
+    <script src="assets/js/lib/data-table/datatables.min.js"></script>
+    <script src="assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
+    <script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
 
     <!--   <script src="assets/js/lib/data-table/buttons.bootstrap.min.js"></script> -->
     <!-- <script src="assets/js/lib/data-table/jszip.min.js"></script>-->
@@ -227,7 +227,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                         $('#date').val(data.date);
                         $('#city').val(data.city);
                         $('#club').val(data.club);
-                  
+
 
                         $('.modal-title').text("Edit User");
                         $('#user_id').val(user_id);
@@ -273,15 +273,15 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
 <div id="userModal" class="modal fade">
     <div class="modal-dialog">
-        
-    
-        
-        <form method="post" id="user_form" enctype="multipart/form-data">
+
+
+
+        <form method="post" id="user_form" enctype="multipart/form-data" autocomplete="off">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Add News</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    
+
                 </div>
                 <div class="modal-body">
                     <label>Enter Title</label>
@@ -291,7 +291,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                     <input type="textarea" name="content" id="content" class="form-control" />
                     <br/>
 
-                    
+
                     <label>Enter City</label>
                     <select data-placeholder="Choose a city..." class="form-control " name="city" id="city">
                         <option value=""></option>
@@ -313,8 +313,8 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                         }
                         ?>
                     </select>
-                    
-                      <label>Enter club</label>
+
+                    <label>Enter club</label>
                     <select data-placeholder="Choose a club..." class="form-control" name="club" id="club">
                         <option value=""></option>
                         <?php

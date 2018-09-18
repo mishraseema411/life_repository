@@ -1,7 +1,6 @@
 ﻿<?php
 $page_title="addCityClubMembers";
 require_once('includes/header.php');
-//require('inc/clubinfo.php');
 if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 {
     header('location:login.php');
@@ -25,9 +24,9 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         margin:0%;
     }
     #user_data_length select{
-     padding: 15px 20px !important;
-     width: 120px !important;
-     margin-top: 10px;
+        padding: 15px 20px !important;
+        width: 120px !important;
+        margin-top: 10px;
     }
     #user_data_filter input{
         margin-top: 10px;
@@ -91,141 +90,141 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                 <div class="animated fadeIn">
                     <div class="row">
                         <!-- <div class="col-sm-3 col-lg-3 ">
-                            <section class="card">
-                                <div class="card-header text-center">
-                                    <strong>Add City </strong>Set club details
-                                    <hr/>
-                                    <div class="col-sm-12 col-lg-12" style="padding:1%;">
-                                        <button id="city" type="submit" class="btn btn-primary btn-sm" >
-                                            <i class="fa fa-plus"></i> Add City
-                                        </button>
+<section class="card">
+<div class="card-header text-center">
+<strong>Add City </strong>Set club details
+<hr/>
+<div class="col-sm-12 col-lg-12" style="padding:1%;">
+<button id="city" type="submit" class="btn btn-primary btn-sm" >
+<i class="fa fa-plus"></i> Add City
+</button>
 
 
-                                    </div>
-                                </div>
-                                <div class="card-body text-secondary">
-                                    <div>
+</div>
+</div>
+<div class="card-body text-secondary">
+<div>
 
-                                        <?php
+<?php
 
-                                        $query="select * from pasistence_city ORDER BY id DESC";
-                                        $run=mysqli_query($con,$query);
+$query="select * from pasistence_city ORDER BY id DESC";
+$run=mysqli_query($con,$query);
 
-                                        if(mysqli_num_rows($run) > 0)
-                                        {
-                                            while($row=mysqli_fetch_array($run))
-                                            {
+if(mysqli_num_rows($run) > 0)
+{
+    while($row=mysqli_fetch_array($run))
+    {
 
 
-                                        ?>
+?>
 
-                                        <a href="index.php?cat".'$id'>
-                                            <div class="text-center flip3"  style="height:35px;margin:3px;">
+<a href="index.php?cat".'$id'>
+<div class="text-center flip3"  style="height:35px;margin:3px;">
 
-                                                <?php
-                                                //defining id to particular portion
-                                                $city=ucfirst($row['name']); 
-                                                echo " $city ";
+<?php
+        //defining id to particular portion
+        $city=ucfirst($row['name']); 
+        echo " $city ";
 
-                                                ?>
-                                            </div></a>
+?>
+</div></a>
 
-                                        <?php
-                                            }
-                                        }
-                                        else{
-                                            $msg="No Cities yet !";
-                                        ?>
-                                        <div class="text-center flip3" style="height:35px;margin:3px;">
+<?php
+    }
+}
+else{
+    $msg="No Cities yet !";
+?>
+<div class="text-center flip3" style="height:35px;margin:3px;">
 
-                                            <?php
+<?php
 
-                                            echo " $msg ";
+    echo " $msg ";
 
-                                            ?>
-                                        </div>
-                                        <?php
+?>
+</div>
+<?php
 
-                                        }
+}
 
-                                        ?>
-                                    </div>
+?>
+</div>
 
-                                </div>
-                            </section>
-                        </div> -->
+</div>
+</section>
+</div> -->
 
                         <!-- <div class="col-sm-12 col-lg-12" id="showinfo2">
-                            <section class="card">
-                                <div class="card-header">
-                                    <strong>Enter City</strong> Details
-                                </div>
-                                <div class="card-body text-secondary">
-                                    <div class="card-body card-block">
+<section class="card">
+<div class="card-header">
+<strong>Enter City</strong> Details
+</div>
+<div class="card-body text-secondary">
+<div class="card-body card-block">
 
-                                        <form id="formCity" action="city.php" method="post" enctype="multipart/form-data" class="form-horizontal">
-
-
-
-                                            <div class="row form-group">
-                                                <div class="col col-md-3">
-                                                    <label class=" form-control-label">City Name</label>
-                                                </div>
-                                                <div class="col-12 col-md-9">
-                                                    <input type="text" id="city" name="cityname" placeholder="Enter City" class="form-control" />
-                                                </div>
-                                            </div>
-
-                                            <div class="row form-group">
-                                                <div class="col col-md-3"><label for="file-input" class=" form-control-label">Select image</label></div>
-                                                <div class="col-12 col-md-9"><input type="file" id="file-input" name="cityimage" class="form-control-file"></div>
-                                            </div>
+<form id="formCity" action="city.php" method="post" enctype="multipart/form-data" class="form-horizontal">
 
 
 
-                                            <div class="card-footer">
-                                                <button type="submit" name="Submit" class="btn btn-primary btn-sm">
-                                                    <i class="fa fa-dot-circle-o"></i>&nbsp; Submit
-                                                </button>
-                                                <button type="reset" class="btn btn-danger btn-sm">
-                                                    <i class="fa fa-ban"></i>&nbsp; Reset
-                                                </button>
+<div class="row form-group">
+<div class="col col-md-3">
+<label class=" form-control-label">City Name</label>
+</div>
+<div class="col-12 col-md-9">
+<input type="text" id="city" name="cityname" placeholder="Enter City" class="form-control" />
+</div>
+</div>
 
-                                                <button type="button" id="cancel_city" class="btn btn-secondary btn-sm">
-                                                    <i class="fa fa-close"></i>&nbsp; Cancel
-                                                </button>
+<div class="row form-group">
+<div class="col col-md-3"><label for="file-input" class=" form-control-label">Select image</label></div>
+<div class="col-12 col-md-9"><input type="file" id="file-input" name="cityimage" class="form-control-file"></div>
+</div>
 
 
-                                                <?php 
-                                                if(isset($error_msg))
-                                                {
-                                                    echo "<span style='color:red;' class='pull-right'> Error Here </span> ";
-                                                }
-                                                else if(isset($msg))
-                                                {
-                                                    {
-                                                        echo "<span style='color:green;' class='pull-right'> $msg </span> ";
-                                                    }
-                                                }
-                                                ?>
-                                            </div>
 
-                                        </form>
-                                    </div>
+<div class="card-footer">
+<button type="submit" name="Submit" class="btn btn-primary btn-sm">
+<i class="fa fa-dot-circle-o"></i>&nbsp; Submit
+</button>
+<button type="reset" class="btn btn-danger btn-sm">
+<i class="fa fa-ban"></i>&nbsp; Reset
+</button>
 
-                                </div>
-                            </section>
+<button type="button" id="cancel_city" class="btn btn-secondary btn-sm">
+<i class="fa fa-close"></i>&nbsp; Cancel
+</button>
 
-                        </div> -->
+
+<?php 
+if(isset($error_msg))
+{
+    echo "<span style='color:red;' class='pull-right'> Error Here </span> ";
+}
+else if(isset($msg))
+{
+    {
+        echo "<span style='color:green;' class='pull-right'> $msg </span> ";
+    }
+}
+?>
+</div>
+
+</form>
+</div>
+
+</div>
+</section>
+
+</div> -->
                         <div class="col-sm-12 col-lg-12 ">
                             <section class="card">
                                 <div class="card-header">
-                                    
+
                                     <div class="col-sm-9 col-lg-9" style="padding:1%;text-align: center;">
                                         <strong>Add City </strong>Set club details
-                                   
+
                                     </div>
-                                     <div class="col-sm-3 col-lg-3" style="padding:1%; text-align: center;">
+                                    <div class="col-sm-3 col-lg-3" style="padding:1%; text-align: center;">
                                         <button id="city" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cityModal" class="btn btn-primary btn-sm">
                                             <i class="fa fa-plus"></i> Add City
                                         </button>
@@ -233,10 +232,10 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                             <i class="fa fa-plus"></i> Add club
                                         </button>
 
-                                       
+
                                     </div>
-                                     
- 
+
+
                                 </div>
                                 <div class="card-body text-secondary" style="padding:0px;margin:0px;">
 
@@ -265,7 +264,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                 </div>
                             </section>
                         </div>
-                         
+
                     </div><!-- .row -->
 
 
@@ -276,26 +275,26 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
     <!-- Right Panel -->
 
 
-   
- <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/plugins.js"></script>
-<script src="assets/js/main.js"></script>
+
+    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
 
 
 
-<!--
+    <!--
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>  
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 -->
 
-    
-<script src="assets/js/lib/data-table/datatables.min.js"></script>
-<script src="assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
-<script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
+
+    <script src="assets/js/lib/data-table/datatables.min.js"></script>
+    <script src="assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
+    <script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
 
     <!--   <script src="assets/js/lib/data-table/buttons.bootstrap.min.js"></script> -->
     <!-- <script src="assets/js/lib/data-table/jszip.min.js"></script>-->
@@ -437,12 +436,12 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
 <div id="userModal" class="modal fade">
     <div class="modal-dialog">
-        <form method="post" id="user_form" enctype="multipart/form-data">
+        <form method="post" id="user_form" enctype="multipart/form-data" autocomplete="off">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Add User</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    
+
                 </div>
                 <div class="modal-body">
                     <label>Enter First Name</label>
@@ -452,7 +451,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                     <input type="text" name="address" id="address" class="form-control" />
                     <br/>
 
-                    
+
                     <label>Enter City</label>
                     <select data-placeholder="Choose a city..." class="form-control" name="city_id" id="city_id">
                         <option value=""></option>
@@ -475,11 +474,11 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                         ?>
                     </select>
 
-<!--
+                    <!--
 
 
-                    <label>Enter City</label>
-                    <input type="text" name="city_id" id="city_id" class="form-control" />
+<label>Enter City</label>
+<input type="text" name="city_id" id="city_id" class="form-control" />
 -->
                     <br/>
                     <label>Enter Zipcode</label>
@@ -508,69 +507,57 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
 <div id="cityModal" class="modal fade">
     <div class="modal-dialog">
-         
-            <div class="modal-content">
-                <div class="modal-header">
-                     <h4 class="modal-title" >Add City</h4> 
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    
-                </div>
-                <div class="modal-body">
-                    <form id="formCity" action="city.php" method="post" enctype="multipart/form-data" class="form-horizontal">
 
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" >Add City</h4> 
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-
-                                            <div class="row form-group">
-                                                <div class="col col-md-3">
-                                                    <label class=" form-control-label">City Name</label>
-                                                </div>
-                                                <div class="col-12 col-md-9">
-                                                    <input type="text" id="city" name="cityname" placeholder="Enter City" class="form-control" />
-                                                </div>
-                                            </div>
-
-                                            <div class="row form-group">
-                                                <div class="col col-md-3"><label for="file-input" class=" form-control-label">Select Image</label></div>
-                                                <div class="col-12 col-md-9"><input type="file" id="file-input" name="cityimage" class="form-control-file"></div>
-                                            </div>
-
-
-
-                                            <div class="card-footer">
-                                                <button type="submit" name="Submit" class="btn btn-primary btn-sm">
-                                                    <i class="fa fa-dot-circle-o"></i>&nbsp; Submit
-                                                </button>
-                                                <button type="reset" class="btn btn-danger btn-sm">
-                                                    <i class="fa fa-ban"></i>&nbsp; Reset
-                                                </button>
-
-                                                <button type="button" id="cancel_city" class="btn btn-secondary btn-sm">
-                                                    <i class="fa fa-close"></i>&nbsp; Cancel
-                                                </button>
-
-
-                                                <?php 
-                                                if(isset($error_msg))
-                                                {
-                                                    echo "<span style='color:red;' class='pull-right'> Error Here </span> ";
-                                                }
-                                                else if(isset($msg))
-                                                {
-                                                    {
-                                                        echo "<span style='color:green;' class='pull-right'> $msg </span> ";
-                                                    }
-                                                }
-                                                ?>
-                                            </div>
-
-                                        </form>
-                </div>
-                <div class="modal-footer">
-                    
-                    <input type="submit" name="action" id="action" class="btn btn-success" value="Add" />
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
             </div>
-        </form>
+            <div class="modal-body">
+                <form id="formCity" action="city.php" method="post" enctype="multipart/form-data" class="form-horizontal" autocomplete="off">
+
+
+
+                    <div class="row form-group">
+                        <div class="col col-md-5">
+                            <label class=" form-control-label">City Name</label>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <input type="text" id="city" name="cityname" placeholder="Enter City" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col col-md-5"><label for="file-input" class="form-control-label">Select Image</label></div>
+                        <div class="col-12 col-md-7"><input type="file" id="file-input" name="cityimage" class="form-control-file"></div>
+                    </div>
+
+
+
+
+                    <div class="modal-footer">
+
+                        <input type="submit" name="submit" id="submit" class="btn btn-success form-control" value="Add" />
+
+                        <?php 
+                        if(isset($error_msg))
+                        {
+                            echo "<span style='color:red;' class='pull-right'> $error_msg </span> ";
+                        }
+                        else if(isset($msg))
+                        {
+                            {
+                                echo "<span style='color:green;' class='pull-right'> $msg </span> ";
+                            }
+                        }
+                        ?>
+
+                    </div>
+                </form>
+            </div>
+
+
     </div>
+</div>
 </div>

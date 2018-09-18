@@ -152,8 +152,8 @@ body, html {
                 <img src="img/lifeclub.jpg" class="img img-responsive img-circle center-block"/>
                 <h1 class="logo-caption"><span class="tweak" style="border-radius:5px;color:#8fbf29;">L</span>ogin</h1>
             </div><!-- /.logo -->
-            <div class="controls">
-                <form action="" method="post">
+            <div class="controls animated shake">
+                <form action="" method="post" autocomplete="off">
                 <input type="text" name="username" placeholder="Username or Email" class="form-control" />
                 <input type="text" name="password" placeholder="Password" class="form-control" />
                 

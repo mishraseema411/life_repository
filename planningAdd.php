@@ -276,7 +276,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         
     
         
-        <form method="post" id="user_form" enctype="multipart/form-data">
+        <form method="post" id="user_form" enctype="multipart/form-data" autocomplete="off">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Add News</h4>
