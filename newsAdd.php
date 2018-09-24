@@ -80,7 +80,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                         <!-- <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
                                             <i class="fa fa-plus"></i> Add News
                                         </button> -->
-                                    <a href="planning.php" class="btn btn-primary btn-sm">Add News </a>
+                                    <a href="news.php" class="btn btn-primary btn-sm">Add News </a>
                                     </div>
 
 
@@ -133,11 +133,11 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
     <!--
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>  
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
--->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    -->
 
 
     <script src="assets/js/lib/data-table/datatables.min.js"></script>
