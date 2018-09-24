@@ -155,7 +155,7 @@ body, html {
             <div class="controls animated shake">
                 <form action="" method="post" autocomplete="off">
                 <input type="text" name="username" placeholder="Username or Email" class="form-control" />
-                <input type="text" name="password" placeholder="Password" class="form-control" />
+                <input type="password" name="password" placeholder="Password" class="form-control" />
                 
                 
                 

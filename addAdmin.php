@@ -7,11 +7,11 @@ if(!isset($_SESSION['username']))
 }
 ?>
 
-<!--    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css" /> -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 
-<!--    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" /> 
-<link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
 <link rel="stylesheet" href="assets/scss/style.css">
+
 
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
@@ -23,7 +23,7 @@ if(!isset($_SESSION['username']))
     if(isset($_GET['del']))
     {
         $del_id=$_GET['del'];
-        $del_query="DELETE FROM `pasistence_admin` WHERE `pasistence_admin`.`id` = $del_id ";
+        $del_query="DELETE FROM `pasistence_admin` WHERE `pasistence_admin`.`id` = $del_id and `pasistence_admin`.`id`<>24 ";
        if(isset($_SESSION['username']))
        {
             if(mysqli_query($con,$del_query))
@@ -90,7 +90,7 @@ if(!isset($_SESSION['username']))
                                 }
 
                             ?>
-                            <table class="table datatable table-striped table-borderd table-hover">
+                            <table id="admintb" class="table datatable table-striped table-borderd table-hover">
                                 <thead>
                                     <tr>
                                         
@@ -107,6 +107,7 @@ if(!isset($_SESSION['username']))
                                     </tr>
                                 </thead>
                                 <tbody>
+                                     
                                     <?php
                                         while($row=mysqli_fetch_array($run))
                                         {
@@ -132,11 +133,12 @@ if(!isset($_SESSION['username']))
                                             //                $y=$date['year'];
 
                                                                 ?>
+                                    
 
                                     <tr>
                                         
                                         <td><?php echo $id; ?></td>
-                                        <td><?php echo "$fname $lname"; ?></td>
+                                        <td><?php echo "$fname "; ?></td>
                                         <td><?php echo "$date"; ?></td>
                                         <td><?php echo $username; ?></td>
                                         <td><?php echo $email; ?></td>
@@ -170,25 +172,26 @@ if(!isset($_SESSION['username']))
         ?>
     </div><!-- /#right-panel -->
     <!-- Right Panel -->
+<script type="application/javascript">
+    $(document).ready(function() {
+   $("#admintb").find("tr:gt(0)").remove();
+});
+    </script>
 
     
-    
-
     <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
-   
 
 
 
-
+ 
 
     <script src="assets/js/lib/data-table/datatables.min.js"></script>
     <script src="assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
     <script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
 
-    <script src="assets/js/lib/data-table/datatables-init.js"></script>
 </body>
 </html>
 

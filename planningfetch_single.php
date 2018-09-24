@@ -13,8 +13,8 @@ if(isset($_POST["user_id"]))
  $result = $statement->fetchAll();
  foreach($result as $row)
  {
-  $output["title"] = $row["title"];
-  $output["content"] = $row["content"];
+  $output["title"] = $row["name"];
+  $output["content"] = $row["description"];
   $output["city"] = $row["city"];
   $output["club"] = $row["club"];
   $output["date"] = $row["date"];

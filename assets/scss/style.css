@@ -921,7 +921,8 @@ aside.left-panel {
     .navbar .navbar-nav li {
       width: 100%; }
       .navbar .navbar-nav li .dropdown-toggle:hover {
-        background-color: #20A8D8 !important;}
+        background-color: #20A8D8 !important;
+}
       .navbar .navbar-nav li.active .menu-icon, .navbar .navbar-nav li:hover .toggle_nav_button:before,
       .navbar .navbar-nav li .toggle_nav_button.nav-open:before {
         color: #fff !important; }

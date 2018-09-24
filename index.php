@@ -2,10 +2,14 @@
 $page_title="dashboard";
 require_once('includes/db.php');
 require_once('includes/header.php');?>
-<style>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+<link rel="stylesheet" href="assets/scss/style.css">
 
 
-</style>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
@@ -224,6 +228,7 @@ require_once('includes/header.php');?>
             } );
         } )( jQuery );
     </script>
+    
 
 </body>
 </html>

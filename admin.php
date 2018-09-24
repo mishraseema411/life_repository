@@ -7,14 +7,14 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 }
 ?>
 
-<!--    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css" /> -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 
-<!--    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" /> 
-<link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
 <link rel="stylesheet" href="assets/scss/style.css">
 
 
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
 
 </head>
 <body>
@@ -197,6 +197,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
     </div><!-- /#right-panel -->
     <!-- Right Panel -->
 
+<!--
 
     <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
@@ -212,5 +213,20 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
     <script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
 
     <script src="assets/js/lib/data-table/datatables-init.js"></script>
+-->
+    
+    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+
+ 
+
+    <script src="assets/js/lib/data-table/datatables.min.js"></script>
+    <script src="assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
+    <script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
+
 
 

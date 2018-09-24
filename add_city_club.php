@@ -1,5 +1,5 @@
 ﻿<?php
-$page_title="addCityClubMembers";
+$page_title="addCity ClubMembers";
 require_once('includes/header.php');
 if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 {
@@ -22,19 +22,19 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         height: 60px !important;
         padding:0%;
         margin:0%;
-		
+
     }
     #user_data_length select{
-      
+
         width: 120px !important;
         height: 36px!important;
-		margin-top: 10px;
+        margin-top: 10px;
     }
     #user_data_filter input{
-       margin-top: 10px;
+        margin-top: 10px;
     }
 
-       
+
 
 </style>
 
@@ -70,8 +70,8 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         });
     });
 
-   
-});
+
+    });
 </script>
 
 
@@ -95,344 +95,204 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         <div class="content mt-3">
             <div class="container">
                 <div class="animated fadeIn">
-                    <div class="row">
-                        <!-- <div class="col-sm-3 col-lg-3 ">
-<section class="card">
-<div class="card-header text-center">
-<strong>Add City </strong>Set club details
-<hr/>
-<div class="col-sm-12 col-lg-12" style="padding:1%;">
-<button id="city" type="submit" class="btn btn-primary btn-sm" >
-<i class="fa fa-plus"></i> Add City
-</button>
 
+                    <div class="col-sm-12 col-lg-12">
+                        <section class="card">
+                            <div class="card-header">
 
-</div>
-</div>
-<div class="card-body text-secondary">
-<div>
+                                <div class="col-sm-6 col-xs-6 col-lg-6" style="padding:1%;text-align: left;">
+                                    <h3><strong>Set City & Club </strong> </h3>
 
-<?php
-
-$query="select * from pasistence_city ORDER BY id DESC";
-$run=mysqli_query($con,$query);
-
-if(mysqli_num_rows($run) > 0)
-{
-    while($row=mysqli_fetch_array($run))
-    {
-
-
-?>
-
-<a href="index.php?cat".'$id'>
-<div class="text-center flip3"  style="height:35px;margin:3px;">
-
-<?php
-        //defining id to particular portion
-        $city=ucfirst($row['name']); 
-        echo " $city ";
-
-?>
-</div></a>
-
-<?php
-    }
-}
-else{
-    $msg="No Cities yet !";
-?>
-<div class="text-center flip3" style="height:35px;margin:3px;">
-
-<?php
-
-    echo " $msg ";
-
-?>
-</div>
-<?php
-
-}
-
-?>
-</div>
-
-</div>
-</section>
-</div> -->
-
-                        <!-- <div class="col-sm-12 col-lg-12" id="showinfo2">
-<section class="card">
-<div class="card-header">
-<strong>Enter City</strong> Details
-</div>
-<div class="card-body text-secondary">
-<div class="card-body card-block">
-
-<form id="formCity" action="city.php" method="post" enctype="multipart/form-data" class="form-horizontal">
-
-
-
-<div class="row form-group">
-<div class="col col-md-3">
-<label class=" form-control-label">City Name</label>
-</div>
-<div class="col-12 col-md-9">
-<input type="text" id="city" name="cityname" placeholder="Enter City" class="form-control" />
-</div>
-</div>
-
-<div class="row form-group">
-<div class="col col-md-3"><label for="file-input" class=" form-control-label">Select image</label></div>
-<div class="col-12 col-md-9"><input type="file" id="file-input" name="cityimage" class="form-control-file"></div>
-</div>
-
-
-
-<div class="card-footer">
-<button type="submit" name="Submit" class="btn btn-primary btn-sm">
-<i class="fa fa-dot-circle-o"></i>&nbsp; Submit
-</button>
-<button type="reset" class="btn btn-danger btn-sm">
-<i class="fa fa-ban"></i>&nbsp; Reset
-</button>
-
-<button type="button" id="cancel_city" class="btn btn-secondary btn-sm">
-<i class="fa fa-close"></i>&nbsp; Cancel
-</button>
-
-
-<?php 
-if(isset($error_msg))
-{
-    echo "<span style='color:red;' class='pull-right'> Error Here </span> ";
-}
-else if(isset($msg))
-{
-    {
-        echo "<span style='color:green;' class='pull-right'> $msg </span> ";
-    }
-}
-?>
-</div>
-
-</form>
-</div>
-
-</div>
-</section>
-
-</div> -->
-                        <div class="col-sm-12 col-lg-12">
-                            <section class="card">
-                                <div class="card-header">
-
-                                    <div class="col-sm-6 col-xs-6 col-lg-6" style="padding:1%;text-align: left;">
-                                        <h3><strong>Set City & Club </strong> </h3>
-
-                                    </div>
-                                    <div class="col-sm-6 col-lg-6 col-xs-6" style="padding:1%; text-align: right;">
-                                        <button id="city" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cityModal" class="btn btn-primary btn-sm">
-                                            <i class="fa fa-plus"></i> Add City
-                                        </button>
-                                        <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
-                                            <i class="fa fa-plus"></i> Add Club
-                                        </button>
-
-
-                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-6 col-xs-6" style="padding:1%; text-align: right;">
+                                    <button id="city" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cityModal" class="btn btn-primary btn-sm">
+                                        <i class="fa fa-plus"></i> Add City
+                                    </button>
+                                    <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
+                                        <i class="fa fa-plus"></i> Add Club
+                                    </button>
 
 
                                 </div>
-                                <div class="card-body text-secondary" style="padding:0px;margin:0px;">
 
 
-                                    <div class="table-responsive">
+                            </div>
+                            <div class="card-body text-secondary" style="padding:0px;margin:0px;">
 
-                                        <table id="user_data" class="table table-bordered table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th width="10%">Image</th>
-                                                    <th width="10%">Name</th>
-                                                    <th width="10%">Address</th>
-                                                    <th width="10%">City Name</th>
-                                                    <th width="10%">Zip Code</th>
-                                                    <th width="10%">Phone</th>
-                                                    <th width="10%">Email</th>
-                                                    <th width="5%">Edit</th>
-                                                    <th width="5%">Delete</th>
 
-                                                </tr>
-                                            </thead>
-                                        </table>
+                                <div class="table-responsive">
 
-                                    </div>
+                                    <table id="user_data" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th width="10%">Image</th>
+                                                <th width="10%">Name</th>
+                                                <th width="10%">Address</th>
+                                                <th width="10%">City </th>
+                                                <th width="10%">ZipCode</th>
+                                                <th width="10%">Phone</th>
+                                                <th width="10%">Email</th>
+                                                <th width="5%">Edit</th>
+                                                <th width="5%">Delete</th>
+
+                                            </tr>
+                                        </thead>
+                                    </table>
 
                                 </div>
-                            </section>
-                        </div>
 
-                    </div><!-- .row -->
+                            </div>
+                        </section>
+                    </div>
+
+                </div><!-- .row -->
 
 
-                </div>
             </div>
-        </div> <!-- .content -->
+        </div>
+    </div> <!-- .content -->
     </div><!-- /#right-panel -->
-    <!-- Right Panel -->
+<!-- Right Panel -->
 
 
 
-    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
+<script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/main.js"></script>
 
 
 
-    <!--
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>  
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
--->
 
 
-    <script src="assets/js/lib/data-table/datatables.min.js"></script>
-    <script src="assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
-    <script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
-
-    <!--   <script src="assets/js/lib/data-table/buttons.bootstrap.min.js"></script> -->
-    <!-- <script src="assets/js/lib/data-table/jszip.min.js"></script>-->
-    <!--  <script src="assets/js/lib/data-table/pdfmake.min.js"></script> -->
-    <!--  <script src="assets/js/lib/data-table/vfs_fonts.js"></script> -->
-    <!--  <script src="assets/js/lib/data-table/buttons.html5.min.js"></script>
-<script src="assets/js/lib/data-table/buttons.print.min.js"></script>
-<script src="assets/js/lib/data-table/buttons.colVis.min.js"></script> -->
-    <!--<script src="assets/js/lib/data-table/datatables-init.js"></script>-->
+<script src="assets/js/lib/data-table/datatables.min.js"></script>
+<script src="assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
+<script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
 
 
 
-    <script type="text/javascript" language="javascript" >
 
-        $(document).ready(function(){
-            $('#add_button').click(function(){
-                $('#user_form')[0].reset();
-                $('.modal-title').text("Add User");
-                $('#action').val("Add");
-                $('#operation').val("Add");
-                $('#user_uploaded_image').html('');
-            });
+<script type="text/javascript" language="javascript" >
 
-            var dataTable = $('#user_data').DataTable({
-                "processing":true,
-                "serverSide":true,
-                "order":[],
-                "ajax":{
-                    url:"fetch.php",
-                    type:"POST"
+    $(document).ready(function(){
+        $('#add_button').click(function(){
+            $('#user_form')[0].reset();
+            $('.modal-title').text("Add User");
+            $('#action').val("Add");
+            $('#operation').val("Add");
+            $('#user_uploaded_image').html('');
+        });
+
+        var dataTable = $('#user_data').DataTable({
+            "processing":true,
+            "serverSide":true,
+            "order":[],
+            "ajax":{
+                url:"fetch.php",
+                type:"POST"
+            },
+            "columnDefs":[
+                {
+                    "targets":[0, 7, 8],
+                    "orderable":false,
                 },
-                "columnDefs":[
-                    {
-                        "targets":[0, 7, 8],
-                        "orderable":false,
-                    },
-                ],
-
-            });
-
-            $(document).on('submit', '#user_form', function(event){
-                event.preventDefault();
-                var name = $('#name').val();
-                var address = $('#address').val();
-                var city_id = $('#city_id').val();
-                var zip_code = $('#zip_code').val();
-                var phone = $('#phone').val();
-                var email = $('#email').val();
-                var extension = $('#image_url').val().split('.').pop().toLowerCase();
-                if(extension != '')
-                {
-                    if(jQuery.inArray(extension, ['gif','png','jpg','jpeg']) == -1)
-                    {
-                        alert("Invalid Image File");
-                        $('#image_url').val('');
-                        return false;
-                    }
-                } 
-                if(name != '' && address != '' && city_id != '' && zip_code != '' && phone != '' && email != '' )
-                {
-                    $.ajax({
-                        url:"insert.php",
-                        method:'POST',
-                        data:new FormData(this),
-                        contentType:false,
-                        processData:false,
-                        success:function(data)
-                        {
-                            alert(data);
-                            $('#user_form')[0].reset();
-                            $('#userModal').modal('hide');
-                            dataTable.ajax.reload();
-                        }
-                    });
-                }
-                else
-                {
-                    alert("All Fields are Required");
-                }
-            });
-
-            $(document).on('click', '.update', function(){
-                var user_id = $(this).attr("id");
-                $.ajax({
-                    url:"fetch_single.php",
-                    method:"POST",
-                    data:{user_id:user_id},
-                    dataType:"json",
-                    success:function(data)
-                    {
-                        $('#userModal').modal('show');
-                        $('#name').val(data.name);
-                        $('#address').val(data.address);
-                        $('#city_id').val(data.city_id);
-                        $('#zip_code').val(data.zip_code);
-                        $('#phone').val(data.phone);
-                        $('#email').val(data.email);
-
-                        $('.modal-title').text("Edit User");
-                        $('#user_id').val(user_id);
-                        $('#user_uploaded_image').html(data.image_url);
-                        $('#action').val("Edit");
-                        $('#operation').val("Edit");
-                    }
-                })
-            });
-
-            $(document).on('click', '.delete', function()
-                           {
-                var user_id = $(this).attr("id");
-                if(confirm("Are you sure you want to delete this?"))
-                {
-                    $.ajax({
-                        url:"delete.php",
-                        method:"POST",
-                        data:{user_id:user_id},
-                        success:function(data)
-                        {
-                            alert(data);
-                            dataTable.ajax.reload();
-                        }
-                    });
-                }
-                else
-                {
-                    return false; 
-                }
-            });
-
+            ],
 
         });
+
+        $(document).on('submit', '#user_form', function(event){
+            event.preventDefault();
+            var name = $('#name').val();
+            var address = $('#address').val();
+            var makecity = $('#makecity').val();
+            var make_text = $('#make_text').val();
+            var zip_code = $('#zip_code').val();
+            var phone = $('#phone').val();
+            var email = $('#email').val();
+            var extension = $('#image_url').val().split('.').pop().toLowerCase();
+            if(extension != '')
+            {
+                if(jQuery.inArray(extension, ['gif','png','jpg','jpeg']) == -1)
+                {
+                    alert("Invalid Image File");
+                    $('#image_url').val('');
+                    return false;
+                }
+            } 
+            if(name != '' && address != '' && makecity != '' && zip_code != '' && phone != '' && email != '' )
+            {
+                $.ajax({
+                    url:"insert.php",
+                    method:'POST',
+                    data:new FormData(this),
+                    contentType:false,
+                    processData:false,
+                    success:function(data)
+                    {
+                        alert(data);
+                        $('#user_form')[0].reset();
+                        $('#userModal').modal('hide');
+                        dataTable.ajax.reload();
+                    }
+                });
+            }
+            else
+            {
+                alert("All Fields are Required");
+            }
+        });
+
+        $(document).on('click', '.update', function(){
+            var user_id = $(this).attr("id");
+            $.ajax({
+                url:"fetch_single.php",
+                method:"POST",
+                data:{user_id:user_id},
+                dataType:"json",
+                success:function(data)
+                {
+                    $('#userModal').modal('show');
+                    $('#name').val(data.name);
+                    $('#address').val(data.address);
+                    $('#makecity').val(data.makecity);
+                    $('#make_text').val(data.make_text);
+                    $('#zip_code').val(data.zip_code);
+                    $('#phone').val(data.phone);
+                    $('#email').val(data.email);
+                    $('.modal-title').text("Edit User");
+                    $('#user_id').val(user_id);
+                    $('#user_uploaded_image').html(data.image_url);
+                    $('#action').val("Edit");
+                    $('#operation').val("Edit");
+                }
+            })
+
+        });
+
+        $(document).on('click', '.delete', function()
+                       {
+            var user_id = $(this).attr("id");
+            if(confirm("Are you sure you want to delete this?"))
+            {
+                $.ajax({
+                    url:"delete.php",
+                    method:"POST",
+                    data:{user_id:user_id},
+                    success:function(data)
+                    {
+                        alert(data);
+                        dataTable.ajax.reload();
+                    }
+                });
+            }
+            else
+            {
+                return false; 
+            }
+        });
+
+
+    });
     function sortDropDownListByText() {
         // Loop for each select element on the page.
         $("select").each(function() {             
@@ -446,14 +306,19 @@ else if(isset($msg))
             $(this).val(selectedValue);
         });
     }
-     $(document).ready(sortDropDownListByText);
+    $(document).ready(sortDropDownListByText);
 
-     function hideIt() {
-        if(document.getElementById) { 
-            document.getElementById('userModal').style.visibility='hidden';
-        }
+
+</script>
+
+<script type="text/javascript">
+    function setTextField(ddl) 
+    {
+        document.getElementById('make_text').value = ddl.options[ddl.selectedIndex].text;
+
     }
-    </script>
+
+</script>
 
 
 
@@ -481,7 +346,7 @@ else if(isset($msg))
 
 
                     <label>City</label>
-                    <select data-placeholder="Choose a city..." class="form-control" name="city_id" id="city_id" style=" min-height: 35px;">
+                    <select data-placeholder="Choose a city..." class="form-control " name="makecity" id="makecity" style=" min-height: 35px;" onchange="setTextField(this)">
                         <option value=""></option>
                         <?php
                         $query1="select * from pasistence_city ORDER BY id DESC";
@@ -490,24 +355,21 @@ else if(isset($msg))
                         {
                             while($row1=mysqli_fetch_array($run1))
                             {
-                                $city=ucfirst($row1['name']); 
-
+                                $city=$row1['name']; 
+                                $value=$row1['id']; 
 
                         ?>
-                        <option value="<?php echo " $city "; ?> ">
+                        <option value="<?php echo " $value "; ?> ">
                             <?php echo " $city ";?></option>
                         <?php
                             }
+
                         }
                         ?>
                     </select>
+                    <input id="make_text" type = "text" name = "make_text" value = "" />
 
-                    <!--
 
-
-                        <label>Enter City</label>
-                        <input type="text" name="city_id" id="city_id" class="form-control" />
-                        -->
                     <br/>
                     <label>Zipcode</label>
                     <input type="text" name="zip_code" id="zip_code" class="form-control" />
@@ -586,6 +448,6 @@ else if(isset($msg))
             </div>
 
 
+        </div>
     </div>
-</div>
 </div>
