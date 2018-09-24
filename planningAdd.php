@@ -80,10 +80,10 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
                                     <div class="col-sm-4 col-lg-4 col-xs-4 col-md-4" style="padding:1%;text-align: right;">
 
-                                        <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm">
+                                       <!--  <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm">
                                             <i class="fa fa-plus"></i> Add Planning
-                                        </button>
-
+                                        </button> -->
+                                    <a href="planning.php" class="btn btn-primary btn-sm">Add Planning</a>
                                     </div>
 
 
@@ -285,7 +285,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         
     </script>
 
-    <div id="userModal" class="modal fade">
+ <!--    <div id="userModal" class="modal fade">
         <div class="modal-dialog">
 
 
@@ -307,7 +307,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
 
                         <label>City</label>
-                        <select data-placeholder="Choose a city..." class="form-control " name="makecity" id="city" style=" min-height: 35px;" onchange="setTextField(this)">
+                        <select data-placeholder="Choose a city..." class="form-control" name="makecity" id="city" style=" min-height: 35px;" onchange="setTextField(this)">
                             <option value=""></option>
                             <?php
                             $query1="select * from pasistence_city ORDER BY id DESC";
@@ -376,7 +376,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
             </form>
         </div>
     </div>
-
+ -->
     <script type="text/javascript">
         function setTextField(ddl) {
             document.getElementById('make_text').value = ddl.options[ddl.selectedIndex].text;
