@@ -11,8 +11,6 @@ if(isset($_POST["operation"]))
             $image_url = upload_image();
         }
 
-
-
         $statement = $connection->prepare("
    INSERT INTO pasistence_club (name, address, city_id,city,zip_code,phone,email,image_url) 
    VALUES (:name, :address, :city_id, :city, :zip_code, :phone, :email, :image_url)

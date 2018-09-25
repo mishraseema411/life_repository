@@ -80,10 +80,10 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
                                     <div class="col-sm-4 col-lg-4 col-xs-4 col-md-4" style="padding:1%;text-align: right;">
 
-                                       <!--  <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm">
-                                            <i class="fa fa-plus"></i> Add Planning
-                                        </button> -->
-                                    <a href="planning.php" class="btn btn-primary btn-sm">Add Planning</a>
+<!--                                        <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm">-->
+<!--                                            <i class="fa fa-plus"></i> Add Planning-->
+<!--                                        </button>-->
+                                    <a href="planning.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> Add Planning</a>
                                     </div>
 
 
