@@ -137,6 +137,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 									                        $run1=mysqli_query($con,$query1);
 									                        if(mysqli_num_rows($run1) > 0)
 									                        {
+                                                                echo '<option value = "" disabled selected>--Select--</option>';
 									                            while($row1=mysqli_fetch_array($run1))
 									                            {
 
