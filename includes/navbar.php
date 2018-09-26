@@ -55,13 +55,13 @@
                 <li class="menu-item-has-children dropdown">
                     <a href="add_city_club.php"  aria-haspopup="true" aria-expanded="false"> 
                         <i class="menu-icon1 fa fa-laptop "></i>Set City and Club</a>
-                    <!--
-<ul class="sub-menu children dropdown-menu">
+                     
+                            <!-- <ul class="sub-menu children dropdown-menu">
 
-<li><i class="fa fa-dot-circle-o"></i><a href="add_city_club.php">Add new City/Club</a></li>
-<li><i class="fa fa-dot-circle-o"></i><a href="add_city_club.php">Add new Member</a></li>
-</ul>
--->
+                            <li><i class="fa fa-dot-circle-o"></i><a href="add_city_club.php">Add new City</a></li>
+                            <li><i class="fa fa-dot-circle-o"></i><a href="add_city_club.php">Add new Club</a></li>
+                            </ul> -->
+ 
                 </li>
 
 
