@@ -108,10 +108,10 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                     <button id="city" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cityModal" class="btn btn-primary btn-sm">
                                         <i class="fa fa-plus"></i> Add City
                                     </button>
-                                    <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
+                                    <!-- <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
                                         <i class="fa fa-plus"></i> Add Club
-                                    </button>
-
+                                    </button> -->
+                                <a href="club_r.php" class="btn btn-primary btn-sm">Add Club</a>
 
                                 </div>
 
@@ -327,7 +327,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 </html>
 
 
-<div id="userModal" class="modal fade">
+<!-- <div id="userModal" class="modal fade">
     <div class="modal-dialog">
         <form method="post" id="user_form" enctype="multipart/form-data" autocomplete="off" onsubmit="hideIt()">
             <div class="modal-content">
@@ -393,7 +393,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
             </div>
         </form>
     </div>
-</div>
+</div> -->
 
 <div id="cityModal" class="modal fade">
     <div class="modal-dialog">
