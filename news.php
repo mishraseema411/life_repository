@@ -51,9 +51,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                     <strong>Add News</strong>
                                 </div>
                                 <div class="card-body card-block">
-                                    <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
-                                        
-
+                                    <form action="insertNews.php" method="post" enctype="multipart/form-data" class="form-horizontal">
                                         <div class="row form-group">
                                             <div class="col col-md-3">
                                                 <label for="n_title" class=" form-control-label">Title</label>
@@ -71,39 +69,141 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                             </div>
                                             <div class="col-12 col-md-9">
                                                 <textarea class="form-control" id="n_content" name="n_content" value="" placeholder="News Description" cols="5" rows="4">
-                                                   
                                                 </textarea>
 
                                             </div>
                                         </div>
 
 
+<!--                                        <div class="row form-group">-->
+<!--                                            <div class="col col-md-3">-->
+<!--                                                <label for="n_city" class=" form-control-label">City-->
+<!--                                                </label>-->
+<!--                                            </div>-->
+<!---->
+<!--                                            <div class="col-12 col-md-9">-->
+<!--                                               <select class="form-control" id="n_city" name="n_city" style=" min-height: 35px;">-->
+<!--                                                   <option>Avignon</option>-->
+<!--                                                   <option>Marseille</option>-->
+<!--                                               </select>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!---->
+<!---->
+<!--                                        <div class="row form-group">-->
+<!--                                            <div class="col col-md-3">-->
+<!--                                                <label for="n_club" class=" form-control-label">Club-->
+<!--                                                </label>-->
+<!--                                            </div>-->
+<!---->
+<!--                                            <div class="col-12 col-md-9">-->
+<!--                                               <select class="form-control" id="n_club" name="n_club" style=" min-height: 35px;">-->
+<!--                                                   <option>Avignon Club1</option>-->
+<!--                                                   <option>Avignon Club2</option>-->
+<!--                                               </select>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+
                                         <div class="row form-group">
                                             <div class="col col-md-3">
-                                                <label for="n_city" class=" form-control-label">City
-                                                </label>
-                                            </div>
+                                                <label for="city" class=" form-control-label">Choose a City</label></div>
 
                                             <div class="col-12 col-md-9">
-                                               <select class="form-control" id="n_city" name="n_city" style=" min-height: 35px;">
-                                                   <option>Avignon</option>
-                                                   <option>Marseille</option>
-                                               </select>
+
+                                                <select class="form-control" id="city" name="city"style=" min-height: 35px;">
+                                                    <?php
+                                                    $query1="select * from pasistence_city ORDER BY id DESC";
+                                                    $run1=mysqli_query($con,$query1);
+                                                    if(mysqli_num_rows($run1) > 0)
+                                                    {
+                                                        echo '<option value = "" disabled selected>--Select--</option>';
+
+                                                        while($row1=mysqli_fetch_array($run1))
+                                                        {
+                                                            $city=$row1['name'];
+                                                            $value=$row1['name'].','.$row1['id'];
+
+                                                            echo '<option value = "'.$value.'">'.$city.'</option>';
+                                                        }
+                                                    }
+                                                    // $selectedcity='';
+                                                    /*   $query1="select * from pasistence_city ORDER BY id DESC";
+                                                       $run1=mysqli_query($con,$query1);
+                                                       if(mysqli_num_rows($run1) > 0)
+                                                       {
+                                                           while($row1=mysqli_fetch_array($run1))
+                                                           {
+                                                               $city=$row1['name'];
+                                                               $value=$row1['id'];
+                                                               if($value == $selectedcity){
+                                                                   echo '<option value = "'.$value.'"selected>'.$city.'</option>';
+                                                               }else{
+                                                                   echo '<option value = "'.$value.'">'.$city.'</option>';
+                                                               }
+                                                               //echo '<option value = "'.$value.'">'.$city.'</option>';
+                                                     /*  ?>
+                                                       <option value="<?php echo " $value "; ?> ">
+                                                           <?php echo " $city ";?></option>
+                                                       <?php
+                                                           }
+                                                       }*/
+                                                    ?>
+                                                </select>
                                             </div>
                                         </div>
 
-
                                         <div class="row form-group">
                                             <div class="col col-md-3">
-                                                <label for="n_club" class=" form-control-label">Club
-                                                </label>
+                                                <label for="club" class=" form-control-label">Choose a Club</label>
                                             </div>
-
                                             <div class="col-12 col-md-9">
-                                               <select class="form-control" id="n_club" name="n_club" style=" min-height: 35px;">
-                                                   <option>Avignon Club1</option>
-                                                   <option>Avignon Club2</option>
-                                               </select>
+                                                <select class="form-control" id="club" name="club" value=""style=" min-height: 35px;">
+                                                    <?php
+                                                    //                                                   if(isset($_POST["city"])){
+                                                    //													       $selectedcity = $_POST["city"];
+                                                    //$query1="select * from pasistence_club where city_id = ".$selectedcity." ORDER BY id DESC";
+                                                    $query1="select * from pasistence_club ORDER BY id DESC";
+                                                    $run1=mysqli_query($con,$query1);
+                                                    if(mysqli_num_rows($run1) > 0)
+                                                    {
+                                                        echo '<option value = "" disabled selected>--Select--</option>';
+                                                        while($row1=mysqli_fetch_array($run1))
+                                                        {
+
+                                                            $club=$row1['name'];
+                                                            $value=$row1['name'].','.$row1['id'];
+                                                            echo '<option value = "'.$value.'">'.$club.'</option>';
+                                                            /*?>
+                                                            <option value="<?php echo " $value1 "; ?> ">
+                                                                <?php echo " $club ";?></option>
+                                                            <?php*/
+                                                        }
+                                                    }
+
+                                                    /*function set_City(){
+                                                        $query1="select * from pasistence_city ORDER BY id DESC";
+                                                        $run1=mysqli_query($con,$query1);
+                                                        //$options
+                                                        if(mysqli_num_rows($run1) > 0)
+                                                        {
+                                                            while($row1=mysqli_fetch_array($run1))
+                                                            {
+                                                                $city=$row1['name'];
+                                                                $value=$row1['id'];
+                                                                //if($value == $selectedcity){
+                                                                $options = '<option value = "'.$value.'"selected>'.$city.'</option>';
+                                                                //}else{
+                                                                //	$options= '<option value = "'.$value.'">'.$city.'</option>';
+                                                                //}
+                                                                //echo '<option value = "'.$value.'">'.$city.'</option>';
+
+                                                                }
+                                                        }
+                                                        return $options;
+                                                      }	*/
+                                                    // }
+                                                    ?>
+                                                </select>
                                             </div>
                                         </div>
 
@@ -125,13 +225,13 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                                 </label>
                                             </div>
                                             <div class="col-12 col-md-9">
-                                                <input type="file" id="imageurl" name="imageurl" >
+                                                <input type="file" id="photo" name="photo" >
                                             </div>
                                         </div>
 
 
                                         <div class="card-footer text-center">
-                                            <button type="submit" name="submit_news" id="submit_news" class="btn btn-primary btn-sm">
+                                            <button type="submit" name="add" id="submit_news" class="btn btn-primary btn-sm">
                                                 <i class="fa fa-dot-circle-o"></i> Add
                                             </button>
                                             <button type="reset" name="close_news" id="close_news" class="btn btn-danger btn-sm">
