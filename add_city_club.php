@@ -6,8 +6,6 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
     header('location:login.php');
 }
 ?>
-
-
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 
@@ -74,7 +72,6 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
     });
 </script>
 
-
 </head>
 <body>
 
@@ -84,13 +81,11 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
 
     <!-- Right Panel -->
-
     <div id = "right-panel" class = "right-panel">
 
         <?php require_once('includes/rightPanelHeader.php');?>
 
         <!-- Header/Bradcrum-->
-
 
         <div class="content mt-3">
             <div class="container">
@@ -112,19 +107,17 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                         <i class="fa fa-plus"></i> Add Club
                                     </button>
 
-
                                 </div>
-
 
                             </div>
                             <div class="card-body text-secondary" style="padding:0px;margin:0px;">
-
 
                                 <div class="table-responsive">
 
                                     <table id="user_data" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
+
                                                 <th width="10%">Image</th>
                                                 <th width="10%">Name</th>
                                                 <th width="10%">Address</th>
@@ -322,7 +315,6 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
 
 
-
 </body>
 </html>
 
@@ -347,7 +339,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
                     <label>City</label>
                     <select data-placeholder="Choose a city..." class="form-control " name="makecity" id="makecity" style=" min-height: 35px;" onchange="setTextField(this)">
-                        <option value=""></option>
+                        <option selected value=""></option>
                         <?php
                         $query1="select * from pasistence_city ORDER BY id DESC";
                         $run1=mysqli_query($con,$query1);
