@@ -1,5 +1,5 @@
 <?php
-$page_title="add Admin";
+$page_title="add Planning";
 require_once('includes/header.php');
 if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 {
@@ -12,6 +12,9 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
 <!--    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" /> 
 <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 <link rel="stylesheet" href="assets/scss/style.css">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -77,11 +80,11 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
                                         <div class="row form-group">
                                             <div class="col col-md-3">
-                                                <label for="city" class=" form-control-label">Choose a City</label></div>
+                                                <label for="city" class=" form-control-label">City</label></div>
 
                                             <div class="col-12 col-md-9">
 
-                                               <select class="form-control" id="city" name="city">
+                                               <select class="form-control" id="city" name="city" style="min-height: 35px;">
                                                     <?php
 														 $query1="select * from pasistence_city ORDER BY id DESC";
 									                        $run1=mysqli_query($con,$query1);
@@ -125,10 +128,10 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
                                         <div class="row form-group">
                                             <div class="col col-md-3">
-                                                <label for="club" class=" form-control-label">Choose a Club</label>
+                                                <label for="club" class=" form-control-label">Club</label>
                                             </div>
                                             <div class="col-12 col-md-9">
-                                               <select class="form-control" id="club" name="club" value="">
+                                               <select class="form-control" id="club" name="club" value="" style="min-height: 35px;">
                                                   <?php
 //                                                   if(isset($_POST["city"])){
 //													       $selectedcity = $_POST["city"];
@@ -232,7 +235,6 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
     <script src="assets/js/lib/data-table/datatables.min.js"></script>
     <script src="assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
     <script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
-
     <script src="assets/js/lib/data-table/datatables-init.js"></script>
     
     <script>

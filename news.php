@@ -106,7 +106,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
                                         <div class="row form-group">
                                             <div class="col col-md-3">
-                                                <label for="city" class=" form-control-label">Choose a City</label></div>
+                                                <label for="city" class=" form-control-label">City</label></div>
 
                                             <div class="col-12 col-md-9">
 
@@ -154,7 +154,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
                                         <div class="row form-group">
                                             <div class="col col-md-3">
-                                                <label for="club" class=" form-control-label">Choose a Club</label>
+                                                <label for="club" class=" form-control-label">Club</label>
                                             </div>
                                             <div class="col-12 col-md-9">
                                                 <select class="form-control" id="club" name="club" value=""style=" min-height: 35px;">
