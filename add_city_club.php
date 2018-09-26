@@ -74,12 +74,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
 </head>
 <body>
-
     <?php require_once('includes/navbar.php');?>
-
-
-
-
     <!-- Right Panel -->
     <div id = "right-panel" class = "right-panel">
 
@@ -90,6 +85,28 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         <div class="content mt-3">
             <div class="container">
                 <div class="animated fadeIn">
+
+               <?php
+               if(isset($_SESSION['error'])){
+                   echo "
+                   <div class='alert alert-danger alert-dismissible'>
+                   <button type='button'class='close' data-dismiss='alert' aria-hidden='true'>x</button>
+                   <h4><i class='fa fa-warning'></i> Error !</h4>
+                   ".$_SESSION['error']." </div>
+                   ";
+                   unset($_SESSION['error']);
+               }
+               if(isset($_SESSION['success'])){
+                   echo "
+                   <div class='alert alert-success alert-dismissible'>
+                   <button type='button'class='close' data-dismiss='alert' aria-hidden='true'>x</button>
+                   <h4><i class='fa fa-check'></i> Success !</h4>
+                   ".$_SESSION['success']." </div>
+                   ";
+                   unset($_SESSION['success']);
+               }
+
+               ?>
 
                     <div class="col-sm-12 col-lg-12">
                         <section class="card">
@@ -105,13 +122,9 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                     </button>
                                     <!-- <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
                                         <i class="fa fa-plus"></i> Add Club
-<<<<<<< HEAD
                                     </button>
-=======
                                     </button> -->
-                                <a href="club_r.php" class="btn btn-primary btn-sm">Add Club</a>
->>>>>>> e09c76d277b52c9272535203c6432c87a0bdb9f2
-
+                                <a href="club_r.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i>  Add Club</a>
                                 </div>
 
                             </div>
@@ -158,10 +171,6 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/plugins.js"></script>
 <script src="assets/js/main.js"></script>
-
-
-
-
 
 <script src="assets/js/lib/data-table/datatables.min.js"></script>
 <script src="assets/js/lib/data-table/dataTables.bootstrap.min.js"></script>
@@ -242,29 +251,24 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
         $(document).on('click', '.update', function(){
             var user_id = $(this).attr("id");
-            $.ajax({
-                url:"fetch_single.php",
-                method:"POST",
-                data:{user_id:user_id},
-                dataType:"json",
-                success:function(data)
-                {
-                    $('#userModal').modal('show');
-                    $('#name').val(data.name);
-                    $('#address').val(data.address);
-                    $('#makecity').val(data.makecity);
-                    $('#make_text').val(data.make_text);
-                    $('#zip_code').val(data.zip_code);
-                    $('#phone').val(data.phone);
-                    $('#email').val(data.email);
-                    $('.modal-title').text("Edit User");
-                    $('#user_id').val(user_id);
-                    $('#user_uploaded_image').html(data.image_url);
-                    $('#action').val("Edit");
-                    $('#operation').val("Edit");
-                }
-            })
+            var url = 'club_r.php';
+            var form = $('<form action="' + url + '" method="post">' +
+                '<input type="text" name="userId" value="' + user_id + '" />' +
+                '</form>');
+            $('body').append(form);
+            form.submit()
+//            $.ajax({
+//                url:"fetch.php",
+//                method:"POST",
+//                data:{user_id:user_id},
+//                dataType:"json",
+//                success:function(data)
+//                {
+//                    window.location.href = "club_r.php";
+//                }
+//            })
 
+           // window.location.href = "club_r.php";
         });
 
         $(document).on('click', '.delete', function()
@@ -288,7 +292,6 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                 return false; 
             }
         });
-
 
     });
     function sortDropDownListByText() {
@@ -318,13 +321,11 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
 </script>
 
-
-
 </body>
 </html>
 
 
-<!-- <div id="userModal" class="modal fade">
+ <div id="userModal" class="modal fade">
     <div class="modal-dialog">
         <form method="post" id="user_form" enctype="multipart/form-data" autocomplete="off" onsubmit="hideIt()">
             <div class="modal-content">
@@ -341,10 +342,9 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                     <input type="text" name="address" id="address" class="form-control" />
                     <br/>
 
-
                     <label>City</label>
                     <select data-placeholder="Choose a city..." class="form-control " name="makecity" id="makecity" style=" min-height: 35px;" onchange="setTextField(this)">
-                        <option selected value=""></option>
+                        <option selected="" id="make_text" value=""></option>
                         <?php
                         $query1="select * from pasistence_city ORDER BY id DESC";
                         $run1=mysqli_query($con,$query1);
@@ -390,7 +390,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
             </div>
         </form>
     </div>
-</div> -->
+</div>
 
 <div id="cityModal" class="modal fade">
     <div class="modal-dialog">

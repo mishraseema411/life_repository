@@ -15,7 +15,7 @@ if(isset($_POST["user_id"]))
     {
         $output["name"] = $row["name"];
         $output["address"] = $row["address"];
-        $output["makecity"] = $row["city_id"];
+        $output["makecity"] = $row["city"];
         $output["make_text"] = $row["city"];
         $output["zip_code"] = $row["zip_code"];
         $output["phone"] = $row["phone"];

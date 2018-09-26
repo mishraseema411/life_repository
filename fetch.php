@@ -35,11 +35,11 @@ foreach($result as $row)
     $image = '';
     if($row["image_url"] != '')
     {
-        $image = '<img src="img/club/'.$row["image_url"].'" class="img-thumbnail" width="50" height="35" />';
+        $image = '<img src="img/club/'.$row["image_url"].'" class="img-thumbnail" width="80" height="80" />';
     }
     else
     {
-        $image = '';
+        $image = '<img src="img/club/'.$row["image_url"].'" class="img-thumbnail" width="80" height="80';
     }
     $sub_array = array();
     $sub_array[] = $image;
