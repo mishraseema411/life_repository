@@ -126,7 +126,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                         <i class="fa fa-plus"></i> Add Club
                                     </button>
                                     </button> -->
-                                <a href="club_r.php" class="btn btn-primary btn-lg"><i class="fa fa-plus"></i>  Add Club</a>
+                                <a href="club_r.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i>  Add Club</a>
                                 </div>
 
                             </div>
