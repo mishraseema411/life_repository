@@ -122,11 +122,6 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                             <button id="city" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cityModal" class="btn btn-primary btn-sm">
                                 <i class="fa fa-plus"></i> Add City
                             </button>
-                                <!-- <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
-                                    <i class="fa fa-plus"></i> Add Club
-                                </button>
-                                </button> -->
-<!--                                <a href="club_r.php" class="btn btn-primary btn-lg"><i class="fa fa-plus"></i>  Add Club</a>-->
                             </div>
 
                         </div>
@@ -195,48 +190,6 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                 },
             ],
 
-        });
-
-        $(document).on('submit', '#user_form', function(event){
-            event.preventDefault();
-            var name = $('#name').val();
-            var address = $('#address').val();
-            var makecity = $('#makecity').val();
-            var make_text = $('#make_text').val();
-            var zip_code = $('#zip_code').val();
-            var phone = $('#phone').val();
-            var email = $('#email').val();
-            var extension = $('#image_url').val().split('.').pop().toLowerCase();
-            if(extension != '')
-            {
-                if(jQuery.inArray(extension, ['gif','png','jpg','jpeg']) == -1)
-                {
-                    alert("Invalid Image File");
-                    $('#image_url').val('');
-                    return false;
-                }
-            }
-            if(name != '' && address != '' && makecity != '' && zip_code != '' && phone != '' && email != '' )
-            {
-                $.ajax({
-                    url:"insert.php",
-                    method:'POST',
-                    data:new FormData(this),
-                    contentType:false,
-                    processData:false,
-                    success:function(data)
-                    {
-                        alert(data);
-                        $('#user_form')[0].reset();
-                        $('#userModal').modal('hide');
-                        dataTable.ajax.reload();
-                    }
-                });
-            }
-            else
-            {
-                alert("All Fields are Required");
-            }
         });
 
         $(document).on('click', '.update', function(){
@@ -313,74 +266,6 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 </body>
 </html>
 
-
-<div id="userModal" class="modal fade">
-    <div class="modal-dialog">
-        <form method="post" id="user_form" enctype="multipart/form-data" autocomplete="off" onsubmit="hideIt()">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Add User</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-                </div>
-                <div class="modal-body">
-                    <label>First Name</label>
-                    <input type="text" name="name" id="name" class="form-control" />
-                    <br />
-                    <label>Address</label>
-                    <input type="text" name="address" id="address" class="form-control" />
-                    <br/>
-
-                    <label>City</label>
-                    <select data-placeholder="Choose a city..." class="form-control " name="makecity" id="makecity" style=" min-height: 35px;" onchange="setTextField(this)">
-                        <option selected="" id="make_text" value=""></option>
-                        <?php
-                        $query1="select * from pasistence_city ORDER BY id DESC";
-                        $run1=mysqli_query($con,$query1);
-                        if(mysqli_num_rows($run1) > 0)
-                        {
-                            while($row1=mysqli_fetch_array($run1))
-                            {
-                                $city=$row1['name'];
-                                $value=$row1['id'];
-
-                                ?>
-                                <option value="<?php echo " $value "; ?> ">
-                                    <?php echo " $city ";?></option>
-                                <?php
-                            }
-
-                        }
-                        ?>
-                    </select>
-                    <input id="make_text" type = "text" name = "make_text" value = "" />
-
-
-                    <br/>
-                    <label>Zipcode</label>
-                    <input type="text" name="zip_code" id="zip_code" class="form-control" />
-                    <br/>
-                    <label>Phone</label>
-                    <input type="text" name="phone" id="phone" class="form-control" />
-                    <br/>
-                    <label>Email</label>
-                    <input type="email" name="email" id="email" class="form-control" />
-                    <br />
-                    <label>Select User Image</label>
-                    <input type="file" name="image_url" id="image_url" />
-                    <span id="user_uploaded_image"></span>
-                </div>
-                <div class="modal-footer">
-                    <input type="hidden" name="user_id" id="user_id" />
-                    <input type="hidden" name="operation" id="operation" />
-                    <input type="submit" name="action" id="action" class="btn btn-success btn-md" value="Add">
-                    <button type="button" class="btn btn-default btn-md" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
-
 <div id="cityModal" class="modal fade">
     <div class="modal-dialog">
 
@@ -391,7 +276,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
             </div>
             <div class="modal-body">
-                <form id="formCity" action="Insert_City.php" method="post" enctype="multipart/form-data" class="form-horizontal" autocomplete="off" onsubmit="hideIt()">
+                <form id="formCity" action="" method="post" enctype="multipart/form-data" class="form-horizontal" autocomplete="off" onsubmit="hideIt()">
 
 
 
