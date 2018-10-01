@@ -4,8 +4,13 @@ include('cityfunction.php');
 $query = '';
 $output = array();
 $query .= "SELECT * FROM pasistence_city";
+/*$statement = $connection->prepare($query);
+$statement->execute();
+$result = $statement->fetchAll();
+var_dump($result);
+die();*/
 
-if(isset($_POST["search"]["value"]))
+/*if(isset($_POST["search"]["value"]))
 {
     $query .= 'WHERE name LIKE "%'.$_POST["search"]["value"].'%" ';
 }
@@ -20,14 +25,14 @@ else
 if($_POST["length"] != -1)
 {
     $query .= 'LIMIT ' . $_POST['start'] . ', ' . $_POST['length'];
-}
+}*/
 $statement = $connection->prepare($query);
 $statement->execute();
 $result = $statement->fetchAll();
+
 $data = array();
 $filtered_rows = $statement->rowCount();
-print_r($result);
-die();
+
 foreach($result as $row)
 {
     $image = '';

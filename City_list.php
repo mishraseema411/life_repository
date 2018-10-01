@@ -122,11 +122,6 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                 <button id="city" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cityModal" class="btn btn-primary btn-sm">
                                     <i class="fa fa-plus"></i> Add City
                                 </button>
-                                <!-- <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
-                                    <i class="fa fa-plus"></i> Add Club
-                                </button>
-                                </button> -->
-<!--                                <a href="club_r.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i>  Add Club</a>-->
                             </div>
 
                         </div>
@@ -208,7 +203,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
             $('#user_uploaded_image').html('');
         });
 
-        var dataTable = $('#user_data').DataTable({
+        var dataTable = $('#city_data').DataTable({
             "processing":true,
             "serverSide":true,
             "order":[],
