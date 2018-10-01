@@ -1,14 +1,11 @@
 <?php
 require("includes/db.php");
 
-
 try{	
     if(isset($_POST['submit']))
     {
         $cityname=$_POST['cityname'];
         $cityimage=$_FILES['cityimage'];	
-
-
 
         $stmt=("select * from pasistence_city where name='". $cityname. "'");
 
@@ -16,8 +13,6 @@ try{
 
         if (mysqli_num_rows($result) > 0) 
         {
-
-
             echo "<script>alert('City Already Exists!');location.replace('add_city_club.php');</script>";
         } else {
             if (($_FILES ["cityimage"] != "") and ($_POST ["cityname"] != ""))

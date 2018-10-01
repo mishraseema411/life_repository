@@ -9,7 +9,6 @@ $statement->execute();
 $result = $statement->fetchAll();
 var_dump($result);
 die();*/
-
 /*if(isset($_POST["search"]["value"]))
 {
     $query .= 'WHERE name LIKE "%'.$_POST["search"]["value"].'%" ';
@@ -58,4 +57,5 @@ $output = array(
     "data"    => $data
 );
 echo json_encode($output);
+//var_dump($data);
 ?>

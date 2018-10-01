@@ -1,5 +1,5 @@
 <?php
-$page_title="City List";
+$page_title="addCity ClubMembers";
 require_once('includes/header.php');
 if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 {
@@ -76,6 +76,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 <body>
 <?php require_once('includes/navbar.php');?>
 
+<?php require_once('includes/navbar.php');?>
 <!-- Right Panel -->
 <div id = "right-panel" class = "right-panel">
 
@@ -118,9 +119,14 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
                             </div>
                             <div class="col-sm-6 col-lg-6 col-xs-6" style="padding:1%; text-align: right;">
-                                <button id="city" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cityModal" class="btn btn-primary btn-sm">
-                                    <i class="fa fa-plus"></i> Add City
+                            <button id="city" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cityModal" class="btn btn-primary btn-sm">
+                                <i class="fa fa-plus"></i> Add City
+                            </button>
+                                <!-- <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
+                                    <i class="fa fa-plus"></i> Add Club
                                 </button>
+                                </button> -->
+<!--                                <a href="club_r.php" class="btn btn-primary btn-lg"><i class="fa fa-plus"></i>  Add Club</a>-->
                             </div>
 
                         </div>
@@ -128,38 +134,17 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
                             <div class="table-responsive">
 
-                                <table id="city_data" class="table table-bordered table-striped">
+                                <table id="user_data" class="table table-bordered table-striped">
                                     <thead>
                                     <tr>
 
-                                        <th width="50%">Image</th>
-                                        <th width="40%">Name</th>
+                                        <th width="40%">Image</th>
+                                        <th width="30%">Name</th>
                                         <th width="5%">Edit</th>
                                         <th width="5%">Delete</th>
 
                                     </tr>
                                     </thead>
-<!--                                    <tbody>-->
-<!--                                    --><?php
-//                                    include('dbConnection.php');
-//                                    $sql = "SELECT * FROM pasistence_city ";
-//                                    $query = $conn->query($sql);
-//                                    while($row = $query->fetch_assoc()){
-//                                      echo "
-//                                    <tr>
-//                                      <td class='hidden'></td>
-//                                      <td>".date('M d, Y', strtotime($row['created_at']))."</td>
-//                                      <td>".$row['image']."</td>
-//                                      <td><button class='btn btn-success btn-sm btn-flat edit' data-id='".$row['id']."'><i class='fa fa-edit'></i>Edit</button></td>
-//                                      <td>
-//                                        <button class='btn btn-danger btn-sm btn-flat delete' data-id='".$row['id']."'><i class='fa fa-trash'></i> Delete</button>
-//                                      </td>
-//                                    </tr>
-//                                  ";
-//                                    }
-//
-//                                    ?>
-<!--                                    </tbody>-->
                                 </table>
 
                             </div>
@@ -194,15 +179,8 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 <script type="text/javascript" language="javascript" >
 
     $(document).ready(function(){
-        $('#add_button').click(function(){
-            $('#user_form')[0].reset();
-            $('.modal-title').text("Add User");
-            $('#action').val("Add");
-            $('#operation').val("Add");
-            $('#user_uploaded_image').html('');
-        });
 
-        var dataTable = $('#city_data').DataTable({
+        var dataTable = $('#user_data').DataTable({
             "processing":true,
             "serverSide":true,
             "order":[],
@@ -212,15 +190,14 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
             },
             "columnDefs":[
                 {
-                    "targets":[0, 2, 3],
+                    "targets":[0],
                     "orderable":false,
                 },
             ],
-            console.log(order);
 
         });
 
-       /* $(document).on('submit', '#user_form', function(event){
+        $(document).on('submit', '#user_form', function(event){
             event.preventDefault();
             var name = $('#name').val();
             var address = $('#address').val();
@@ -284,7 +261,8 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
             // window.location.href = "club_r.php";
         });
 
-        $(document).on('click', '.delete', function() {
+        $(document).on('click', '.delete', function()
+        {
             var user_id = $(this).attr("id");
             if(confirm("Are you sure you want to delete this?"))
             {
@@ -303,7 +281,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
             {
                 return false;
             }
-        });*/
+        });
 
     });
     function sortDropDownListByText() {
@@ -330,9 +308,132 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         document.getElementById('make_text').value = ddl.options[ddl.selectedIndex].text;
 
     }
-
 </script>
 
 </body>
 </html>
 
+
+<div id="userModal" class="modal fade">
+    <div class="modal-dialog">
+        <form method="post" id="user_form" enctype="multipart/form-data" autocomplete="off" onsubmit="hideIt()">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Add User</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                    <label>First Name</label>
+                    <input type="text" name="name" id="name" class="form-control" />
+                    <br />
+                    <label>Address</label>
+                    <input type="text" name="address" id="address" class="form-control" />
+                    <br/>
+
+                    <label>City</label>
+                    <select data-placeholder="Choose a city..." class="form-control " name="makecity" id="makecity" style=" min-height: 35px;" onchange="setTextField(this)">
+                        <option selected="" id="make_text" value=""></option>
+                        <?php
+                        $query1="select * from pasistence_city ORDER BY id DESC";
+                        $run1=mysqli_query($con,$query1);
+                        if(mysqli_num_rows($run1) > 0)
+                        {
+                            while($row1=mysqli_fetch_array($run1))
+                            {
+                                $city=$row1['name'];
+                                $value=$row1['id'];
+
+                                ?>
+                                <option value="<?php echo " $value "; ?> ">
+                                    <?php echo " $city ";?></option>
+                                <?php
+                            }
+
+                        }
+                        ?>
+                    </select>
+                    <input id="make_text" type = "text" name = "make_text" value = "" />
+
+
+                    <br/>
+                    <label>Zipcode</label>
+                    <input type="text" name="zip_code" id="zip_code" class="form-control" />
+                    <br/>
+                    <label>Phone</label>
+                    <input type="text" name="phone" id="phone" class="form-control" />
+                    <br/>
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" class="form-control" />
+                    <br />
+                    <label>Select User Image</label>
+                    <input type="file" name="image_url" id="image_url" />
+                    <span id="user_uploaded_image"></span>
+                </div>
+                <div class="modal-footer">
+                    <input type="hidden" name="user_id" id="user_id" />
+                    <input type="hidden" name="operation" id="operation" />
+                    <input type="submit" name="action" id="action" class="btn btn-success btn-md" value="Add">
+                    <button type="button" class="btn btn-default btn-md" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="cityModal" class="modal fade">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" >Add City</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <form id="formCity" action="Insert_City.php" method="post" enctype="multipart/form-data" class="form-horizontal" autocomplete="off" onsubmit="hideIt()">
+
+
+
+                    <div class="row form-group">
+                        <div class="col col-md-5">
+                            <label class=" form-control-label">City Name</label>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <input type="text" id="city" name="cityname" placeholder="Enter City" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col col-md-5"><label for="file-input" class="form-control-label">Select Image</label></div>
+                        <div class="col-12 col-md-7"><input type="file" id="file-input" name="cityimage" class="form-control-file"></div>
+                    </div>
+
+
+
+
+                    <div class="modal-footer">
+
+                        <input type="submit" name="submit" id="submit" class="btn btn-success form-control" value="Add" />
+
+                        <?php
+                        if(isset($error_msg))
+                        {
+                            echo "<span style='color:red;' class='pull-right'> $error_msg </span> ";
+                        }
+                        else if(isset($msg))
+                        {
+                            {
+                                echo "<span style='color:green;' class='pull-right'> $msg </span> ";
+                            }
+                        }
+                        ?>
+
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</div>

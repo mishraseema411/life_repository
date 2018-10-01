@@ -142,10 +142,6 @@ body, html {
     </head>
     <body class="bg-dark">
 
-
-
-
-
     <div class="container ">
         <div id="login-box">
             <div class="logo">
@@ -156,8 +152,6 @@ body, html {
                 <form action="" method="post" autocomplete="off">
                 <input type="text" name="username" placeholder="Username or Email" class="form-control" />
                 <input type="password" name="password" placeholder="Password" class="form-control" />
-                
-                
                 
                  <input type="submit" value="Sign In" class="btn btn-default btn-block btn-custom" style="border-radius:5px; background-color:#16bef0;" name="submit"/>
 
