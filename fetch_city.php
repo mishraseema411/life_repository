@@ -9,22 +9,22 @@ $statement->execute();
 $result = $statement->fetchAll();
 var_dump($result);
 die();*/
-/*if(isset($_POST["search"]["value"]))
-{
-    $query .= 'WHERE name LIKE "%'.$_POST["search"]["value"].'%" ';
-}
-if(isset($_POST["order"]))
-{
-    $query .= 'ORDER BY '.$_POST['order']['0']['column'].' '.$_POST['order']['0']['dir'].' ';
-}
-else
-{
-    $query .= 'ORDER BY id DESC ';
-}
-if($_POST["length"] != -1)
-{
-    $query .= 'LIMIT ' . $_POST['start'] . ', ' . $_POST['length'];
-}*/
+    if(isset($_POST["search"]["value"]))
+    {
+        $query .= 'WHERE name LIKE "%'.$_POST["search"]["value"].'%" ';
+    }
+    if(isset($_POST["order"]))
+    {
+        $query .= 'ORDER BY '.$_POST['order']['0']['column'].' '.$_POST['order']['0']['dir'].' ';
+    }
+    else
+    {
+        $query .= 'ORDER BY id DESC ';
+    }
+    if($_POST["length"] != -1)
+    {
+        $query .= 'LIMIT ' . $_POST['start'] . ', ' . $_POST['length'];
+    }
 $statement = $connection->prepare($query);
 $statement->execute();
 $result = $statement->fetchAll();
@@ -37,7 +37,7 @@ foreach($result as $row)
     $image = '';
     if($row["image"] != '')
     {
-        $image = '<img src="img/city/'.$row["image"].'" class="img-thumbnail" width="80" height="80" />';
+        $image = '<img src="'.$row["image"].'" class="img-thumbnail" width="80" height="80" />';
     }
     else
     {
