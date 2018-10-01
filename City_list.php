@@ -119,14 +119,14 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
                             </div>
                             <div class="col-sm-6 col-lg-6 col-xs-6" style="padding:1%; text-align: right;">
-                            <button id="city" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cityModal" class="btn btn-primary btn-sm">
+                            <!-- <button id="city" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cityModal" class="btn btn-primary btn-sm">
                                 <i class="fa fa-plus"></i> Add City
-                            </button>
+                            </button> -->
                                 <!-- <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
                                     <i class="fa fa-plus"></i> Add Club
                                 </button>
                                 </button> -->
-<!--                                <a href="club_r.php" class="btn btn-primary btn-lg"><i class="fa fa-plus"></i>  Add Club</a>-->
+                                <a href="city.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i>  Add City</a> 
                             </div>
 
                         </div>
