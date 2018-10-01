@@ -9,7 +9,7 @@ $statement->execute();
 $result = $statement->fetchAll();
 var_dump($result);
 die();*/
-    if(isset($_POST["search"]["value"]))
+   /* if(isset($_POST["search"]["value"]))
     {
         $query .= 'WHERE name LIKE "%'.$_POST["search"]["value"].'%" ';
     }
@@ -24,7 +24,7 @@ die();*/
     if($_POST["length"] != -1)
     {
         $query .= 'LIMIT ' . $_POST['start'] . ', ' . $_POST['length'];
-    }
+    }*/
 $statement = $connection->prepare($query);
 $statement->execute();
 $result = $statement->fetchAll();
