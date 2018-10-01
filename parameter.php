@@ -13,7 +13,9 @@ require_once('includes/header.php');
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <?php require_once('includes/navbar.php');?>
+<!--    --><?php //require_once('includes/navbar.php');?>
+<?php require_once('leftpanel.php');?>
+<?php require_once('script.php');?>
 
 
 

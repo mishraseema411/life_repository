@@ -18,8 +18,11 @@ if(!isset($_SESSION['username']))
 
 </head>
 <body>
-    <?php require_once('includes/navbar.php');?>
-    <?php
+<!--    --><?php //require_once('includes/navbar.php');?>
+<?php require_once('leftpanel.php');?>
+<?php require_once('script.php');?>
+
+<?php
     if(isset($_GET['del']))
     {
         $del_id=$_GET['del'];

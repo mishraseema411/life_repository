@@ -8,6 +8,8 @@
 include('db.php');
 include('function.php');
 include('dbConnection.php');
+include ('session.php');
+
 
 if(isset($_POST['add'])){
     $name = $_POST['name'];
@@ -46,10 +48,14 @@ if(isset($_POST['add'])){
     $sql = "Insert into pasistence_club(name,address,city_id, city, zip_code,phone,email,image_url) VALUES('$name','$address','$city_id','$city','$zipcode','$phone','$email','$filename')";
 
     if ($conn->query($sql) === TRUE) {
+        $_SESSION['success'] = 'Data Inserted Successfully';
         header("Location: add_city_club.php");
         die();
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        //echo "Error: " . $sql . "<br>" . $conn->error;
+        $_SESSION['error'] =  "Error: " . $sql . "<br>" . $conn->error;
+        header("Location: add_city_club.php");
+        die();
     }
     $conn->close();
 }?>

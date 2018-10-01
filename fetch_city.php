@@ -1,17 +1,13 @@
 <?php
 include('db.php');
-include('function.php');
+include('cityfunction.php');
 $query = '';
 $output = array();
-$query .= "SELECT * FROM pasistence_club ";
+$query .= "SELECT * FROM pasistence_city";
+
 if(isset($_POST["search"]["value"]))
 {
     $query .= 'WHERE name LIKE "%'.$_POST["search"]["value"].'%" ';
-    $query .= 'OR address LIKE "%'.$_POST["search"]["value"].'%" ';
-    $query .= 'OR city LIKE "%'.$_POST["search"]["value"].'%" ';
-    $query .= 'OR zip_code LIKE "%'.$_POST["search"]["value"].'%" ';
-    $query .= 'OR phone LIKE "%'.$_POST["search"]["value"].'%" ';
-    $query .= 'OR email LIKE "%'.$_POST["search"]["value"].'%" ';
 }
 if(isset($_POST["order"]))
 {
@@ -30,12 +26,14 @@ $statement->execute();
 $result = $statement->fetchAll();
 $data = array();
 $filtered_rows = $statement->rowCount();
+print_r($result);
+die();
 foreach($result as $row)
 {
     $image = '';
-    if($row["image_url"] != '')
+    if($row["image"] != '')
     {
-        $image = '<img src="img/club/'.$row["image_url"].'" class="img-thumbnail" width="80" height="80" />';
+        $image = '<img src="img/city/'.$row["image"].'" class="img-thumbnail" width="80" height="80" />';
     }
     else
     {
@@ -44,11 +42,6 @@ foreach($result as $row)
     $sub_array = array();
     $sub_array[] = $image;
     $sub_array[] = $row["name"];
-    $sub_array[] = $row["address"];
-    $sub_array[] = $row["city"];
-    $sub_array[] = $row["zip_code"];
-    $sub_array[] = $row["phone"];
-    $sub_array[] = $row["email"];
     $sub_array[] = '<button type="button" name="update" id="'.$row["id"].'" class="btn btn-warning btn-xs update">Update</button>';
     $sub_array[] = '<button type="button" name="delete" id="'.$row["id"].'" class="btn btn-danger btn-xs delete">Delete</button>';
     $data[] = $sub_array;

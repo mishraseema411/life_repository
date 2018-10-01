@@ -18,12 +18,15 @@ require_once('includes/header.php');?>
 <body>
 
 
-    <?php require_once('includes/navbar.php');?>
+<!--    --><?php //require_once('includes/navbar.php');?>
+<?php require_once('leftpanel.php');?>
+<?php require_once('script.php');?>
 
 
 
 
-    <!-- Right Panel -->
+
+<!-- Right Panel -->
 
     <div id="right-panel" class="right-panel" >
 

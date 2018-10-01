@@ -2,16 +2,226 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cd9d0d9-b29c-472d-9307-c4f2cae37d21" name="Default Changelist" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clubModel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dbConnection.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/insertClub.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/session.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/updateClub.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/City_list.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Insert_City.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Update_City.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cityfunction.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fetch_city.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newsModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/planningModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/updateNews.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/updatePlanning.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/admin/1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/admin/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/admin/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/admin/admin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/admin/unknown.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/15363203263.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/15363211133.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/15363212753.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/15363212913.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/15363226293.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/15365124103.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/15365520401.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/15365734953.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/153665622016.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/15366568571.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/15366716671.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/153693093810.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/1537176092mobile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/1537190881admin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/15372539833.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/1537263691coffee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/1537272845coffee.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/1537273936pasistence-logo-0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/1537280793bpo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/1537343029492363722.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/15375376392.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/15378840843.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/city/15379519264.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1025883127.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1036486451.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1049890754.6375652015223134861537" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1072627233.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1084440655.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1089764052.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1108253742.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1124609607.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1126970862.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1263078377.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1288477026.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1316616323.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/136505726.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1392915679.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1466513944.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1479074875.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1480752943.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1526831196.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1535565684.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1554960326.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1557268621.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1617978585.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1647880245.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1650384027.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1660962908.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1667832299.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1668684812.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1676441735.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1693468963.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1696625321.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1733355827.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1763727815.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1787695150.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/178962162.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1795503272.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1800335614.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1802890719.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1827082574.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1861689460.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1905092907.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1919610008.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1959371431.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/1975830249.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/2027446312.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/2031768479.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/2071280086.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/2072042108.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/2082792867.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/2109037001.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/2146657688.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/246846564.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/24933162.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/257647929.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/257922068.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/268235437.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/272499833.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/275580162.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/308392299.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/362218973.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/364227300.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/369472379.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/391457696.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/409556608.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/440227186.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/477840139.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/481016208.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/535160996.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/541274674.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/549294197.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/626856959.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/768131834.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/77141657.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/785797852.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/80783616.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/842401237.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/877252322.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/896303422.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/904125778.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/club/976353419.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/news/308617380.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/news/37333654.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/news/66810306.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/news/club1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/news/club2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1013410323.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1038359579.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1053705196.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1061997813.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1158946967.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1175856250.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1176847098.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1186815003.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/124272282.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1246064861.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/128348973.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1287174242.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/134597988.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1364725693.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1393259154.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/145245905.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1599680885.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1603209071.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1622144329.6375652015223134861537" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1639564948.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/167036756.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1703954457.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1746860174.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1754955377.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1757982480.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1769193109.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1818446001.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1862317820.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/187060174.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1885367390.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1908243290.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1925764936.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1938834407.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1946744000.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1964611033.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/1978554853.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/2001599326.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/2022070130.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/2086044108.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/2088180661.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/236088985.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/245071945.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/251559650.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/262525442.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/303322898.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/306518100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/398364338.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/430509128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/51116257.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/520892452.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/55564941.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/635344313.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/648807539.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/736383219.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/809945739.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/832046131.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/838653670.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/859127262.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/861149140.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/880728193.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/883449192.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/909326950.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/916583927.6375652015223134861537" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/962084921.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/965266430.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/CodeLobsterCrack.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/plan2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/planning/plan3.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addAdmin.php" afterPath="$PROJECT_DIR$/addAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addNews.php" afterPath="$PROJECT_DIR$/addNews.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addPlanning.php" afterPath="$PROJECT_DIR$/addPlanning.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_city_club.php" afterPath="$PROJECT_DIR$/add_city_club.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/club_r.php" afterPath="$PROJECT_DIR$/club_r.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editAdmin.php" afterPath="$PROJECT_DIR$/editAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editPlan.php" afterPath="$PROJECT_DIR$/editPlan.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fetch.php" afterPath="$PROJECT_DIR$/fetch.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fetch_single.php" afterPath="$PROJECT_DIR$/fetch_single.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/navbar.php" afterPath="$PROJECT_DIR$/includes/navbar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/insertClub.php" afterPath="$PROJECT_DIR$/insertClub.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/insertNews.php" afterPath="$PROJECT_DIR$/insertNews.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/insertPlanning.php" afterPath="$PROJECT_DIR$/insertPlanning.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news.php" afterPath="$PROJECT_DIR$/news.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newsAdd.php" afterPath="$PROJECT_DIR$/newsAdd.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newsfetch.php" afterPath="$PROJECT_DIR$/newsfetch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newsfunction.php" afterPath="$PROJECT_DIR$/newsfunction.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parameter.php" afterPath="$PROJECT_DIR$/parameter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planning.php" afterPath="$PROJECT_DIR$/planning.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/planningAdd.php" afterPath="$PROJECT_DIR$/planningAdd.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/updateClub.php" afterPath="$PROJECT_DIR$/updateClub.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,31 +284,45 @@
       <file leaf-file-name="add_city_club.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add_city_club.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="197" column="23" lean-forward="true" selection-start-line="197" selection-start-column="23" selection-end-line="197" selection-end-column="23" />
+            <state relative-caret-position="-595">
+              <caret line="390" column="71" lean-forward="false" selection-start-line="390" selection-start-column="71" selection-end-line="390" selection-end-column="71" />
               <folding>
-                <element signature="n#script#8;n#body#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#!!top" expanded="false" />
-                <marker date="1537965587888" expanded="true" signature="2330:2570" ph="..." />
-                <marker date="1537965587888" expanded="true" signature="2425:2570" ph="..." />
-                <marker date="1537965587888" expanded="true" signature="2551:2570" ph="..." />
-                <marker date="1537965587888" expanded="true" signature="2780:3002" ph="..." />
-                <marker date="1537965587888" expanded="true" signature="12097:12143" ph="select * fro... pasistence_city" />
-                <marker date="1537965587888" expanded="true" signature="15692:15702" ph="..." />
-                <marker date="1537965587888" expanded="true" signature="15924:15936" ph="..." />
+                <marker date="1538400114515" expanded="true" signature="2415:2655" ph="..." />
+                <marker date="1538400114515" expanded="true" signature="2510:2655" ph="..." />
+                <marker date="1538400114515" expanded="true" signature="2636:2655" ph="..." />
+                <marker date="1538400114515" expanded="true" signature="2865:3087" ph="..." />
+                <marker date="1538400114515" expanded="true" signature="12203:12249" ph="select * fro... pasistence_city" />
+                <marker date="1538400114515" expanded="true" signature="15812:15822" ph="..." />
+                <marker date="1538400114515" expanded="true" signature="16044:16056" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fetch.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/fetch.php">
+      <file leaf-file-name="club_r.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/club_r.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="41" column="103" lean-forward="false" selection-start-line="41" selection-start-column="103" selection-end-line="41" selection-end-column="103" />
+            <state relative-caret-position="483">
+              <caret line="158" column="125" lean-forward="false" selection-start-line="158" selection-start-column="123" selection-end-line="158" selection-end-column="125" />
               <folding>
-                <marker date="1537966441641" expanded="true" signature="93:122" ph="SELECT * FRO... pasistence_club" />
+                <marker date="1538400201642" expanded="true" signature="1458:1504" ph="SELECT * FRO... pasistence_club" />
+                <marker date="1538400201642" expanded="true" signature="5436:5482" ph="select * fro... pasistence_city" />
+                <marker date="1538400201642" expanded="true" signature="13385:13431" ph="select * fro... pasistence_city" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="planningAdd.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/planningAdd.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="641">
+              <caret line="115" column="102" lean-forward="true" selection-start-line="115" selection-start-column="102" selection-end-line="115" selection-end-column="102" />
+              <folding>
+                <marker date="1538400233678" expanded="true" signature="1595:1815" ph="..." />
+                <marker date="1538400233678" expanded="true" signature="2065:2287" ph="..." />
+                <marker date="1538400233678" expanded="true" signature="12045:12091" ph="select * fro... pasistence_city" />
+                <marker date="1538400233678" expanded="true" signature="13280:13326" ph="select * fro... pasistence_club" />
               </folding>
             </state>
           </provider>
@@ -111,6 +335,9 @@
       <find>update</find>
       <find>userModal</find>
     </findStrings>
+    <replaceStrings>
+      <replace>$</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -121,22 +348,46 @@
         <option value="$PROJECT_DIR$/data/page-login.html" />
         <option value="$PROJECT_DIR$/page-login.html" />
         <option value="$PROJECT_DIR$/insert.php" />
-        <option value="$PROJECT_DIR$/planningAdd.php" />
         <option value="$PROJECT_DIR$/cmodel.php" />
-        <option value="$PROJECT_DIR$/insertPlanning.php" />
-        <option value="$PROJECT_DIR$/planning.php" />
-        <option value="$PROJECT_DIR$/insertNews.php" />
-        <option value="$PROJECT_DIR$/news.php" />
         <option value="$PROJECT_DIR$/fetch_single.php" />
         <option value="$PROJECT_DIR$/dbConnection.php" />
-        <option value="$PROJECT_DIR$/insertClub.php" />
         <option value="$PROJECT_DIR$/selectClub.php" />
         <option value="$PROJECT_DIR$/clubModel.php" />
         <option value="$PROJECT_DIR$/session.php" />
-        <option value="$PROJECT_DIR$/add_city_club.php" />
-        <option value="$PROJECT_DIR$/updateClub.php" />
-        <option value="$PROJECT_DIR$/club_r.php" />
         <option value="$PROJECT_DIR$/fetch.php" />
+        <option value="$PROJECT_DIR$/planningModel.php" />
+        <option value="$PROJECT_DIR$/updatePlanning.php" />
+        <option value="$PROJECT_DIR$/updateClub.php" />
+        <option value="$PROJECT_DIR$/newsModel.php" />
+        <option value="$PROJECT_DIR$/updateNews.php" />
+        <option value="$PROJECT_DIR$/insertClub.php" />
+        <option value="$PROJECT_DIR$/insertPlanning.php" />
+        <option value="$PROJECT_DIR$/newsfunction.php" />
+        <option value="$PROJECT_DIR$/cityfunction.php" />
+        <option value="$PROJECT_DIR$/fetch_city.php" />
+        <option value="$PROJECT_DIR$/newsfetch.php" />
+        <option value="$PROJECT_DIR$/city.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/insertNews.php" />
+        <option value="$PROJECT_DIR$/includes/navbar.php" />
+        <option value="$PROJECT_DIR$/includes/leftpanel.php" />
+        <option value="$PROJECT_DIR$/script.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/addAdmin.php" />
+        <option value="$PROJECT_DIR$/addNews.php" />
+        <option value="$PROJECT_DIR$/addPlanning.php" />
+        <option value="$PROJECT_DIR$/admin.php" />
+        <option value="$PROJECT_DIR$/City_list.php" />
+        <option value="$PROJECT_DIR$/editAdmin.php" />
+        <option value="$PROJECT_DIR$/editPlan.php" />
+        <option value="$PROJECT_DIR$/news.php" />
+        <option value="$PROJECT_DIR$/newsAdd.php" />
+        <option value="$PROJECT_DIR$/parameter.php" />
+        <option value="$PROJECT_DIR$/planning.php" />
+        <option value="$PROJECT_DIR$/leftpanel.php" />
+        <option value="$PROJECT_DIR$/add_city_club.php" />
+        <option value="$PROJECT_DIR$/club_r.php" />
+        <option value="$PROJECT_DIR$/planningAdd.php" />
       </list>
     </option>
   </component>
@@ -170,7 +421,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -179,10 +429,16 @@
               <item name="life_repository" type="b2602c69:ProjectViewProjectNode" />
               <item name="life_repository" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="life_repository" type="b2602c69:ProjectViewProjectNode" />
+              <item name="life_repository" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -224,12 +480,13 @@
       <workItem from="1535100351161" duration="683000" />
       <workItem from="1535448509222" duration="538000" />
       <workItem from="1537874009883" duration="11193000" />
-      <workItem from="1537941460709" duration="22914000" />
+      <workItem from="1537941460709" duration="30277000" />
+      <workItem from="1538377988572" duration="18146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35328000" />
+    <option name="totallyTimeSpent" value="60837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -237,9 +494,10 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -251,7 +509,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -268,40 +525,159 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/news.php">
+    <entry file="file://$PROJECT_DIR$/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <marker date="1538399148499" expanded="true" signature="2138:2213" ph="select * fro... pasistence_admin" />
+            <marker date="1538399148499" expanded="true" signature="3601:3801" ph="INSERT INTO `pasistence_admin`... " />
+            <marker date="1538399148499" expanded="true" signature="4136:4191" ph="select * fro... pasistence_admin" />
+            <marker date="1538399148499" expanded="true" signature="5889:5899" ph="..." />
+            <marker date="1538399148499" expanded="true" signature="6162:6174" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/city.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <marker date="1538392611787" expanded="true" signature="179:237" ph="select * fro... pasistence_city" />
+            <marker date="1538392611787" expanded="true" signature="843:915" ph="INSERT INTO pasistence_city" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/City_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="78" column="35" lean-forward="false" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
+          <folding>
+            <element signature="e#5221#5287#0#PHP" expanded="true" />
+            <marker date="1538399164160" expanded="true" signature="2379:2599" ph="..." />
+            <marker date="1538399164160" expanded="true" signature="2833:3055" ph="..." />
+            <marker date="1538399164160" expanded="true" signature="5334:5359" ph="SELECT * FRO... pasistence_club" />
+            <marker date="1538399164160" expanded="true" signature="5334:5363" ph="SELECT * FRO... pasistence_city" />
+            <marker date="1538399164160" expanded="true" signature="5597:5874" ph="..." />
+            <marker date="1538399164160" expanded="true" signature="5597:6295" ph="..." />
+            <marker date="1538399164160" expanded="true" signature="6040:6251" ph="..." />
+            <marker date="1538399164160" expanded="true" signature="6041:6251" ph="..." />
+            <marker date="1538399164160" expanded="false" signature="8062:9573" ph="{...}" />
+            <marker date="1538399164160" expanded="false" signature="9630:10342" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cityfunction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding>
+            <marker date="1538385061719" expanded="true" signature="465:520" ph="SELECT image... pasistence_city" />
+            <marker date="1538385061719" expanded="true" signature="764:789" ph="SELECT * FRO... pasistence_news" />
+            <marker date="1538385061719" expanded="true" signature="764:793" ph="SELECT * FRO... pasistence_city" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/club.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1537945619795" expanded="false" signature="3868:3886" ph="..." />
-            <marker date="1537945619795" expanded="true" signature="5800:5846" ph="select * fro... pasistence_city" />
-            <marker date="1537945619795" expanded="true" signature="9748:9794" ph="select * fro... pasistence_club" />
+            <marker date="1537350500363" expanded="true" signature="950:1110" ph="INSERT INTO pasistence_club... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/insertNews.php">
+    <entry file="file://$PROJECT_DIR$/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="147">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbConnection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1537885389222" expanded="true" signature="1201:1369" ph="Insert into pasistence_news... " />
+            <marker date="1536575244317" expanded="true" signature="227:269" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/page-login.html">
+    <entry file="file://$PROJECT_DIR$/editAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="588">
+          <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+          <folding>
+            <marker date="1538399194598" expanded="true" signature="248:288" ph="select * fro... pasistence_admin" />
+            <marker date="1538399194598" expanded="true" signature="3303:3484" ph="UPDATE `pasi... " />
+            <marker date="1538399194598" expanded="true" signature="5270:5280" ph="..." />
+            <marker date="1538399194598" expanded="true" signature="5543:5555" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page-login.html" />
+    <entry file="file://$PROJECT_DIR$/editPlan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+          <folding>
+            <marker date="1538399201628" expanded="true" signature="248:288" ph="select * fro... pasistence_admin" />
+            <marker date="1538399201628" expanded="true" signature="3244:3425" ph="UPDATE `pasi... " />
+            <marker date="1538399201628" expanded="true" signature="5141:5151" ph="..." />
+            <marker date="1538399201628" expanded="true" signature="5414:5426" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-535">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="43" />
+          <folding>
+            <marker date="1537967194836" expanded="true" signature="93:122" ph="SELECT * FRO... pasistence_club" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetch_city.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="33" />
+          <folding>
+            <marker date="1538385331364" expanded="true" signature="97:126" ph="SELECT * FRO... pasistence_city" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetch_single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding>
+            <marker date="1537946474362" expanded="true" signature="152:230" ph="SELECT * FRO... pasistence_club" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        <state relative-caret-position="431">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding>
             <marker date="1536572035464" expanded="true" signature="406:465" ph="SELECT image... pasistence_club" />
             <marker date="1536572035464" expanded="true" signature="682:711" ph="SELECT * FRO... pasistence_club" />
@@ -309,9 +685,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <marker date="1538397273591" expanded="true" signature="863:899" ph="select count... pasistence_city" />
+            <marker date="1538397273591" expanded="true" signature="941:977" ph="select count... pasistence_club" />
+            <marker date="1538397273591" expanded="true" signature="1019:1059" ph="select count... pasistence_planning" />
+            <marker date="1538397273591" expanded="true" signature="1101:1137" ph="select count... pasistence_news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index_left_dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="41" column="27" lean-forward="true" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/insert.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
+        <state relative-caret-position="728">
           <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
           <folding>
             <marker date="1537877514477" expanded="true" signature="307:480" ph="INSERT INTO pasistence_club... " />
@@ -320,21 +717,216 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db.php">
+    <entry file="file://$PROJECT_DIR$/Insert_City.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="11" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/planningAdd.php">
+    <entry file="file://$PROJECT_DIR$/insertClub.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3170">
-          <caret line="238" column="21" lean-forward="true" selection-start-line="238" selection-start-column="21" selection-end-line="238" selection-end-column="21" />
+        <state relative-caret-position="1043">
+          <caret line="50" column="45" lean-forward="false" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="45" />
           <folding>
-            <marker date="1537879218333" expanded="true" signature="10611:10657" ph="select * fro... pasistence_city" />
-            <marker date="1537879218333" expanded="true" signature="11846:11892" ph="select * fro... pasistence_club" />
+            <marker date="1537972844744" expanded="true" signature="1097:1271" ph="Insert into pasistence_club... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/insertNews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="25" column="24" lean-forward="true" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <marker date="1538394133366" expanded="true" signature="1216:1384" ph="Insert into pasistence_news... " />
+            <marker date="1538394133366" expanded="true" signature="1383:1384" ph="Insert into pasistence_news... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/insertPlanning.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <marker date="1537972844910" expanded="true" signature="1276:1454" ph="Insert into pasistence_planning... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="178" column="36" lean-forward="true" selection-start-line="178" selection-start-column="36" selection-end-line="178" selection-end-column="36" />
+          <folding>
+            <marker date="1538393707386" expanded="true" signature="262:340" ph="select * fro... pasistence_admin" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding>
+            <element signature="e#1093#28879#0#PHP" expanded="false" />
+            <element signature="e#2516#2521#0#PHP" expanded="false" />
+            <element signature="e#12651#12656#0#PHP" expanded="false" />
+            <marker date="1538399294440" expanded="true" signature="1266:1312" ph="SELECT * FRO... pasistence_news" />
+            <marker date="1538399294440" expanded="true" signature="5575:5621" ph="select * fro... pasistence_city" />
+            <marker date="1538399294440" expanded="true" signature="7693:7739" ph="select * fro... pasistence_club" />
+            <marker date="1538399294440" expanded="true" signature="18679:18725" ph="select * fro... pasistence_city" />
+            <marker date="1538399294440" expanded="true" signature="22824:22870" ph="select * fro... pasistence_club" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsAdd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="42" column="35" lean-forward="false" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+          <folding>
+            <marker date="1538399305131" expanded="true" signature="1512:1732" ph="..." />
+            <marker date="1538399305131" expanded="true" signature="1966:2188" ph="..." />
+            <marker date="1538399305131" expanded="true" signature="12061:12107" ph="select * fro... pasistence_city" />
+            <marker date="1538399305131" expanded="true" signature="12767:12813" ph="select * fro... pasistence_club" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsdelete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1537259204000" expanded="true" signature="231:273" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsfetch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="45" column="32" lean-forward="true" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+          <folding>
+            <marker date="1538385613476" expanded="true" signature="100:129" ph="SELECT * FRO... pasistence_news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsfetch_single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1537259204000" expanded="true" signature="146:223" ph="SELECT * FRO... pasistence_news" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsinsert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1537435888000" expanded="true" signature="266:400" ph="INSERT INTO pasistence_news... " />
+            <marker date="1537435888000" expanded="true" signature="952:1103" ph="UPDATE pasis... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="70" lean-forward="false" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parameter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding>
+            <marker date="1538399323815" expanded="true" signature="3290:3336" ph="select * fro... pasistence_city" />
+            <marker date="1538399323815" expanded="true" signature="5967:5973" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="5973:5979" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="5979:5985" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="5985:5991" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="5991:5997" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="6057:6063" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="6063:6069" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="6069:6075" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="6075:6081" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="6081:6087" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="6087:6093" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="6152:6158" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="6158:6164" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="6164:6170" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="6170:6176" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="6176:6182" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="6182:6188" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="6188:6194" ph=" " />
+            <marker date="1538399323815" expanded="true" signature="6194:6200" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planningdelete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1537184780679" expanded="true" signature="239:285" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planningfetch.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1537304366392" expanded="true" signature="101:134" ph="SELECT * FRO... pasistence_planning" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planningfetch_single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1537304581774" expanded="true" signature="150:231" ph="SELECT * FRO... pasistence_planning" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planningfunction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1537184585570" expanded="true" signature="410:473" ph="SELECT image... pasistence_planning" />
+            <marker date="1537184585570" expanded="true" signature="690:723" ph="SELECT * FRO... pasistence_planning" />
           </folding>
         </state>
       </provider>
@@ -350,181 +942,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newsAdd.php">
+    <entry file="file://$PROJECT_DIR$/planningModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1537884485739" expanded="true" signature="11531:11577" ph="select * fro... pasistence_city" />
-            <marker date="1537884485739" expanded="true" signature="12494:12540" ph="select * fro... pasistence_club" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/insertPlanning.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding>
-            <marker date="1537883850073" expanded="true" signature="1199:1377" ph="Insert into pasistence_planning... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="257" column="0" lean-forward="true" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
-          <folding>
-            <marker date="1537945619795" expanded="false" signature="3868:3886" ph="..." />
-            <marker date="1537945619795" expanded="true" signature="5800:5846" ph="select * fro... pasistence_city" />
-            <marker date="1537945619795" expanded="true" signature="9748:9794" ph="select * fro... pasistence_club" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbConnection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/planning.php">
+    <entry file="file://$PROJECT_DIR$/script.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
-            <element signature="n#select#0;n#div#1;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="false" />
-            <marker date="1537945619807" expanded="true" signature="2053:2063" ph="..." />
-            <marker date="1537945619807" expanded="true" signature="2326:2338" ph="..." />
-            <marker date="1537945619807" expanded="true" signature="4356:4402" ph="select * fro... pasistence_city" />
-            <marker date="1537945619807" expanded="true" signature="7386:7432" ph="select * fro... pasistence_club" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/insertClub.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="53" column="19" lean-forward="true" selection-start-line="47" selection-start-column="4" selection-end-line="53" selection-end-column="19" />
-          <folding>
-            <marker date="1537954195867" expanded="true" signature="1071:1245" ph="Insert into pasistence_club... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/insertNews.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding>
-            <marker date="1537885389222" expanded="true" signature="1201:1369" ph="Insert into pasistence_news... " />
-          </folding>
+        <state relative-caret-position="788">
+          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/selectClub.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1537956851425" expanded="true" signature="197:243" ph="SELECT * FRO... pasistence_club" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmodel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clubModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fetch_single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-          <folding>
-            <marker date="1537946474362" expanded="true" signature="152:230" ph="SELECT * FRO... pasistence_club" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/club_r.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-736">
-          <caret line="57" column="41" lean-forward="false" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
-          <folding>
-            <marker date="1537966205279" expanded="true" signature="1374:1420" ph="SELECT * FRO... pasistence_club" />
-            <marker date="1537966205279" expanded="true" signature="5350:5396" ph="select * fro... pasistence_city" />
-            <marker date="1537966205279" expanded="true" signature="9022:9914" ph="..." />
-            <marker date="1537966205279" expanded="true" signature="9097:9335" ph="..." />
-            <marker date="1537966205279" expanded="true" signature="9202:9280" ph="..." />
-            <marker date="1537966205279" expanded="true" signature="9413:9863" ph="..." />
-            <marker date="1537966205279" expanded="true" signature="13297:13343" ph="select * fro... pasistence_city" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Update_City.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/updateClub.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="872">
-          <caret line="48" column="6" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+        <state relative-caret-position="-343">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1537965675854" expanded="true" signature="591:773" ph="UPDATE pasis... " />
-            <marker date="1537965675854" expanded="true" signature="859:1019" ph="UPDATE pasis... " />
-            <marker date="1537965675854" expanded="true" signature="1233:1415" ph="UPDATE pasis... " />
-            <marker date="1537965675854" expanded="true" signature="1637:1809" ph="UPDATE pasis... " />
-            <marker date="1537965675854" expanded="true" signature="1637:1819" ph="UPDATE pasis... " />
+            <marker date="1537970348251" expanded="true" signature="591:773" ph="UPDATE pasis... " />
+            <marker date="1537970348251" expanded="true" signature="859:1019" ph="UPDATE pasis... " />
+            <marker date="1537970348251" expanded="true" signature="1233:1415" ph="UPDATE pasis... " />
+            <marker date="1537970348251" expanded="true" signature="1637:1809" ph="UPDATE pasis... " />
+            <marker date="1537970348251" expanded="true" signature="1637:1819" ph="UPDATE pasis... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/updateNews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1537972453489" expanded="true" signature="675:816" ph="UPDATE pasis... " />
+            <marker date="1537972453489" expanded="true" signature="675:824" ph="UPDATE pasis... " />
+            <marker date="1537972453489" expanded="true" signature="1003:1174" ph="UPDATE pasis... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/updatePlanning.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1537970291077" expanded="true" signature="771:931" ph="UPDATE pasis... " />
+            <marker date="1537970291077" expanded="true" signature="1118:1301" ph="UPDATE pasis... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planning.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <marker date="1538399645712" expanded="true" signature="1615:1665" ph="SELECT * FRO... pasistence_club" />
+            <marker date="1538399645712" expanded="true" signature="4666:4712" ph="select * fro... pasistence_city" />
+            <marker date="1538399645712" expanded="true" signature="7684:7730" ph="select * fro... pasistence_club" />
+            <marker date="1538399645712" expanded="true" signature="12914:12924" ph="..." />
+            <marker date="1538399645712" expanded="true" signature="13187:13199" ph="..." />
+            <marker date="1538399645712" expanded="true" signature="15217:15263" ph="select * fro... pasistence_city" />
+            <marker date="1538399645712" expanded="true" signature="18247:18293" ph="select * fro... pasistence_club" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="106" column="60" lean-forward="false" selection-start-line="106" selection-start-column="48" selection-end-line="106" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leftpanel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="93" column="158" lean-forward="false" selection-start-line="93" selection-start-column="158" selection-end-line="93" selection-end-column="158" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/add_city_club.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="197" column="23" lean-forward="true" selection-start-line="197" selection-start-column="23" selection-end-line="197" selection-end-column="23" />
+        <state relative-caret-position="-595">
+          <caret line="390" column="71" lean-forward="false" selection-start-line="390" selection-start-column="71" selection-end-line="390" selection-end-column="71" />
           <folding>
-            <element signature="n#script#8;n#body#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#!!top" expanded="false" />
-            <marker date="1537965587888" expanded="true" signature="2330:2570" ph="..." />
-            <marker date="1537965587888" expanded="true" signature="2425:2570" ph="..." />
-            <marker date="1537965587888" expanded="true" signature="2551:2570" ph="..." />
-            <marker date="1537965587888" expanded="true" signature="2780:3002" ph="..." />
-            <marker date="1537965587888" expanded="true" signature="12097:12143" ph="select * fro... pasistence_city" />
-            <marker date="1537965587888" expanded="true" signature="15692:15702" ph="..." />
-            <marker date="1537965587888" expanded="true" signature="15924:15936" ph="..." />
+            <marker date="1538400114515" expanded="true" signature="2415:2655" ph="..." />
+            <marker date="1538400114515" expanded="true" signature="2510:2655" ph="..." />
+            <marker date="1538400114515" expanded="true" signature="2636:2655" ph="..." />
+            <marker date="1538400114515" expanded="true" signature="2865:3087" ph="..." />
+            <marker date="1538400114515" expanded="true" signature="12203:12249" ph="select * fro... pasistence_city" />
+            <marker date="1538400114515" expanded="true" signature="15812:15822" ph="..." />
+            <marker date="1538400114515" expanded="true" signature="16044:16056" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fetch.php">
+    <entry file="file://$PROJECT_DIR$/club_r.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="41" column="103" lean-forward="false" selection-start-line="41" selection-start-column="103" selection-end-line="41" selection-end-column="103" />
+        <state relative-caret-position="483">
+          <caret line="158" column="125" lean-forward="false" selection-start-line="158" selection-start-column="123" selection-end-line="158" selection-end-column="125" />
           <folding>
-            <marker date="1537966441641" expanded="true" signature="93:122" ph="SELECT * FRO... pasistence_club" />
+            <marker date="1538400201642" expanded="true" signature="1458:1504" ph="SELECT * FRO... pasistence_club" />
+            <marker date="1538400201642" expanded="true" signature="5436:5482" ph="select * fro... pasistence_city" />
+            <marker date="1538400201642" expanded="true" signature="13385:13431" ph="select * fro... pasistence_city" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/planningAdd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="115" column="102" lean-forward="true" selection-start-line="115" selection-start-column="102" selection-end-line="115" selection-end-column="102" />
+          <folding>
+            <marker date="1538400233678" expanded="true" signature="1595:1815" ph="..." />
+            <marker date="1538400233678" expanded="true" signature="2065:2287" ph="..." />
+            <marker date="1538400233678" expanded="true" signature="12045:12091" ph="select * fro... pasistence_city" />
+            <marker date="1538400233678" expanded="true" signature="13280:13326" ph="select * fro... pasistence_club" />
           </folding>
         </state>
       </provider>

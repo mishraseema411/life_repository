@@ -15,7 +15,9 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
 
 <body>
-    <?php require_once('includes/navbar.php');?>
+<!--    --><?php //require_once('includes/navbar.php');?>
+<?php require_once('leftpanel.php');?>
+<?php require_once('script.php');?>
 
     <!-- Right Panel -->
 
@@ -73,7 +75,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
                                                 <div class="col-12 col-md-9">
                                                     <input type="text" id="name" name="name" placeholder="Club Name" class="form-control" value="<?php echo $clubmodel->name ?>" required>
-                                                    <input type="text" id="id" name="id" class="form-control" value="<?php echo $clubmodel->id ?>">
+                                                    <input type="hidden" id="id" name="id" class="form-control" value="<?php echo $clubmodel->id ?>">
                                                 </div>
                                             </div>
 
@@ -150,14 +152,14 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                                 <div class="col-12 col-md-9">
                                                     <input type="file" id="photo" name="photo" >
                                                     <img src="img/club/<?php echo $clubmodel->image_url?>" class="img-thumbnail img-responsive"/>
-                                                    <input type="text"  id="photo_edit" name="photo_edit" value="<?php echo $clubmodel->image_url?>" />
+                                                    <input type="hidden"  id="photo_edit" name="photo_edit" value="<?php echo $clubmodel->image_url?>" />
                                                 </div>
                                             </div>
                                             <div class="card-footer text-center">
-                                                <button type="submit" name="update" id="update" class="btn btn-primary btn-sm">
+                                                <button type="submit" name="update" id="update" class="btn btn-primary btn-md">
                                                     <i class="fa fa-dot-circle-o"></i> Update
                                                 </button>
-                                                <button type="reset" name="close_club" id="close_club" class="btn btn-danger btn-sm">
+                                                <button type="reset" name="close_club" id="close_club" class="btn btn-danger btn-md">
                                                     <i class="fa fa-ban"></i> Reset
                                                 </button>
                                             </div>

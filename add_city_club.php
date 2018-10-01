@@ -74,7 +74,10 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
 </head>
 <body>
-    <?php require_once('includes/navbar.php');?>
+<!--    --><?php //require_once('includes/navbar.php');?>
+<?php require_once('leftpanel.php');?>
+<?php require_once('script.php');?>
+
     <!-- Right Panel -->
     <div id = "right-panel" class = "right-panel">
 
@@ -117,14 +120,14 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
                                 </div>
                                 <div class="col-sm-6 col-lg-6 col-xs-6" style="padding:1%; text-align: right;">
-                                    <button id="city" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cityModal" class="btn btn-primary btn-sm">
-                                        <i class="fa fa-plus"></i> Add City
-                                    </button>
+<!--                                    <button id="city" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cityModal" class="btn btn-primary btn-sm">-->
+<!--                                        <i class="fa fa-plus"></i> Add City-->
+<!--                                    </button>-->
                                     <!-- <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
                                         <i class="fa fa-plus"></i> Add Club
                                     </button>
                                     </button> -->
-                                <a href="club_r.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i>  Add Club</a>
+                                <a href="club_r.php" class="btn btn-primary btn-lg"><i class="fa fa-plus"></i>  Add Club</a>
                                 </div>
 
                             </div>
@@ -384,8 +387,8 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                 <div class="modal-footer">
                     <input type="hidden" name="user_id" id="user_id" />
                     <input type="hidden" name="operation" id="operation" />
-                    <input type="submit" name="action" id="action" class="btn btn-success" value="Add">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type="submit" name="action" id="action" class="btn btn-success btn-md" value="Add">
+                    <button type="button" class="btn btn-default btn-md" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </form>

@@ -7,15 +7,12 @@
  */
 include('db.php');
 include('function.php');
-
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "lifeclub_db";
+include('dbConnection.php');
+include ('session.php');
 
 if(isset($_POST['add'])){
     $title = $_POST['n_title'];
+    $title = str_replace("'","\'",$title);
     $plan = $_POST['n_content'];
 
     $cityString = $_POST['city'];
@@ -36,7 +33,12 @@ if(isset($_POST['add'])){
 //    $city_id = $_POST['title'];
 //    $club_id = $_POST['title'];
     if(!empty($filename)){
-        move_uploaded_file($_FILES['photo']['tmp_name'],'img/news/'.$filename);
+
+        $filenm = $_FILES["photo"]["name"]; //name of file
+        $tempnm = $_FILES["photo"]["tmp_name"]; // temp name of file
+        $folder="img/news/".time().$filenm;
+       // move_uploaded_file($_FILES['photo']['tmp_name'],'img/news/'.$tempnm);
+        move_uploaded_file($tempnm,$folder);
     }
 
 //    if($connection->query($sql)){
@@ -47,20 +49,19 @@ if(isset($_POST['add'])){
 //    }
 
 
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
 
     $sql = "Insert into pasistence_news(title,content,image_url, date, city_id,club_id,city,club) VALUES('$title','$plan','$filename','$date','$city_id','$club_id','$city','$club')";
 
     if ($conn->query($sql) === TRUE) {
+        $_SESSION['success'] = 'Data Inserted Successfully';
         header("Location: newsAdd.php");
         die();
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        // echo "Error: " . $sql . "<br>" . $conn->error;
+        $_SESSION['error'] =  "Error: " . $sql . "<br>" . $conn->error;
+        header("Location: newsAdd.php");
+        die();
+
     }
     $conn->close();
 }?>

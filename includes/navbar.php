@@ -6,8 +6,19 @@
     }
 
     .menu-icon1{
+          font-size:18px;
+          margin-right:20px;
+      }
+    .menu-icon11{
         font-size:18px;
         margin-right:20px;
+    }
+    .menu-icon4{
+        margin-left:-10px;
+    }
+
+    .navbar-nav #onhoverli:hover{
+        background: none !important;
     }
 .menu-icon2{
         
@@ -16,8 +27,6 @@
 /*
     .menu-icon3 a{
         font-weight:800 !important;
-       
-    
     }
 */
 
@@ -52,18 +61,18 @@
                 </li>
 
                 <h3 class="menu-title"></h3><!-- /.menu-title -->
-                <li class="menu-item-has-children dropdown">
-                    <a href="add_city_club.php"  aria-haspopup="true" aria-expanded="false"> 
-                        <i class="menu-icon1 fa fa-laptop "></i>Set City and Club</a>
-                     
-                            <!-- <ul class="sub-menu children dropdown-menu">
 
-                            <li><i class="fa fa-dot-circle-o"></i><a href="add_city_club.php">Add new City</a></li>
+                <li class=" menu-icon4 menu-item-has-children dropdown" id="onhoverli">
+                    <a href="add_city_club.php" class="dropdown-toggle"  aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">
+                        <i class="menu-icon11 fa fa-laptop "></i>Set City and Club</a>
+
+                             <ul class="sub-menu children dropdown-menu">
+
+                            <li><i class="fa fa-dot-circle-o"></i><a href="City_list.php">Add new City</a></li>
                             <li><i class="fa fa-dot-circle-o"></i><a href="add_city_club.php">Add new Club</a></li>
-                            </ul> -->
- 
-                </li>
+                            </ul>
 
+                </li>
 
                 <h3 class="menu-title"></h3><!-- /.menu-title -->
 

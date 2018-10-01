@@ -47,7 +47,9 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 </head>
 <body>
 
-    <?php require_once('includes/navbar.php');?>
+<!--    --><?php //require_once('includes/navbar.php');?>
+<?php require_once('leftpanel.php');?>
+<?php require_once('script.php');?>
 
 
 
@@ -64,6 +66,29 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
         <div class="content mt-3">
             <div class="container">
                 <div class="animated fadeIn">
+
+                    <?php
+                    if(isset($_SESSION['error'])){
+                        echo "
+                   <div class='alert alert-danger alert-dismissible'>
+                   <button type='button'class='close' data-dismiss='alert' aria-hidden='true'>x</button>
+                   <h4><i class='fa fa-warning'></i> Error !</h4>
+                   ".$_SESSION['error']." </div>
+                   ";
+                        unset($_SESSION['error']);
+                    }
+                    if(isset($_SESSION['success'])){
+                        echo "
+                   <div class='alert alert-success alert-dismissible'>
+                   <button type='button'class='close' data-dismiss='alert' aria-hidden='true'>x</button>
+                   <h4><i class='fa fa-check'></i> Success !</h4>
+                   ".$_SESSION['success']." </div>
+                   ";
+                        unset($_SESSION['success']);
+                    }
+
+                    ?>
+
                     <div class="row">
 
 
@@ -83,7 +108,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 <!--                                        <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm">-->
 <!--                                            <i class="fa fa-plus"></i> Add Planning-->
 <!--                                        </button>-->
-                                    <a href="planning.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> Add Planning</a>
+                                    <a href="planning.php" class="btn btn-primary btn-lg"><i class="fa fa-plus"></i> Add Planning</a>
                                     </div>
 
 
@@ -215,7 +240,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
             });
 
             $(document).on('click', '.update', function(){
-                var user_id = $(this).attr("id");
+                /*var user_id = $(this).attr("id");
                 $.ajax({
                     url:"planningfetch_single.php",
                     method:"POST",
@@ -237,7 +262,14 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                         $('#action').val("Edit");
                         $('#operation').val("Edit");
                     }
-                })
+                })*/
+                var user_id = $(this).attr("id");
+                var url = 'planning.php';
+                var form = $('<form action="' + url + '" method="post">' +
+                    '<input type="text" name="userId" value="' + user_id + '" />' +
+                    '</form>');
+                $('body').append(form);
+                form.submit()
             });
 
             $(document).on('click', '.delete', function()

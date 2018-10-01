@@ -40,12 +40,12 @@ include('session.php');
     // $sql =" UPDATE pasistence_club SET name ='$name',address= '$address',city_id ='$city_id',city='$city',zip_code='$zipcode',phone='$phone',email='$email',image_url='$filename' WHERE id = '$id'";
 
      if ($conn->query($sql) === TRUE) {
-             $_SESSION['success'] = 'Data Updated Successfully';
+         $_SESSION['success'] = 'Data Updated Successfully';
          header("Location: add_city_club.php");
          die();
      } else {
          echo "Error: " . $sql . "<br>" . $conn->error;
-         $_SESSION['success'] =  "Error: " . $sql . "<br>" . $conn->error;
+         $_SESSION['error'] =  "Error: " . $sql . "<br>" . $conn->error;
      }
      $conn->close();
  }
