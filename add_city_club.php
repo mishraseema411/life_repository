@@ -74,14 +74,9 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
 </head>
 <body>
-<<<<<<< HEAD
     <?php require_once('includes/navbar.php');?>
 
-=======
 <?php require_once('includes/navbar.php');?>
- 
->>>>>>> dfa0b9d9fcc91e5654cc1acf59a8ca2625c6399a
-
     <!-- Right Panel -->
     <div id = "right-panel" class = "right-panel">
 

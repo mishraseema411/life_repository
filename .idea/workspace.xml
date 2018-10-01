@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cd9d0d9-b29c-472d-9307-c4f2cae37d21" name="Default Changelist" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/City_list.php" afterPath="$PROJECT_DIR$/City_list.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_city_club.php" afterPath="$PROJECT_DIR$/add_city_club.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fetch_city.php" afterPath="$PROJECT_DIR$/fetch_city.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,19 +62,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="add_city_club.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="add_city_club.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/add_city_club.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="79" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="451" selection-end-column="6" />
+            <state relative-caret-position="357">
+              <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
               <folding>
-                <marker date="1538400829142" expanded="true" signature="2332:2572" ph="..." />
-                <marker date="1538400829142" expanded="true" signature="2427:2572" ph="..." />
-                <marker date="1538400829142" expanded="true" signature="2553:2572" ph="..." />
-                <marker date="1538400829142" expanded="true" signature="2782:3004" ph="..." />
-                <marker date="1538400829142" expanded="true" signature="12120:12166" ph="select * fro... pasistence_city" />
-                <marker date="1538400829142" expanded="true" signature="15729:15739" ph="..." />
-                <marker date="1538400829142" expanded="true" signature="15961:15973" ph="..." />
+                <marker date="1538401454728" expanded="true" signature="2376:2616" ph="..." />
+                <marker date="1538401454728" expanded="true" signature="2471:2616" ph="..." />
+                <marker date="1538401454728" expanded="true" signature="2597:2616" ph="..." />
+                <marker date="1538401454728" expanded="true" signature="2826:3048" ph="..." />
+                <marker date="1538401454728" expanded="false" signature="3392:3420" ph="..." />
+                <marker date="1538401454728" expanded="false" signature="3622:3652" ph="..." />
+                <marker date="1538401454728" expanded="false" signature="4578:4601" ph="..." />
+                <marker date="1538401454728" expanded="false" signature="11408:11415" ph="×" />
+                <marker date="1538401454728" expanded="false" signature="11972:11990" ph="..." />
+                <marker date="1538401454728" expanded="true" signature="12164:12210" ph="select * fro... pasistence_city" />
+                <marker date="1538401454728" expanded="false" signature="14419:14426" ph="×" />
+                <marker date="1538401454728" expanded="true" signature="15773:15783" ph="..." />
+                <marker date="1538401454728" expanded="true" signature="16005:16017" ph="..." />
               </folding>
             </state>
           </provider>
@@ -86,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/city.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <marker date="1538392611787" expanded="true" signature="179:237" ph="select * fro... pasistence_city" />
                 <marker date="1538392611787" expanded="true" signature="843:915" ph="INSERT INTO pasistence_city" />
@@ -99,30 +103,65 @@
         <entry file="file://$PROJECT_DIR$/City_list.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="210" column="30" lean-forward="true" selection-start-line="210" selection-start-column="30" selection-end-line="210" selection-end-column="30" />
+              <caret line="209" column="30" lean-forward="false" selection-start-line="209" selection-start-column="30" selection-end-line="209" selection-end-column="30" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-                <element signature="e#4774#4840#0#PHP" expanded="true" />
-                <marker date="1538400928842" expanded="true" signature="2379:2599" ph="..." />
-                <marker date="1538400928842" expanded="true" signature="2833:3055" ph="..." />
-                <marker date="1538400928842" expanded="true" signature="4887:4912" ph="SELECT * FRO... pasistence_club" />
-                <marker date="1538400928842" expanded="true" signature="4887:4916" ph="SELECT * FRO... pasistence_city" />
-                <marker date="1538400928842" expanded="true" signature="5150:5427" ph="..." />
-                <marker date="1538400928842" expanded="true" signature="5150:5848" ph="..." />
-                <marker date="1538400928842" expanded="true" signature="5593:5804" ph="..." />
-                <marker date="1538400928842" expanded="true" signature="5594:5804" ph="..." />
-                <marker date="1538400928842" expanded="false" signature="7615:9126" ph="{...}" />
-                <marker date="1538400928842" expanded="false" signature="9183:9895" ph="{...}" />
+                <marker date="1538401398563" expanded="true" signature="1930:6167" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="1942:1989" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="2051:6160" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="2083:6149" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="2125:6119" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="2149:3076" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="2196:2599" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="2292:2512" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="2649:3057" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="2746:2968" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="3128:6099" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="3171:6076" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="3221:3892" ph="..." />
+                <marker date="1538401398563" expanded="false" signature="3299:3327" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="3328:3431" ph="..." />
+                <marker date="1538401398563" expanded="false" signature="3508:3538" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="3539:3860" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="3711:3825" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="3963:3986" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="3987:6045" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="4047:6013" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="4146:5977" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="4190:4585" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="4231:4540" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="4686:5883" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="4687:5883" ph="//..." />
+                <marker date="1538401398563" expanded="true" signature="4800:4825" ph="SELECT * FRO... pasistence_club" />
+                <marker date="1538401398563" expanded="true" signature="4800:4829" ph="SELECT * FRO... pasistence_city" />
+                <marker date="1538401398563" expanded="true" signature="5063:5340" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="5063:5761" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="5506:5717" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="5507:5717" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="6712:11052" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="6748:10437" ph="{...}" />
+                <marker date="1538401398563" expanded="true" signature="6791:7015" ph="{...}" />
+                <marker date="1538401398563" expanded="true" signature="7069:7437" ph="{...}" />
+                <marker date="1538401398563" expanded="true" signature="7176:7257" ph="{&quot;url&quot;: &quot;fetch_city.php&quot;...}" />
+                <marker date="1538401398563" expanded="true" signature="7284:7416" ph="[...]" />
+                <marker date="1538401398563" expanded="true" signature="7302:7401" ph="{...}" />
+                <marker date="1538401398563" expanded="true" signature="7471:10430" ph="/*...*/" />
+                <marker date="1538401398563" expanded="false" signature="7528:9039" ph="{...}" />
+                <marker date="1538401398563" expanded="false" signature="9096:9808" ph="{...}" />
+                <marker date="1538401398563" expanded="true" signature="10478:10994" ph="{...}" />
+                <marker date="1538401398563" expanded="true" signature="10569:10986" ph="{...}" />
+                <marker date="1538401398563" expanded="true" signature="10813:10899" ph="{...}" />
+                <marker date="1538401398563" expanded="true" signature="11085:11230" ph="..." />
+                <marker date="1538401398563" expanded="true" signature="11122:11220" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fetch_city.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fetch_city.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fetch_city.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="494">
+              <caret line="50" column="86" lean-forward="false" selection-start-line="50" selection-start-column="86" selection-end-line="50" selection-end-column="86" />
               <folding>
                 <marker date="1538401323258" expanded="true" signature="97:126" ph="SELECT * FRO... pasistence_city" />
               </folding>
@@ -187,9 +226,9 @@
         <option value="$PROJECT_DIR$/leftpanel.php" />
         <option value="$PROJECT_DIR$/club_r.php" />
         <option value="$PROJECT_DIR$/planningAdd.php" />
-        <option value="$PROJECT_DIR$/add_city_club.php" />
         <option value="$PROJECT_DIR$/City_list.php" />
         <option value="$PROJECT_DIR$/fetch_city.php" />
+        <option value="$PROJECT_DIR$/add_city_club.php" />
       </list>
     </option>
   </component>
@@ -203,7 +242,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="952" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
@@ -278,15 +317,15 @@
       <workItem from="1535448509222" duration="538000" />
       <workItem from="1537874009883" duration="11193000" />
       <workItem from="1537941460709" duration="30277000" />
-      <workItem from="1538377988572" duration="19265000" />
+      <workItem from="1538377988572" duration="19357000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61956000" />
+    <option name="totallyTimeSpent" value="62048000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -327,11 +366,11 @@
         <state relative-caret-position="273">
           <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
           <folding>
-            <marker date="1538399148499" expanded="true" signature="2138:2213" ph="select * fro... pasistence_admin" />
-            <marker date="1538399148499" expanded="true" signature="3601:3801" ph="INSERT INTO `pasistence_admin`... " />
-            <marker date="1538399148499" expanded="true" signature="4136:4191" ph="select * fro... pasistence_admin" />
-            <marker date="1538399148499" expanded="true" signature="5889:5899" ph="..." />
-            <marker date="1538399148499" expanded="true" signature="6162:6174" ph="..." />
+            <marker date="1538401397622" expanded="true" signature="2051:2126" ph="select * fro... pasistence_admin" />
+            <marker date="1538401397622" expanded="true" signature="3514:3714" ph="INSERT INTO `pasistence_admin`... " />
+            <marker date="1538401397622" expanded="true" signature="4049:4104" ph="select * fro... pasistence_admin" />
+            <marker date="1538401397622" expanded="true" signature="5802:5812" ph="..." />
+            <marker date="1538401397622" expanded="true" signature="6075:6087" ph="..." />
           </folding>
         </state>
       </provider>
@@ -377,10 +416,10 @@
         <state relative-caret-position="588">
           <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
           <folding>
-            <marker date="1538399194598" expanded="true" signature="248:288" ph="select * fro... pasistence_admin" />
-            <marker date="1538399194598" expanded="true" signature="3303:3484" ph="UPDATE `pasi... " />
-            <marker date="1538399194598" expanded="true" signature="5270:5280" ph="..." />
-            <marker date="1538399194598" expanded="true" signature="5543:5555" ph="..." />
+            <marker date="1538401397643" expanded="true" signature="248:288" ph="select * fro... pasistence_admin" />
+            <marker date="1538401397643" expanded="true" signature="3216:3397" ph="UPDATE `pasi... " />
+            <marker date="1538401397643" expanded="true" signature="5183:5193" ph="..." />
+            <marker date="1538401397643" expanded="true" signature="5456:5468" ph="..." />
           </folding>
         </state>
       </provider>
@@ -390,10 +429,10 @@
         <state relative-caret-position="462">
           <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
           <folding>
-            <marker date="1538399201628" expanded="true" signature="248:288" ph="select * fro... pasistence_admin" />
-            <marker date="1538399201628" expanded="true" signature="3244:3425" ph="UPDATE `pasi... " />
-            <marker date="1538399201628" expanded="true" signature="5141:5151" ph="..." />
-            <marker date="1538399201628" expanded="true" signature="5414:5426" ph="..." />
+            <marker date="1538401397652" expanded="true" signature="248:288" ph="select * fro... pasistence_admin" />
+            <marker date="1538401397652" expanded="true" signature="3157:3338" ph="UPDATE `pasi... " />
+            <marker date="1538401397652" expanded="true" signature="5054:5064" ph="..." />
+            <marker date="1538401397652" expanded="true" signature="5327:5339" ph="..." />
           </folding>
         </state>
       </provider>
@@ -434,10 +473,10 @@
         <state relative-caret-position="231">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <marker date="1538397273591" expanded="true" signature="863:899" ph="select count... pasistence_city" />
-            <marker date="1538397273591" expanded="true" signature="941:977" ph="select count... pasistence_club" />
-            <marker date="1538397273591" expanded="true" signature="1019:1059" ph="select count... pasistence_planning" />
-            <marker date="1538397273591" expanded="true" signature="1101:1137" ph="select count... pasistence_news" />
+            <marker date="1538401397702" expanded="true" signature="771:807" ph="select count... pasistence_city" />
+            <marker date="1538401397702" expanded="true" signature="849:885" ph="select count... pasistence_club" />
+            <marker date="1538401397702" expanded="true" signature="927:967" ph="select count... pasistence_planning" />
+            <marker date="1538401397702" expanded="true" signature="1009:1045" ph="select count... pasistence_news" />
           </folding>
         </state>
       </provider>
@@ -531,14 +570,11 @@
         <state relative-caret-position="399">
           <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
           <folding>
-            <element signature="e#1093#28879#0#PHP" expanded="false" />
-            <element signature="e#2516#2521#0#PHP" expanded="false" />
-            <element signature="e#12651#12656#0#PHP" expanded="false" />
-            <marker date="1538399294440" expanded="true" signature="1266:1312" ph="SELECT * FRO... pasistence_news" />
-            <marker date="1538399294440" expanded="true" signature="5575:5621" ph="select * fro... pasistence_city" />
-            <marker date="1538399294440" expanded="true" signature="7693:7739" ph="select * fro... pasistence_club" />
-            <marker date="1538399294440" expanded="true" signature="18679:18725" ph="select * fro... pasistence_city" />
-            <marker date="1538399294440" expanded="true" signature="22824:22870" ph="select * fro... pasistence_club" />
+            <marker date="1538401397725" expanded="true" signature="1179:1225" ph="SELECT * FRO... pasistence_news" />
+            <marker date="1538401397725" expanded="true" signature="5488:5534" ph="select * fro... pasistence_city" />
+            <marker date="1538401397725" expanded="true" signature="7606:7652" ph="select * fro... pasistence_club" />
+            <marker date="1538401397725" expanded="true" signature="18592:18638" ph="select * fro... pasistence_city" />
+            <marker date="1538401397725" expanded="true" signature="22737:22783" ph="select * fro... pasistence_club" />
           </folding>
         </state>
       </provider>
@@ -548,10 +584,10 @@
         <state relative-caret-position="536">
           <caret line="42" column="35" lean-forward="false" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
           <folding>
-            <marker date="1538399305131" expanded="true" signature="1512:1732" ph="..." />
-            <marker date="1538399305131" expanded="true" signature="1966:2188" ph="..." />
-            <marker date="1538399305131" expanded="true" signature="12061:12107" ph="select * fro... pasistence_city" />
-            <marker date="1538399305131" expanded="true" signature="12767:12813" ph="select * fro... pasistence_club" />
+            <marker date="1538401397739" expanded="true" signature="1425:1645" ph="..." />
+            <marker date="1538401397739" expanded="true" signature="1879:2101" ph="..." />
+            <marker date="1538401397739" expanded="true" signature="11974:12020" ph="select * fro... pasistence_city" />
+            <marker date="1538401397739" expanded="true" signature="12680:12726" ph="select * fro... pasistence_club" />
           </folding>
         </state>
       </provider>
@@ -610,26 +646,26 @@
         <state relative-caret-position="357">
           <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
           <folding>
-            <marker date="1538399323815" expanded="true" signature="3290:3336" ph="select * fro... pasistence_city" />
-            <marker date="1538399323815" expanded="true" signature="5967:5973" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="5973:5979" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="5979:5985" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="5985:5991" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="5991:5997" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="6057:6063" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="6063:6069" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="6069:6075" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="6075:6081" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="6081:6087" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="6087:6093" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="6152:6158" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="6158:6164" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="6164:6170" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="6170:6176" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="6176:6182" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="6182:6188" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="6188:6194" ph=" " />
-            <marker date="1538399323815" expanded="true" signature="6194:6200" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="3203:3249" ph="select * fro... pasistence_city" />
+            <marker date="1538401397754" expanded="true" signature="5880:5886" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="5886:5892" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="5892:5898" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="5898:5904" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="5904:5910" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="5970:5976" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="5976:5982" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="5982:5988" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="5988:5994" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="5994:6000" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="6000:6006" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="6065:6071" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="6071:6077" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="6077:6083" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="6083:6089" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="6089:6095" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="6095:6101" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="6101:6107" ph=" " />
+            <marker date="1538401397754" expanded="true" signature="6107:6113" ph=" " />
           </folding>
         </state>
       </provider>
@@ -770,13 +806,13 @@
         <state relative-caret-position="420">
           <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding>
-            <marker date="1538399645712" expanded="true" signature="1615:1665" ph="SELECT * FRO... pasistence_club" />
-            <marker date="1538399645712" expanded="true" signature="4666:4712" ph="select * fro... pasistence_city" />
-            <marker date="1538399645712" expanded="true" signature="7684:7730" ph="select * fro... pasistence_club" />
-            <marker date="1538399645712" expanded="true" signature="12914:12924" ph="..." />
-            <marker date="1538399645712" expanded="true" signature="13187:13199" ph="..." />
-            <marker date="1538399645712" expanded="true" signature="15217:15263" ph="select * fro... pasistence_city" />
-            <marker date="1538399645712" expanded="true" signature="18247:18293" ph="select * fro... pasistence_club" />
+            <marker date="1538401397767" expanded="true" signature="1531:1581" ph="SELECT * FRO... pasistence_club" />
+            <marker date="1538401397767" expanded="true" signature="4582:4628" ph="select * fro... pasistence_city" />
+            <marker date="1538401397767" expanded="true" signature="7600:7646" ph="select * fro... pasistence_club" />
+            <marker date="1538401397767" expanded="true" signature="12830:12840" ph="..." />
+            <marker date="1538401397767" expanded="true" signature="13103:13115" ph="..." />
+            <marker date="1538401397767" expanded="true" signature="15133:15179" ph="select * fro... pasistence_city" />
+            <marker date="1538401397767" expanded="true" signature="18163:18209" ph="select * fro... pasistence_club" />
           </folding>
         </state>
       </provider>
@@ -802,9 +838,9 @@
         <state relative-caret-position="483">
           <caret line="158" column="125" lean-forward="false" selection-start-line="158" selection-start-column="123" selection-end-line="158" selection-end-column="125" />
           <folding>
-            <marker date="1538400201642" expanded="true" signature="1458:1504" ph="SELECT * FRO... pasistence_club" />
-            <marker date="1538400201642" expanded="true" signature="5436:5482" ph="select * fro... pasistence_city" />
-            <marker date="1538400201642" expanded="true" signature="13385:13431" ph="select * fro... pasistence_city" />
+            <marker date="1538401397632" expanded="true" signature="1372:1418" ph="SELECT * FRO... pasistence_club" />
+            <marker date="1538401397632" expanded="true" signature="5350:5396" ph="select * fro... pasistence_city" />
+            <marker date="1538401397632" expanded="true" signature="13299:13345" ph="select * fro... pasistence_city" />
           </folding>
         </state>
       </provider>
@@ -814,26 +850,10 @@
         <state relative-caret-position="483">
           <caret line="50" column="14" lean-forward="true" selection-start-line="50" selection-start-column="14" selection-end-line="52" selection-end-column="0" />
           <folding>
-            <marker date="1538400233678" expanded="true" signature="1595:1815" ph="..." />
-            <marker date="1538400233678" expanded="true" signature="2065:2287" ph="..." />
-            <marker date="1538400233678" expanded="true" signature="12045:12091" ph="select * fro... pasistence_city" />
-            <marker date="1538400233678" expanded="true" signature="13280:13326" ph="select * fro... pasistence_club" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add_city_club.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="79" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="451" selection-end-column="6" />
-          <folding>
-            <marker date="1538400829142" expanded="true" signature="2332:2572" ph="..." />
-            <marker date="1538400829142" expanded="true" signature="2427:2572" ph="..." />
-            <marker date="1538400829142" expanded="true" signature="2553:2572" ph="..." />
-            <marker date="1538400829142" expanded="true" signature="2782:3004" ph="..." />
-            <marker date="1538400829142" expanded="true" signature="12120:12166" ph="select * fro... pasistence_city" />
-            <marker date="1538400829142" expanded="true" signature="15729:15739" ph="..." />
-            <marker date="1538400829142" expanded="true" signature="15961:15973" ph="..." />
+            <marker date="1538401397795" expanded="true" signature="1508:1728" ph="..." />
+            <marker date="1538401397795" expanded="true" signature="1978:2200" ph="..." />
+            <marker date="1538401397795" expanded="true" signature="11958:12004" ph="select * fro... pasistence_city" />
+            <marker date="1538401397795" expanded="true" signature="13193:13239" ph="select * fro... pasistence_club" />
           </folding>
         </state>
       </provider>
@@ -841,7 +861,7 @@
     <entry file="file://$PROJECT_DIR$/city.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <marker date="1538392611787" expanded="true" signature="179:237" ph="select * fro... pasistence_city" />
             <marker date="1538392611787" expanded="true" signature="843:915" ph="INSERT INTO pasistence_city" />
@@ -852,20 +872,55 @@
     <entry file="file://$PROJECT_DIR$/City_list.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="210" column="30" lean-forward="true" selection-start-line="210" selection-start-column="30" selection-end-line="210" selection-end-column="30" />
+          <caret line="209" column="30" lean-forward="false" selection-start-line="209" selection-start-column="30" selection-end-line="209" selection-end-column="30" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#section#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="e#4774#4840#0#PHP" expanded="true" />
-            <marker date="1538400928842" expanded="true" signature="2379:2599" ph="..." />
-            <marker date="1538400928842" expanded="true" signature="2833:3055" ph="..." />
-            <marker date="1538400928842" expanded="true" signature="4887:4912" ph="SELECT * FRO... pasistence_club" />
-            <marker date="1538400928842" expanded="true" signature="4887:4916" ph="SELECT * FRO... pasistence_city" />
-            <marker date="1538400928842" expanded="true" signature="5150:5427" ph="..." />
-            <marker date="1538400928842" expanded="true" signature="5150:5848" ph="..." />
-            <marker date="1538400928842" expanded="true" signature="5593:5804" ph="..." />
-            <marker date="1538400928842" expanded="true" signature="5594:5804" ph="..." />
-            <marker date="1538400928842" expanded="false" signature="7615:9126" ph="{...}" />
-            <marker date="1538400928842" expanded="false" signature="9183:9895" ph="{...}" />
+            <marker date="1538401398563" expanded="true" signature="1930:6167" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="1942:1989" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="2051:6160" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="2083:6149" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="2125:6119" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="2149:3076" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="2196:2599" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="2292:2512" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="2649:3057" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="2746:2968" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="3128:6099" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="3171:6076" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="3221:3892" ph="..." />
+            <marker date="1538401398563" expanded="false" signature="3299:3327" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="3328:3431" ph="..." />
+            <marker date="1538401398563" expanded="false" signature="3508:3538" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="3539:3860" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="3711:3825" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="3963:3986" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="3987:6045" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="4047:6013" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="4146:5977" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="4190:4585" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="4231:4540" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="4686:5883" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="4687:5883" ph="//..." />
+            <marker date="1538401398563" expanded="true" signature="4800:4825" ph="SELECT * FRO... pasistence_club" />
+            <marker date="1538401398563" expanded="true" signature="4800:4829" ph="SELECT * FRO... pasistence_city" />
+            <marker date="1538401398563" expanded="true" signature="5063:5340" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="5063:5761" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="5506:5717" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="5507:5717" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="6712:11052" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="6748:10437" ph="{...}" />
+            <marker date="1538401398563" expanded="true" signature="6791:7015" ph="{...}" />
+            <marker date="1538401398563" expanded="true" signature="7069:7437" ph="{...}" />
+            <marker date="1538401398563" expanded="true" signature="7176:7257" ph="{&quot;url&quot;: &quot;fetch_city.php&quot;...}" />
+            <marker date="1538401398563" expanded="true" signature="7284:7416" ph="[...]" />
+            <marker date="1538401398563" expanded="true" signature="7302:7401" ph="{...}" />
+            <marker date="1538401398563" expanded="true" signature="7471:10430" ph="/*...*/" />
+            <marker date="1538401398563" expanded="false" signature="7528:9039" ph="{...}" />
+            <marker date="1538401398563" expanded="false" signature="9096:9808" ph="{...}" />
+            <marker date="1538401398563" expanded="true" signature="10478:10994" ph="{...}" />
+            <marker date="1538401398563" expanded="true" signature="10569:10986" ph="{...}" />
+            <marker date="1538401398563" expanded="true" signature="10813:10899" ph="{...}" />
+            <marker date="1538401398563" expanded="true" signature="11085:11230" ph="..." />
+            <marker date="1538401398563" expanded="true" signature="11122:11220" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -884,10 +939,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fetch_city.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="494">
+          <caret line="50" column="86" lean-forward="false" selection-start-line="50" selection-start-column="86" selection-end-line="50" selection-end-column="86" />
           <folding>
             <marker date="1538401323258" expanded="true" signature="97:126" ph="SELECT * FRO... pasistence_city" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_city_club.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+          <folding>
+            <marker date="1538401454728" expanded="true" signature="2376:2616" ph="..." />
+            <marker date="1538401454728" expanded="true" signature="2471:2616" ph="..." />
+            <marker date="1538401454728" expanded="true" signature="2597:2616" ph="..." />
+            <marker date="1538401454728" expanded="true" signature="2826:3048" ph="..." />
+            <marker date="1538401454728" expanded="false" signature="3392:3420" ph="..." />
+            <marker date="1538401454728" expanded="false" signature="3622:3652" ph="..." />
+            <marker date="1538401454728" expanded="false" signature="4578:4601" ph="..." />
+            <marker date="1538401454728" expanded="false" signature="11408:11415" ph="×" />
+            <marker date="1538401454728" expanded="false" signature="11972:11990" ph="..." />
+            <marker date="1538401454728" expanded="true" signature="12164:12210" ph="select * fro... pasistence_city" />
+            <marker date="1538401454728" expanded="false" signature="14419:14426" ph="×" />
+            <marker date="1538401454728" expanded="true" signature="15773:15783" ph="..." />
+            <marker date="1538401454728" expanded="true" signature="16005:16017" ph="..." />
           </folding>
         </state>
       </provider>
