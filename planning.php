@@ -20,10 +20,8 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
 </head>
 <body>
-<!--    --><?php //require_once('includes/navbar.php');?>
-<?php require_once('leftpanel.php');?>
-<?php require_once('script.php');
-    require_once('cmodel.php');?>
+<?php require_once('includes/navbar.php');?>
+<?php require_once('cmodel.php');?>
     <!-- Right Panel -->
 
     <div id="right-panel" class="right-panel" >

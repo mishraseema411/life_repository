@@ -45,9 +45,8 @@ else
 
 </head>
 <body>
-<!--    --><?php //require_once('includes/navbar.php');?>
-<?php require_once('leftpanel.php');?>
-<?php require_once('script.php');?>
+<?php require_once('includes/navbar.php');?>
+
 
 
 
