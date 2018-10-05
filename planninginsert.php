@@ -18,8 +18,6 @@ if(isset($_POST["operation"]))
         $text2 = $_POST["make_text2"];
 
 
-
-
         $statement = $connection->prepare("INSERT INTO pasistence_planning (name, description, image_url,city,club,city_id,club_id,date) 
    VALUES(:title, :content, :image_url,:city,:club, :city_id, :club_id, :date)
   ");

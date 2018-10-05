@@ -16,18 +16,28 @@ try{
      $city=$_POST['city'];
      $phone=$_POST['phone'];
      $email=$_POST['email'];	
-     $clubimage=$_FILES['clubimage'];
+     $clubimage=$_FILES['clubimage']['name'];
 
 
      if (($_FILES ["clubimage"] != "") and ($_POST ["clubnm"] != "") and ($_POST ["address"] != "") and ($_POST ["zipcode"] != "") and ($_POST ["city"] != "") and ($_POST ["phone"] != "") and ($_POST ["email"] != ""))
-     { 
-         $filenm = $_FILES["clubimage"]["name"]; //name of file
-         $tempnm = $_FILES["clubimage"]["tmp_name"]; // temp name of file
+     {
 
-         $folder="img/city/".time().$filenm;
-         move_uploaded_file($tempnm,$folder);
 
-         echo "1";
+         if( $clubimage === ''){
+
+             $sql = "INSERT INTO pasistence_club (name,address,city_id,zip_code,phone,email) VALUES ('$clubnm', '$address', '1', '$zipcode', '$phone', '$email')";
+
+         }else
+         {
+             $filenm = $_FILES["clubimage"]["name"]; //name of file
+             $tempnm = $_FILES["clubimage"]["tmp_name"]; // temp name of file
+
+             $folder="img/club/".time().$filenm;
+             move_uploaded_file($tempnm,$folder);
+             $sql = "INSERT INTO pasistence_club (name,address,city_id,zip_code,phone,email,image_url) VALUES ('$clubnm', '$address', '1', '$zipcode', '$phone', '$email', '$folder')";
+
+         }
+
 
 
          $sql = "INSERT INTO pasistence_club (name,address,city_id,zip_code,phone,email,image_url) VALUES ('$clubnm', '$address', '1', '$zipcode', '$phone', '$email', '$folder')";

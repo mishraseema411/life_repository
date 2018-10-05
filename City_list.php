@@ -114,23 +114,23 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                     <section class="card">
                         <div class="card-header">
 
-                            <div class="col-sm-6 col-xs-6 col-lg-6" style="padding:1%;text-align: left;">
+                            <div class="col-sm-4 col-xs-4 col-lg-4" style="padding:1%;text-align: left;">
                                 <h3><strong>Cities </strong> </h3>
 
                             </div>
                             <div class="col-sm-6 col-lg-6 col-xs-6" style="padding:1%; text-align: right;">
                             <!-- <button id="city" type="submit" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#cityModal" class="btn btn-primary btn-sm">
                                 <i class="fa fa-plus"></i> Add City
-<<<<<<< HEAD
+
                             </button> -->
                                 <!-- <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm" >
                                     <i class="fa fa-plus"></i> Add Club
                                 </button>
                                 </button> -->
                                 <a href="city.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i>  Add City</a> 
-=======
+
                             </button>
->>>>>>> b7aa82f8ff6a41f610fd1b9eea127ddce588bf3b
+
                             </div>
 
                         </div>
@@ -144,6 +144,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 
                                         <th width="40%">Image</th>
                                         <th width="30%">Name</th>
+                                        <th width="30%">Website</th>
                                         <th width="5%">Edit</th>
                                         <th width="5%">Delete</th>
 
@@ -178,13 +179,12 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 <script src="assets/js/lib/data-table/dataTables.buttons.min.js"></script>
 
 
-
-
 <script type="text/javascript" language="javascript" >
 
     $(document).ready(function(){
 
-        var dataTable = $('#user_data').DataTable({
+
+        var dataTable =  $('#user_data').DataTable({
             "processing":true,
             "serverSide":true,
             "order":[],
@@ -194,16 +194,15 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
             },
             "columnDefs":[
                 {
-                    "targets":[0],
-                    "orderable":false,
+                    "targets":[0,2,3],
+                    "orderable":false
                 },
             ],
-
         });
 
         $(document).on('click', '.update', function(){
             var user_id = $(this).attr("id");
-            var url = 'club_r.php';
+            var url = 'city.php';
             var form = $('<form action="' + url + '" method="post">' +
                 '<input type="text" name="userId" value="' + user_id + '" />' +
                 '</form>');
@@ -229,7 +228,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
             if(confirm("Are you sure you want to delete this?"))
             {
                 $.ajax({
-                    url:"delete.php",
+                    url:"deleteCity.php",
                     method:"POST",
                     data:{user_id:user_id},
                     success:function(data)
@@ -302,8 +301,6 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                         <div class="col col-md-5"><label for="file-input" class="form-control-label">Select Image</label></div>
                         <div class="col-12 col-md-7"><input type="file" id="file-input" name="cityimage" class="form-control-file"></div>
                     </div>
-
-
 
 
                     <div class="modal-footer">

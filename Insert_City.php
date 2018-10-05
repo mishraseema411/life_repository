@@ -5,7 +5,9 @@ try{
     if(isset($_POST['submit']))
     {
         $cityname=$_POST['cityname'];
-        $cityimage=$_FILES['cityimage'];
+        $cityweb=$_POST['cityweb'];
+        $cityimage=$_FILES['cityimage']['name'];
+
 
         $stmt=("select * from pasistence_city where name='". $cityname. "'");
 
@@ -17,21 +19,28 @@ try{
         } else {
             if (($_FILES ["cityimage"] != "") and ($_POST ["cityname"] != ""))
             {
-                $filenm = $_FILES["cityimage"]["name"]; //name of file
-                $tempnm = $_FILES["cityimage"]["tmp_name"]; // temp name of file
+                if( $cityimage === ''){
 
-                $folder="img/city/".time().$filenm;
-                move_uploaded_file($tempnm,$folder);
+                    $sql = "INSERT INTO pasistence_city(name,website) values ('$cityname','$cityweb')";
 
-                $sql = "INSERT INTO   pasistence_city(name,image) values ('$cityname','$folder')";
+                }else
+                {
+                    $filenm = $_FILES["cityimage"]["name"]; //name of file
+                    $tempnm = $_FILES["cityimage"]["tmp_name"]; // temp name of file
+
+                    $folder="img/city/".time().$filenm;
+                    move_uploaded_file($tempnm,$folder);
+                     $sql = "INSERT INTO pasistence_city(name,image,website) values ('$cityname','$folder','$cityweb')";
+
+                }
+
                 if (mysqli_query($con, $sql))
                 {
-                    echo "<script>alert('City Inserted !');location.replace('add_city_club.php');</script>";
+                    echo "<script>alert('City Inserted !');location.replace('City_list.php');</script>";
                 }
 
             }else {
-
-                echo "<script>alert('All (*) fields are required !');location.replace('add_city_club.php');</script>";
+                echo "<script>alert('All (*) fields are required !');location.replace('City_list.php');</script>";
 
             }
 

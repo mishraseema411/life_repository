@@ -213,7 +213,6 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                                 {
                                     if(empty($n_title) or empty($n_content) or empty($n_city) or empty($n_club) or empty($n_date) or empty($imageurl))
                                     {
-
                                         $error="All (*) fields are required!";
                                     }
                                 }

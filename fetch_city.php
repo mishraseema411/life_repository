@@ -3,16 +3,23 @@ include('db.php');
 include('cityfunction.php');
 $query = '';
 $output = array();
-$query .= "SELECT * FROM pasistence_city";
+$query .= "SELECT * FROM pasistence_city ";
 /*$statement = $connection->prepare($query);
 $statement->execute();
 $result = $statement->fetchAll();
 var_dump($result);
 die();*/
-   /* if(isset($_POST["search"]["value"]))
+/*echo $_POST["search"]["value"];
+echo $_POST["order"];
+echo $_POST["length"];
+
+*/
+try{
+    if(isset($_POST["search"]["value"]))
     {
         $query .= 'WHERE name LIKE "%'.$_POST["search"]["value"].'%" ';
     }
+
     if(isset($_POST["order"]))
     {
         $query .= 'ORDER BY '.$_POST['order']['0']['column'].' '.$_POST['order']['0']['dir'].' ';
@@ -21,41 +28,52 @@ die();*/
     {
         $query .= 'ORDER BY id DESC ';
     }
+
     if($_POST["length"] != -1)
     {
         $query .= 'LIMIT ' . $_POST['start'] . ', ' . $_POST['length'];
-    }*/
-$statement = $connection->prepare($query);
-$statement->execute();
-$result = $statement->fetchAll();
 
-$data = array();
-$filtered_rows = $statement->rowCount();
-
-foreach($result as $row)
-{
-    $image = '';
-    if($row["image"] != '')
-    {
-        $image = '<img src="'.$row["image"].'" class="img-thumbnail" width="80" height="80" />';
     }
-    else
+
+    $statement = $connection->prepare($query);
+    $statement->execute();
+    $result = $statement->fetchAll();
+    $data = array();
+    $filtered_rows = $statement->rowCount();
+
+    foreach($result as $row)
     {
         $image = '';
+        if($row["image"] != '')
+        {
+            $image = '<img src="'.$row["image"].'" class="img-thumbnail" width="80" height="80" />';
+        }
+        else
+        {
+            $image = '';
+        }
+        $sub_array = array();
+
+        $sub_array[] = $image;
+        $sub_array[] = $row["name"];
+        $sub_array[] = $row["website"];
+        $sub_array[] = '<button type="button" name="update" id="'.$row["id"].'" class="btn btn-warning btn-xs update">Update</button>';
+        $sub_array[] = '<button type="button" name="delete" id="'.$row["id"].'" class="btn btn-danger btn-xs delete">Delete</button>';
+        $data[] = $sub_array;
     }
-    $sub_array = array();
-    $sub_array[] = $image;
-    $sub_array[] = $row["name"];
-    $sub_array[] = '<button type="button" name="update" id="'.$row["id"].'" class="btn btn-warning btn-xs update">Update</button>';
-    $sub_array[] = '<button type="button" name="delete" id="'.$row["id"].'" class="btn btn-danger btn-xs delete">Delete</button>';
-    $data[] = $sub_array;
+    $output = array(
+        "draw"    => intval($_POST["draw"]),
+        "recordsTotal"  =>  $filtered_rows,
+        "recordsFiltered" => get_total_all_records(),
+        "data"    => $data
+    );
+    echo json_encode($output);
+
+}catch (Exception $e){
+    echo $e;
 }
-$output = array(
-    "draw"    => intval($_POST["draw"]),
-    "recordsTotal"  =>  $filtered_rows,
-    "recordsFiltered" => get_total_all_records(),
-    "data"    => $data
-);
-echo json_encode($output);
+
+
+
 //var_dump($data);
 ?>

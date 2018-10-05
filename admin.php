@@ -187,7 +187,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
                         <div class="col col-md-4">
                             <?php
                             if(isset($check_image))
-                                echo"<img src='img/admin/$check_image' width='100%'/>";
+                                echo "<script>alert('Admin Inserted Successfully !');location.replace('addAdmin.php');</script>";
                             ?>
                         </div>
                     </div>

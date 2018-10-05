@@ -8,7 +8,43 @@
 
 class city_model
 {
-    public $id, $name, $image, $created_at, $updated_at;
+    public $id, $name, $image, $created_at, $updated_at,$website;
+
+    /**
+     * city_model constructor.
+     * @param $id
+     * @param $name
+     * @param $image
+     * @param $created_at
+     * @param $updated_at
+     */
+    public function __construct($id, $name, $image, $created_at, $updated_at,$website)
+    {
+        $this->id = $id;
+        $this->name = $name;
+        $this->image = $image;
+        $this->created_at = $created_at;
+        $this->updated_at = $updated_at;
+        $this->website = $website;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getWebsite()
+    {
+        return $this->website;
+    }
+
+    /**
+     * @param mixed $website
+     */
+    public function setWebsite($website)
+    {
+        $this->website = $website;
+    }
+
+
 
     /**
      * @return mixed

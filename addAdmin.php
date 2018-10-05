@@ -95,7 +95,6 @@ if(!isset($_SESSION['username']))
                             <table id="admintb" class="table datatable table-striped table-borderd table-hover">
                                 <thead>
                                     <tr>
-                                        
                                         <th>Sr #</th>
                                         <th>Name</th>
                                         <th>DOB</th>
@@ -135,8 +134,6 @@ if(!isset($_SESSION['username']))
                                             //                $y=$date['year'];
 
                                                                 ?>
-                                    
-
                                     <tr>
                                         
                                         <td><?php echo $id; ?></td>

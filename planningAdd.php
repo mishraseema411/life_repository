@@ -107,7 +107,7 @@ if((!isset($_SESSION['username'])) or (!isset($_SESSION['email'])))
 <!--                                        <button  type="button" id="add_button" data-toggle="modal" data-target="#userModal"  class="btn btn-primary btn-sm">-->
 <!--                                            <i class="fa fa-plus"></i> Add Planning-->
 <!--                                        </button>-->
-                                    <a href="planning.php" class="btn btn-primary btn-lg"><i class="fa fa-plus"></i> Add Planning</a>
+                                    <a href="planning.php" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> Add Planning</a>
                                     </div>
 
 

@@ -38,7 +38,19 @@ if(isset($_POST['add'])){
 //    $city_id = $_POST['title'];
 //    $club_id = $_POST['title'];
     if(!empty($filename)){
-        move_uploaded_file($_FILES['photo']['tmp_name'],'img/planning/'.$filename);
+        $filename = $_FILES["photo"]["name"]; //name of file
+        $tempnm = $_FILES["photo"]["tmp_name"]; // temp name of file
+        $folder="img/planning/".time().$filename;
+        // move_uploaded_file($_FILES['photo']['tmp_name'],'img/news/'.$tempnm);
+        move_uploaded_file($tempnm,$folder);
+
+        //move_uploaded_file($_FILES['photo']['tmp_name'],'img/planning/'.$filename);
+
+        $sql = "Insert into pasistence_planning(name, image_url, date, city, club, description,city_id,club_id) VALUES('$title','$folder','$date','$city','$club','$plan','$city_id','$club_id')";
+
+    }else{
+        $sql = "Insert into pasistence_planning(name, date, city, club, description,city_id,club_id) VALUES('$title','$date','$city','$club','$plan','$city_id','$club_id')";
+
     }
 
 //    if($connection->query($sql)){
@@ -56,7 +68,6 @@ if(isset($_POST['add'])){
 //        die("Connection failed: " . $conn->connect_error);
 //    }
 
-    $sql = "Insert into pasistence_planning(name, image_url, date, city, club, description,city_id,club_id) VALUES('$title','$filename','$date','$city','$club','$plan','$city_id','$club_id')";
 
     if ($conn->query($sql) === TRUE) {
         $_SESSION['success'] = 'Data Inserted Successfully';

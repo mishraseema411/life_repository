@@ -20,7 +20,7 @@ if(isset($_POST["user_id"]))
   $output["date"] = $row["date"];
   if($row["image_url"] != '')
   {
-   $output['image_url'] = '<img src="img/planning/'.$row["image_url"].'" class="img-thumbnail img-responsive"  /><input type="hidden" name="hidden_user_image" value="'.$row["image_url"].'" />';
+   $output['image_url'] = '<img src="'.$row["image_url"].'" class="img-thumbnail img-responsive"  /><input type="hidden" name="hidden_user_image" value="'.$row["image_url"].'" />';
   }
   else
   {

@@ -34,7 +34,8 @@ foreach($result as $row)
  $image = '';
  if($row["image_url"] != '')
  {
-  $image = '<img src="img/news/'.$row["image_url"].'" class="img-thumbnail" width="50" height="35" />';
+  //$image = '<img src="img/news/'.$row["image_url"].'" class="img-thumbnail" width="50" height="35" />';
+  $image = '<img src="'.$row["image_url"].'" class="img-thumbnail" width="50" height="35" />';
  }
  else
  {
@@ -44,15 +45,12 @@ foreach($result as $row)
  $sub_array[] = $image;
  $sub_array[] = $row["title"];
  $sub_array[] = $row["content"];
-   $sub_array[] = $row["city"];
-    $sub_array[] = $row["club"];
-     $sub_array[] = $row["date"];
+ $sub_array[] = $row["city"];
+ $sub_array[] = $row["club"];
+ $sub_array[] = $row["date"];
  $sub_array[] = '<button type="button" name="update" id="'.$row["id"].'" class="btn btn-warning btn-xs update">Update</button>';
  $sub_array[] = '<button type="button" name="delete" id="'.$row["id"].'" class="btn btn-danger btn-xs delete">Delete</button>';
- print_r($sub_array);
-
  $data[] = $sub_array;
- print_r($data);
 }
 $output = array(
  "draw"    => intval($_POST["draw"]),
