@@ -61,7 +61,7 @@ require_once('includes/header.php');
 
                                         <div class="row form-group">
                                             <div class="col col-md-3">
-                                                <label for="select_city" class=" form-control-label">Select City</label>
+                                                <label for="city_id" class=" form-control-label">Select City</label>
                                             </div>
                                             <div class="col-12 col-md-9">
                                                 <select data-placeholder="Choose a city..." class="form-control" name="city_id" id="city_id" style=" min-height: 35px;">
@@ -116,21 +116,24 @@ require_once('includes/header.php');
                 $("#submit_news").click(function(){
 
                     var email = document.getElementById('email').value;
+                    var array = email.split(";");
                     var news = document.getElementById('push_news').value;
-                    var city = document.getElementById('select_city').value;
+                    var city = document.getElementById('city_id').value;
+                    var from_mail = "sales@pasistence.com";
+                    array.forEach(function(item){
+                     //copy.push(item*item);
 
-
-                    var x = "<br><strong>Email:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+email+
+                    var x = "<br><strong>Email:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+from_mail+
                         "<br><strong>News:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+news+
                         "<br><strong>City:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+city;
 
 
                     $.post("http://52.172.221.235:8985/mantra/sendgrid/slimRestfulAPI/public/index.php/api/email",
                            {
-                        from_email:"abc@gmail.com",
+                        from_email:from_mail,
                         from_name:name,
                         subject:"LifeCLub",
-                        to_email:email,
+                        to_email:item,
                         to_name:"LifeCLub",
                         text_type:"html",
                         content:x
@@ -138,12 +141,16 @@ require_once('includes/header.php');
                            function(response){
                         if(response.response == 202)
                         {
-                            alert("Your News is pushed.");
+                           
                         }
                         else{
                             alert("There is some server issue");
                         }
+                     });
+
                     });
+
+                     alert("Your News is pushed.");
                 });
             });
 
